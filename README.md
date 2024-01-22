@@ -9,5 +9,5 @@
 ## Details
 As this is an RNAseq pipeline the rnaseq-nf Docker image was used, which can be pulled by:
 ```
-$ docker pull quay.io/nextflow/rnaseq-nf
+$ docker pull nfcore/rnaseq
 ```
