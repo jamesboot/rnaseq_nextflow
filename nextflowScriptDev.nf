@@ -49,7 +49,7 @@ process FASTQC {
     script:
     """
     # Load module
-    module load fastqc
+    module load trimgalore/0.6.5
 
     # Make output folder
     if [ ! -e ${parentFolder}/1M-fastqc ]; then mkdir -p ${parentFolder}/1M-fastqc; fi
@@ -69,6 +69,49 @@ process FASTQC {
 }
 
 /*
+ * Perform trimming
+ */
+process TRIMMING {
+    tag "Trimming on ${sample_id}"
+
+    input:
+    tuple val(sample_id), path(reads)
+    path parentFolder
+
+    output:
+    path "${parentFolder}/trimgalore_outs"
+
+    script:
+    """
+    # Load module
+    module load fastqc
+
+    # Make output folder
+    if [ ! -e ${parentFolder}/trimgalore_outs ]; then mkdir -p ${parentFolder}/trimgalore_outs; fi
+    
+	# Run trimgalore
+	# Options --length, -e, --stringency, --quality are set to default
+	trim_galore --quality 20 \
+	--length 20 \
+	-j ${NSLOTS} \
+	--paired \
+	--stringency 1 \
+	-e 0.1 \
+	--fastqc --fastqc_args "-o ${parentFolder}/trimgalore_outs/fastqc --noextract" \
+	--output_dir ${parentFolder}/trimgalore_outs \
+	${reads[0]} ${reads[1]}
+
+    # Run multiqc on trimmed fastqc output
+    # Load gcenv containing multiqc
+    . /data/WHRI-GenomeCentre/gcenv/bin/activate
+
+    # Run multiqc
+    cd ${parentFolder}/trimgalore_outs/fastqc
+    multiqc .
+    """
+}
+
+/*
  * Define workflow
  */
 workflow {
@@ -77,4 +120,5 @@ workflow {
         .set { read_pairs_ch }
     SUBSAMPLE(read_pairs_ch, params.analysisdir)
     FASTQC(SUBSAMPLE.out[0], SUBSAMPLE.out[1], params.analysisdir)
+    TRIMMING(read_pairs_ch, params.analysisdir)
 }
