@@ -73,7 +73,7 @@ process MULTIQC {
     script:
     """
     # Load gcenv containing multiqc
-    . /data/WHRI-GenomeCentre/gcenv/bin/activate
+    source /data/WHRI-GenomeCentre/gcenv/bin/activate
 
     # Run multiqc
     cd ${fastqcFolder}
@@ -130,7 +130,7 @@ process MULTIQC_PT {
     script:
     """
     # Load gcenv containing multiqc
-    . /data/WHRI-GenomeCentre/gcenv/bin/activate
+    source /data/WHRI-GenomeCentre/gcenv/bin/activate
 
     # Run multiqc
     cd ${fastqcFolder}
