@@ -1,0 +1,2808 @@
+Loading nextflow/23.10.1
+  Loading requirement: java/17.0.0
+Variable OMP_NUM_THREADS has been set to 2
+N E X T F L O W  ~  version 23.10.1
+Launching `nextflowScriptDev.nf` [serene_picasso] DSL2 - revision: db0482a0f7
+R N A S E Q - N F   P I P E L I N E
+===================================
+reads        : /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Data/201023_NS500784_0721_AHFCJHBGXG/Alignment_1/20201024_095434/Fastq/fastq_lane-merged/*_L001_R{1,2}_001.fastq.gz
+analysisdir  : /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Analysis/nextflow
+
+[-        ] process > SUBSAMPLE -
+[-        ] process > FASTQC    -
+[-        ] process > MULTIQC   -
+[-        ] process > TRIMMING  -
+
+[-        ] process > SUBSAMPLE  -
+[-        ] process > FASTQC     -
+[-        ] process > MULTIQC    -
+[-        ] process > TRIMMING   -
+[-        ] process > FASTQC_PT  -
+[-        ] process > MULTIQC_PT -
+
+[-        ] process > SUBSAMPLE  [  0%] 0 of 24
+[-        ] process > FASTQC     -
+[-        ] process > MULTIQC    -
+[-        ] process > TRIMMING   [  0%] 0 of 27
+[-        ] process > FASTQC_PT  -
+[-        ] process > MULTIQC_PT -
+
+[-        ] process > SUBSAMPLE  [  0%] 0 of 28
+[-        ] process > FASTQC     -
+[-        ] process > MULTIQC    -
+[-        ] process > TRIMMING   [  0%] 0 of 28
+[-        ] process > FASTQC_PT  -
+[-        ] process > MULTIQC_PT -
+
+executor >  sge (1)
+[d0/c4a715] process > SUBSAMPLE (1) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[-        ] process > MULTIQC       -
+[-        ] process > TRIMMING      [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC_PT    -
+
+executor >  sge (2)
+[b5/666b10] process > SUBSAMPLE (2) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[-        ] process > MULTIQC       -
+[-        ] process > TRIMMING      [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC_PT    -
+
+executor >  sge (3)
+[75/90f61f] process > SUBSAMPLE (3) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[-        ] process > MULTIQC       -
+[-        ] process > TRIMMING      [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC_PT    -
+
+executor >  sge (4)
+[75/90f61f] process > SUBSAMPLE (3) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[-        ] process > MULTIQC       -
+[1a/924ae0] process > TRIMMING (2)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC_PT    -
+
+executor >  sge (5)
+[75/90f61f] process > SUBSAMPLE (3) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[-        ] process > MULTIQC       -
+[87/c4dae0] process > TRIMMING (1)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC_PT    -
+
+executor >  sge (6)
+[75/90f61f] process > SUBSAMPLE (3) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[-        ] process > MULTIQC       -
+[56/fe5e4c] process > TRIMMING (3)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC_PT    -
+
+executor >  sge (7)
+[75/90f61f] process > SUBSAMPLE (3) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[-        ] process > MULTIQC       -
+[9f/7ee8f8] process > TRIMMING (5)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC_PT    -
+
+executor >  sge (8)
+[75/90f61f] process > SUBSAMPLE (3) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[-        ] process > MULTIQC       -
+[e5/cb3e6b] process > TRIMMING (4)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC_PT    -
+
+executor >  sge (9)
+[ff/6df591] process > SUBSAMPLE (4) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[-        ] process > MULTIQC       -
+[e5/cb3e6b] process > TRIMMING (4)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC_PT    -
+
+executor >  sge (10)
+[ff/6df591] process > SUBSAMPLE (4) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[-        ] process > MULTIQC       -
+[48/710705] process > TRIMMING (6)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC_PT    -
+
+executor >  sge (11)
+[ff/6df591] process > SUBSAMPLE (4) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[-        ] process > MULTIQC       -
+[bf/56d0d2] process > TRIMMING (7)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC_PT    -
+
+executor >  sge (12)
+[c3/d1ff8f] process > SUBSAMPLE (5) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[-        ] process > MULTIQC       -
+[bf/56d0d2] process > TRIMMING (7)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC_PT    -
+
+executor >  sge (13)
+[d9/2f31ad] process > SUBSAMPLE (6) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[-        ] process > MULTIQC       -
+[bf/56d0d2] process > TRIMMING (7)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC_PT    -
+
+executor >  sge (14)
+[d9/2f31ad] process > SUBSAMPLE (6) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[-        ] process > MULTIQC       -
+[41/343be1] process > TRIMMING (9)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC_PT    -
+
+executor >  sge (15)
+[37/f32241] process > SUBSAMPLE (8) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[-        ] process > MULTIQC       -
+[41/343be1] process > TRIMMING (9)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC_PT    -
+
+executor >  sge (16)
+[37/f32241] process > SUBSAMPLE (8) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[-        ] process > MULTIQC       -
+[38/6777e4] process > TRIMMING (10) [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC_PT    -
+
+executor >  sge (17)
+[37/f32241] process > SUBSAMPLE (8) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[-        ] process > MULTIQC       -
+[a5/3477a2] process > TRIMMING (8)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC_PT    -
+
+executor >  sge (18)
+[2b/a7d68d] process > SUBSAMPLE (7) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[-        ] process > MULTIQC       -
+[a5/3477a2] process > TRIMMING (8)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC_PT    -
+
+executor >  sge (19)
+[2b/a7d68d] process > SUBSAMPLE (7) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[-        ] process > MULTIQC       -
+[9f/df8ab4] process > TRIMMING (11) [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC_PT    -
+
+executor >  sge (20)
+[9b/7b2a1f] process > SUBSAMPLE (10) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[-        ] process > MULTIQC        -
+[9f/df8ab4] process > TRIMMING (11)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (21)
+[da/5ad8e3] process > SUBSAMPLE (9)  [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[-        ] process > MULTIQC        -
+[9f/df8ab4] process > TRIMMING (11)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (22)
+[da/5ad8e3] process > SUBSAMPLE (9)  [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[-        ] process > MULTIQC        -
+[55/f6beaa] process > TRIMMING (13)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (23)
+[da/5ad8e3] process > SUBSAMPLE (9)  [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[-        ] process > MULTIQC        -
+[d9/2883ef] process > TRIMMING (14)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (24)
+[da/5ad8e3] process > SUBSAMPLE (9)  [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[-        ] process > MULTIQC        -
+[1f/94a5e0] process > TRIMMING (12)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (25)
+[f1/b5a353] process > SUBSAMPLE (11) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[-        ] process > MULTIQC        -
+[1f/94a5e0] process > TRIMMING (12)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (26)
+[f1/b5a353] process > SUBSAMPLE (11) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[-        ] process > MULTIQC        -
+[6b/e5263c] process > TRIMMING (15)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (27)
+[bd/9a79a3] process > SUBSAMPLE (12) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[-        ] process > MULTIQC        -
+[6b/e5263c] process > TRIMMING (15)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (28)
+[8f/4a81d1] process > SUBSAMPLE (13) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[-        ] process > MULTIQC        -
+[6b/e5263c] process > TRIMMING (15)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (29)
+[8f/4a81d1] process > SUBSAMPLE (13) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[-        ] process > MULTIQC        -
+[3f/58b8e1] process > TRIMMING (17)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (30)
+[8f/4a81d1] process > SUBSAMPLE (13) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[-        ] process > MULTIQC        -
+[74/9c69c3] process > TRIMMING (16)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (31)
+[7b/ce368c] process > SUBSAMPLE (14) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[-        ] process > MULTIQC        -
+[74/9c69c3] process > TRIMMING (16)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (32)
+[a0/a6443f] process > SUBSAMPLE (15) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[-        ] process > MULTIQC        -
+[74/9c69c3] process > TRIMMING (16)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (33)
+[a0/a6443f] process > SUBSAMPLE (15) [  0%] 0 of 28
+[-        ] process > FASTQC         [  0%] 0 of 1
+[-        ] process > MULTIQC        -
+[ac/cae066] process > TRIMMING (18)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (33)
+[ff/6df591] process > SUBSAMPLE (4)  [ 14%] 4 of 28
+[-        ] process > FASTQC         [  0%] 0 of 4
+[-        ] process > MULTIQC        -
+[ac/cae066] process > TRIMMING (18)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (34)
+[c3/d1ff8f] process > SUBSAMPLE (5)  [ 17%] 5 of 28
+[-        ] process > FASTQC         [  0%] 0 of 5
+[-        ] process > MULTIQC        -
+[5a/dcc256] process > TRIMMING (19)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (34)
+[37/f32241] process > SUBSAMPLE (8)  [ 25%] 7 of 28
+[-        ] process > FASTQC         [  0%] 0 of 7
+[-        ] process > MULTIQC        -
+[5a/dcc256] process > TRIMMING (19)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (35)
+[2b/a7d68d] process > SUBSAMPLE (7)  [ 28%] 8 of 28
+[-        ] process > FASTQC         [  0%] 0 of 8
+[-        ] process > MULTIQC        -
+[5a/dcc256] process > TRIMMING (19)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (36)
+[2b/a7d68d] process > SUBSAMPLE (7)  [ 28%] 8 of 28
+[-        ] process > FASTQC         [  0%] 0 of 8
+[-        ] process > MULTIQC        -
+[33/c823e4] process > TRIMMING (21)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (37)
+[b0/7e09fc] process > SUBSAMPLE (16) [ 28%] 8 of 28
+[-        ] process > FASTQC         [  0%] 0 of 8
+[-        ] process > MULTIQC        -
+[33/c823e4] process > TRIMMING (21)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (38)
+[b0/7e09fc] process > SUBSAMPLE (16) [ 28%] 8 of 28
+[-        ] process > FASTQC         [  0%] 0 of 8
+[-        ] process > MULTIQC        -
+[f3/d50fb1] process > TRIMMING (20)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (39)
+[62/c886a0] process > SUBSAMPLE (18) [ 28%] 8 of 28
+[-        ] process > FASTQC         [  0%] 0 of 8
+[-        ] process > MULTIQC        -
+[f3/d50fb1] process > TRIMMING (20)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (40)
+[62/c886a0] process > SUBSAMPLE (18) [ 28%] 8 of 28
+[-        ] process > FASTQC         [  0%] 0 of 8
+[-        ] process > MULTIQC        -
+[b8/2676ea] process > TRIMMING (22)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (41)
+[62/c886a0] process > SUBSAMPLE (18) [ 28%] 8 of 28
+[-        ] process > FASTQC         [  0%] 0 of 8
+[-        ] process > MULTIQC        -
+[b8/2676ea] process > TRIMMING (22)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (41)
+[07/056b2a] process > SUBSAMPLE (19) [ 28%] 8 of 28
+[-        ] process > FASTQC         [  0%] 0 of 8
+[-        ] process > MULTIQC        -
+[b8/2676ea] process > TRIMMING (22)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (42)
+[bd/c161f2] process > SUBSAMPLE (21) [ 28%] 8 of 28
+[-        ] process > FASTQC         [  0%] 0 of 8
+[-        ] process > MULTIQC        -
+[b8/2676ea] process > TRIMMING (22)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (43)
+[bd/c161f2] process > SUBSAMPLE (21) [ 28%] 8 of 28
+[-        ] process > FASTQC         [  0%] 0 of 8
+[-        ] process > MULTIQC        -
+[1e/9e9367] process > TRIMMING (23)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (44)
+[3c/0fc135] process > SUBSAMPLE (20) [ 28%] 8 of 28
+[-        ] process > FASTQC         [  0%] 0 of 8
+[-        ] process > MULTIQC        -
+[1e/9e9367] process > TRIMMING (23)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (45)
+[3c/0fc135] process > SUBSAMPLE (20) [ 28%] 8 of 28
+[-        ] process > FASTQC         [  0%] 0 of 8
+[-        ] process > MULTIQC        -
+[a4/ecdd2f] process > TRIMMING (24)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (46)
+[3c/0fc135] process > SUBSAMPLE (20) [ 28%] 8 of 28
+[-        ] process > FASTQC         [  0%] 0 of 8
+[-        ] process > MULTIQC        -
+[56/5359c0] process > TRIMMING (26)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (47)
+[cd/80b536] process > SUBSAMPLE (22) [ 28%] 8 of 28
+[-        ] process > FASTQC         [  0%] 0 of 8
+[-        ] process > MULTIQC        -
+[56/5359c0] process > TRIMMING (26)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (48)
+[62/a5374d] process > SUBSAMPLE (24) [ 28%] 8 of 28
+[-        ] process > FASTQC         [  0%] 0 of 8
+[-        ] process > MULTIQC        -
+[56/5359c0] process > TRIMMING (26)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (49)
+[cd/588d6a] process > SUBSAMPLE (23) [ 28%] 8 of 28
+[-        ] process > FASTQC         [  0%] 0 of 8
+[-        ] process > MULTIQC        -
+[56/5359c0] process > TRIMMING (26)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (50)
+[cd/588d6a] process > SUBSAMPLE (23) [ 28%] 8 of 28
+[-        ] process > FASTQC         [  0%] 0 of 8
+[-        ] process > MULTIQC        -
+[2c/b3d4ee] process > TRIMMING (25)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (51)
+[9b/7b2a1f] process > SUBSAMPLE (10) [ 32%] 9 of 28
+[-        ] process > FASTQC         [  0%] 0 of 9
+[-        ] process > MULTIQC        -
+[d1/5d2aec] process > TRIMMING (27)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (51)
+[da/5ad8e3] process > SUBSAMPLE (9)  [ 35%] 10 of 28
+[-        ] process > FASTQC         [  0%] 0 of 10
+[-        ] process > MULTIQC        -
+[d1/5d2aec] process > TRIMMING (27)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (52)
+[8f/4a81d1] process > SUBSAMPLE (13) [ 46%] 13 of 28
+[-        ] process > FASTQC         [  0%] 0 of 13
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (53)
+[a0/a6443f] process > SUBSAMPLE (15) [ 53%] 15 of 28
+[-        ] process > FASTQC         [  0%] 0 of 15
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (53)
+[58/0d3d14] process > SUBSAMPLE (17) [ 57%] 16 of 28
+[-        ] process > FASTQC         [  0%] 0 of 15
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (54)
+[ee/20adf8] process > SUBSAMPLE (26) [ 57%] 16 of 28
+[-        ] process > FASTQC         [  0%] 0 of 16
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (55)
+[d9/76d5b7] process > SUBSAMPLE (27) [ 57%] 16 of 28
+[-        ] process > FASTQC         [  0%] 0 of 16
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (56)
+[bf/fe63a4] process > SUBSAMPLE (28) [ 57%] 16 of 28
+[-        ] process > FASTQC         [  0%] 0 of 16
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (57)
+[bf/fe63a4] process > SUBSAMPLE (28) [ 57%] 16 of 28
+[a5/746791] process > FASTQC (1)     [  0%] 0 of 16
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (58)
+[bf/fe63a4] process > SUBSAMPLE (28) [ 57%] 16 of 28
+[fe/1d4464] process > FASTQC (2)     [  0%] 0 of 16
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (59)
+[bf/fe63a4] process > SUBSAMPLE (28) [ 57%] 16 of 28
+[a8/e49d56] process > FASTQC (3)     [  0%] 0 of 16
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (60)
+[bf/fe63a4] process > SUBSAMPLE (28) [ 57%] 16 of 28
+[2e/046cce] process > FASTQC (4)     [  0%] 0 of 16
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (61)
+[bf/fe63a4] process > SUBSAMPLE (28) [ 57%] 16 of 28
+[41/83f946] process > FASTQC (5)     [  0%] 0 of 16
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (62)
+[bf/fe63a4] process > SUBSAMPLE (28) [ 57%] 16 of 28
+[da/fa92bd] process > FASTQC (6)     [  0%] 0 of 16
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (63)
+[bf/fe63a4] process > SUBSAMPLE (28) [ 57%] 16 of 28
+[a9/815ad9] process > FASTQC (7)     [  0%] 0 of 16
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (64)
+[bf/fe63a4] process > SUBSAMPLE (28) [ 57%] 16 of 28
+[37/b609b8] process > FASTQC (8)     [  0%] 0 of 16
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (65)
+[bf/fe63a4] process > SUBSAMPLE (28) [ 57%] 16 of 28
+[a2/8545a8] process > FASTQC (9)     [  0%] 0 of 16
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (66)
+[bf/fe63a4] process > SUBSAMPLE (28) [ 57%] 16 of 28
+[1e/82ddc0] process > FASTQC (10)    [  0%] 0 of 16
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (67)
+[bf/fe63a4] process > SUBSAMPLE (28) [ 57%] 16 of 28
+[43/084bee] process > FASTQC (11)    [  0%] 0 of 16
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (68)
+[bf/fe63a4] process > SUBSAMPLE (28) [ 57%] 16 of 28
+[42/4f4814] process > FASTQC (12)    [  0%] 0 of 16
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (69)
+[b0/7e09fc] process > SUBSAMPLE (16) [ 60%] 17 of 28
+[04/7d6662] process > FASTQC (13)    [  0%] 0 of 17
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (70)
+[07/056b2a] process > SUBSAMPLE (19) [ 67%] 19 of 28
+[ed/8f25b9] process > FASTQC (14)    [  0%] 0 of 19
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (71)
+[bd/c161f2] process > SUBSAMPLE (21) [ 71%] 20 of 28
+[92/4e5f70] process > FASTQC (15)    [  0%] 0 of 20
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (72)
+[cd/80b536] process > SUBSAMPLE (22) [ 78%] 22 of 28
+[86/8239b7] process > FASTQC (16)    [  0%] 0 of 22
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (73)
+[cd/80b536] process > SUBSAMPLE (22) [ 78%] 22 of 28
+[35/248ead] process > FASTQC (17)    [  0%] 0 of 22
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (74)
+[cd/80b536] process > SUBSAMPLE (22) [ 78%] 22 of 28
+[e3/d1fcf1] process > FASTQC (18)    [  0%] 0 of 22
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (75)
+[cd/80b536] process > SUBSAMPLE (22) [ 78%] 22 of 28
+[8e/9f5e81] process > FASTQC (19)    [  0%] 0 of 22
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (76)
+[cd/80b536] process > SUBSAMPLE (22) [ 78%] 22 of 28
+[41/ab4f77] process > FASTQC (20)    [  0%] 0 of 22
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (77)
+[cd/80b536] process > SUBSAMPLE (22) [ 78%] 22 of 28
+[19/878318] process > FASTQC (21)    [  0%] 0 of 22
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (78)
+[cd/80b536] process > SUBSAMPLE (22) [ 78%] 22 of 28
+[b3/b6b2cb] process > FASTQC (22)    [  0%] 0 of 22
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (78)
+[ee/20adf8] process > SUBSAMPLE (26) [ 92%] 26 of 28
+[b3/b6b2cb] process > FASTQC (22)    [  0%] 0 of 26
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (79)
+[bf/fe63a4] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[2c/c2e2f3] process > FASTQC (23)    [  0%] 0 of 28
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (80)
+[bf/fe63a4] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[f9/e557e3] process > FASTQC (24)    [  0%] 0 of 28
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (81)
+[bf/fe63a4] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[a0/8e7d6b] process > FASTQC (25)    [  0%] 0 of 28
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (82)
+[bf/fe63a4] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[2a/b0754c] process > FASTQC (26)    [  0%] 0 of 28
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (83)
+[bf/fe63a4] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[cf/eb93b1] process > FASTQC (27)    [  0%] 0 of 28
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (84)
+[bf/fe63a4] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[2c/e8ac99] process > FASTQC (28)    [  0%] 0 of 28
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (84)
+[bf/fe63a4] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[2c/e8ac99] process > FASTQC (28)    [  0%] 0 of 28
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (84)
+[bf/fe63a4] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[2c/e8ac99] process > FASTQC (28)    [  0%] 0 of 28
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (84)
+[bf/fe63a4] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[fe/1d4464] process > FASTQC (2)     [  7%] 2 of 28
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (84)
+[bf/fe63a4] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[8e/9f5e81] process > FASTQC (19)    [ 57%] 16 of 28
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (84)
+[bf/fe63a4] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[19/878318] process > FASTQC (21)    [ 75%] 21 of 28
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (84)
+[bf/fe63a4] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[2a/b0754c] process > FASTQC (26)    [ 89%] 25 of 28
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (84)
+[bf/fe63a4] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[2c/e8ac99] process > FASTQC (28)    [100%] 28 of 28 ✔
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (84)
+[bf/fe63a4] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[2c/e8ac99] process > FASTQC (28)    [100%] 28 of 28 ✔
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC_PT     -
+Creating env using conda: multiqc=1.21 [cache /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Analysis/nextflow/work/conda/env-d7c82d54e5d749f203637076e9292471]
+
+executor >  sge (84)
+[bf/fe63a4] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[2c/e8ac99] process > FASTQC (28)    [100%] 28 of 28 ✔
+[-        ] process > MULTIQC        -
+[41/343be1] process > TRIMMING (9)   [  3%] 1 of 28
+[-        ] process > FASTQC_PT      [  0%] 0 of 1
+[-        ] process > MULTIQC_PT     -
+
+
+executor >  sge (85)
+[bf/fe63a4] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[2c/e8ac99] process > FASTQC (28)    [100%] 28 of 28 ✔
+[-        ] process > MULTIQC        -
+[41/343be1] process > TRIMMING (9)   [  3%] 1 of 28
+[8c/a21769] process > FASTQC_PT (1)  [  0%] 0 of 1
+[-        ] process > MULTIQC_PT     -
+
+
+executor >  sge (85)
+[bf/fe63a4] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[2c/e8ac99] process > FASTQC (28)    [100%] 28 of 28 ✔
+[-        ] process > MULTIQC        -
+[41/343be1] process > TRIMMING (9)   [  3%] 1 of 28
+[8c/a21769] process > FASTQC_PT (1)  [  0%] 0 of 1
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (85)
+[bf/fe63a4] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[2c/e8ac99] process > FASTQC (28)    [100%] 28 of 28 ✔
+[-        ] process > MULTIQC        -
+[6b/e5263c] process > TRIMMING (15)  [  7%] 2 of 28
+[8c/a21769] process > FASTQC_PT (1)  [  0%] 0 of 2
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (86)
+[bf/fe63a4] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[2c/e8ac99] process > FASTQC (28)    [100%] 28 of 28 ✔
+[-        ] process > MULTIQC        -
+[6b/e5263c] process > TRIMMING (15)  [  7%] 2 of 28
+[4a/d9b107] process > FASTQC_PT (2)  [  0%] 0 of 2
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (86)
+[bf/fe63a4] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[2c/e8ac99] process > FASTQC (28)    [100%] 28 of 28 ✔
+[-        ] process > MULTIQC        -
+[6b/e5263c] process > TRIMMING (15)  [  7%] 2 of 28
+[4a/d9b107] process > FASTQC_PT (2)  [  0%] 0 of 2
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (86)
+[bf/fe63a4] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[2c/e8ac99] process > FASTQC (28)    [100%] 28 of 28 ✔
+[-        ] process > MULTIQC        -
+[5a/dcc256] process > TRIMMING (19)  [ 10%] 3 of 28
+[4a/d9b107] process > FASTQC_PT (2)  [  0%] 0 of 3
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (87)
+[bf/fe63a4] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[2c/e8ac99] process > FASTQC (28)    [100%] 28 of 28 ✔
+[-        ] process > MULTIQC        -
+[5a/dcc256] process > TRIMMING (19)  [ 10%] 3 of 28
+[e8/3581b8] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (87)
+[bf/fe63a4] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[2c/e8ac99] process > FASTQC (28)    [100%] 28 of 28 ✔
+[-        ] process > MULTIQC        -
+[5a/dcc256] process > TRIMMING (19)  [ 10%] 3 of 28
+[e8/3581b8] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (87)
+[bf/fe63a4] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[2c/e8ac99] process > FASTQC (28)    [100%] 28 of 28 ✔
+[-        ] process > MULTIQC        -
+[5a/dcc256] process > TRIMMING (19)  [ 10%] 3 of 28
+[8c/a21769] process > FASTQC_PT (1)  [ 33%] 1 of 3
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (87)
+[bf/fe63a4] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[2c/e8ac99] process > FASTQC (28)    [100%] 28 of 28 ✔
+[-        ] process > MULTIQC        -
+[5a/dcc256] process > TRIMMING (19)  [ 10%] 3 of 28
+[4a/d9b107] process > FASTQC_PT (2)  [ 66%] 2 of 3
+[-        ] process > MULTIQC_PT     -
+
+executor >  sge (87)
+[bf/fe63a4] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[2c/e8ac99] process > FASTQC (28)    [100%] 28 of 28 ✔
+[-        ] process > MULTIQC        -
+[5a/dcc256] process > TRIMMING (19)  [ 10%] 3 of 28
+[e8/3581b8] process > FASTQC_PT (3)  [100%] 3 of 3
+[-        ] process > MULTIQC_PT     -
+
+WARN: Killing running tasks (25)
+executor >  sge (87)
+[bf/fe63a4] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[2c/e8ac99] process > FASTQC (28)    [100%] 28 of 28 ✔
+[-        ] process > MULTIQC        -
+[5a/dcc256] process > TRIMMING (19)  [ 10%] 3 of 28
+[e8/3581b8] process > FASTQC_PT (3)  [100%] 3 of 3
+[-        ] process > MULTIQC_PT     -
+ERROR ~ Error executing process > 'MULTIQC'
+
+Caused by:
+  Failed to create Conda environment
+  command: conda create --mkdir --yes --quiet --prefix /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Analysis/nextflow/work/conda/env-d7c82d54e5d749f203637076e9292471 multiqc=1.21
+  status : 1
+  message:
+    Collecting package metadata (current_repodata.json): ...working... done
+    Solving environment: ...working... done
+    
+    ## Package Plan ##
+    
+      environment location: /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Analysis/nextflow/work/conda/env-d7c82d54e5d749f203637076e9292471
+    
+      added / updated specs:
+        - multiqc=1.21
+    
+    
+    The following packages will be downloaded:
+    
+        package                    |            build
+        ---------------------------|-----------------
+        rich-click-1.8.0           |     pyhd8ed1ab_0          33 KB  conda-forge
+        ------------------------------------------------------------
+                                               Total:          33 KB
+    
+    The following NEW packages will be INSTALLED:
+    
+      _libgcc_mutex      conda-forge/linux-64::_libgcc_mutex-0.1-conda_forge 
+      _openmp_mutex      conda-forge/linux-64::_openmp_mutex-4.5-2_gnu 
+      brotli             conda-forge/linux-64::brotli-1.1.0-hd590300_1 
+      brotli-bin         conda-forge/linux-64::brotli-bin-1.1.0-hd590300_1 
+      brotli-python      conda-forge/linux-64::brotli-python-1.1.0-py311hb755f60_1 
+      bzip2              conda-forge/linux-64::bzip2-1.0.8-hd590300_5 
+      ca-certificates    conda-forge/linux-64::ca-certificates-2024.2.2-hbcca054_0 
+      certifi            conda-forge/noarch::certifi-2024.2.2-pyhd8ed1ab_0 
+      charset-normalizer conda-forge/noarch::charset-normalizer-3.3.2-pyhd8ed1ab_0 
+      click              conda-forge/noarch::click-8.1.7-unix_pyh707e725_0 
+      coloredlogs        conda-forge/noarch::coloredlogs-15.0.1-pyhd8ed1ab_3 
+      colormath          conda-forge/noarch::colormath-3.0.0-py_2 
+      contourpy          conda-forge/linux-64::contourpy-1.2.1-py311h9547e67_0 
+      cycler             conda-forge/noarch::cycler-0.12.1-pyhd8ed1ab_0 
+      expat              conda-forge/linux-64::expat-2.6.2-h59595ed_0 
+      font-ttf-dejavu-s~ conda-forge/noarch::font-ttf-dejavu-sans-mono-2.37-hab24e00_0 
+      font-ttf-inconsol~ conda-forge/noarch::font-ttf-inconsolata-3.000-h77eed37_0 
+      font-ttf-source-c~ conda-forge/noarch::font-ttf-source-code-pro-2.038-h77eed37_0 
+      font-ttf-ubuntu    conda-forge/noarch::font-ttf-ubuntu-0.83-h77eed37_2 
+      fontconfig         conda-forge/linux-64::fontconfig-2.14.2-h14ed4e7_0 
+      fonts-conda-forge  conda-forge/noarch::fonts-conda-forge-1-0 
+      fonttools          conda-forge/linux-64::fonttools-4.51.0-py311h459d7ec_0 
+      freetype           conda-forge/linux-64::freetype-2.12.1-h267a509_2 
+      future             conda-forge/noarch::future-1.0.0-pyhd8ed1ab_0 
+      humanfriendly      conda-forge/noarch::humanfriendly-10.0-pyhd8ed1ab_6 
+      humanize           conda-forge/noarch::humanize-4.9.0-pyhd8ed1ab_0 
+      idna               conda-forge/noarch::idna-3.7-pyhd8ed1ab_0 
+      importlib-metadata conda-forge/noarch::importlib-metadata-7.1.0-pyha770c72_0 
+      jinja2             conda-forge/noarch::jinja2-3.1.3-pyhd8ed1ab_0 
+      kaleido-core       conda-forge/linux-64::kaleido-core-0.2.1-h3644ca4_0 
+      kiwisolver         conda-forge/linux-64::kiwisolver-1.4.5-py311h9547e67_1 
+      lcms2              conda-forge/linux-64::lcms2-2.16-hb7c19ff_0 
+      ld_impl_linux-64   conda-forge/linux-64::ld_impl_linux-64-2.40-h55db66e_0 
+      lerc               conda-forge/linux-64::lerc-4.0.0-h27087fc_0 
+      libblas            conda-forge/linux-64::libblas-3.9.0-22_linux64_openblas 
+      libbrotlicommon    conda-forge/linux-64::libbrotlicommon-1.1.0-hd590300_1 
+      libbrotlidec       conda-forge/linux-64::libbrotlidec-1.1.0-hd590300_1 
+      libbrotlienc       conda-forge/linux-64::libbrotlienc-1.1.0-hd590300_1 
+      libcblas           conda-forge/linux-64::libcblas-3.9.0-22_linux64_openblas 
+      libdeflate         conda-forge/linux-64::libdeflate-1.20-hd590300_0 
+      libexpat           conda-forge/linux-64::libexpat-2.6.2-h59595ed_0 
+      libffi             conda-forge/linux-64::libffi-3.4.2-h7f98852_5 
+      libgcc-ng          conda-forge/linux-64::libgcc-ng-13.2.0-hc881cc4_6 
+      libgfortran-ng     conda-forge/linux-64::libgfortran-ng-13.2.0-h69a702a_6 
+      libgfortran5       conda-forge/linux-64::libgfortran5-13.2.0-h43f5ff8_6 
+      libgomp            conda-forge/linux-64::libgomp-13.2.0-hc881cc4_6 
+      libjpeg-turbo      conda-forge/linux-64::libjpeg-turbo-3.0.0-hd590300_1 
+      liblapack          conda-forge/linux-64::liblapack-3.9.0-22_linux64_openblas 
+      libnsl             conda-forge/linux-64::libnsl-2.0.1-hd590300_0 
+      libopenblas        conda-forge/linux-64::libopenblas-0.3.27-pthreads_h413a1c8_0 
+      libpng             conda-forge/linux-64::libpng-1.6.43-h2797004_0 
+      libsqlite          conda-forge/linux-64::libsqlite-3.45.3-h2797004_0 
+      libstdcxx-ng       conda-forge/linux-64::libstdcxx-ng-13.2.0-h95c4c6d_6 
+      libtiff            conda-forge/linux-64::libtiff-4.6.0-h1dd3fc0_3 
+      libuuid            conda-forge/linux-64::libuuid-2.38.1-h0b41bf4_0 
+      libwebp-base       conda-forge/linux-64::libwebp-base-1.4.0-hd590300_0 
+      libxcb             conda-forge/linux-64::libxcb-1.15-h0b41bf4_0 
+      libxcrypt          conda-forge/linux-64::libxcrypt-4.4.36-hd590300_1 
+      libzlib            conda-forge/linux-64::libzlib-1.2.13-hd590300_5 
+      lzstring           conda-forge/noarch::lzstring-1.0.4-py_1001 
+      markdown           conda-forge/noarch::markdown-3.6-pyhd8ed1ab_0 
+      markdown-it-py     conda-forge/noarch::markdown-it-py-3.0.0-pyhd8ed1ab_0 
+      markupsafe         conda-forge/linux-64::markupsafe-2.1.5-py311h459d7ec_0 
+      mathjax            conda-forge/linux-64::mathjax-2.7.7-ha770c72_3 
+      matplotlib-base    conda-forge/linux-64::matplotlib-base-3.8.4-py311h54ef318_0 
+      mdurl              conda-forge/noarch::mdurl-0.1.2-pyhd8ed1ab_0 
+      multiqc            bioconda/noarch::multiqc-1.21-pyhdfd78af_0 
+      munkres            conda-forge/noarch::munkres-1.1.4-pyh9f0ad1d_0 
+      ncurses            conda-forge/linux-64::ncurses-6.4.20240210-h59595ed_0 
+      networkx           conda-forge/noarch::networkx-3.3-pyhd8ed1ab_1 
+      nspr               conda-forge/linux-64::nspr-4.35-h27087fc_0 
+      nss                conda-forge/linux-64::nss-3.98-h1d7d5a4_0 
+      numpy              conda-forge/linux-64::numpy-1.26.4-py311h64a7726_0 
+      openjpeg           conda-forge/linux-64::openjpeg-2.5.2-h488ebb8_0 
+      openssl            conda-forge/linux-64::openssl-3.3.0-hd590300_0 
+      packaging          conda-forge/noarch::packaging-24.0-pyhd8ed1ab_0 
+      pillow             conda-forge/linux-64::pillow-10.3.0-py311h18e6fac_0 
+      pip                conda-forge/noarch::pip-24.0-pyhd8ed1ab_0 
+      plotly             conda-forge/noarch::plotly-5.21.0-pyhd8ed1ab_0 
+      pthread-stubs      conda-forge/linux-64::pthread-stubs-0.4-h36c2ea0_1001 
+      pyaml-env          conda-forge/noarch::pyaml-env-1.1.0-pyhd8ed1ab_0 
+      pygments           conda-forge/noarch::pygments-2.17.2-pyhd8ed1ab_0 
+      pyparsing          conda-forge/noarch::pyparsing-3.1.2-pyhd8ed1ab_0 
+      pysocks            conda-forge/noarch::pysocks-1.7.1-pyha2e5f31_6 
+      python             conda-forge/linux-64::python-3.11.9-hb806964_0_cpython 
+      python-dateutil    conda-forge/noarch::python-dateutil-2.9.0-pyhd8ed1ab_0 
+      python-kaleido     conda-forge/noarch::python-kaleido-0.2.1-pyhd8ed1ab_0 
+      python_abi         conda-forge/linux-64::python_abi-3.11-4_cp311 
+      pyyaml             conda-forge/linux-64::pyyaml-5.4.1-py311hd4cff14_4 
+      readline           conda-forge/linux-64::readline-8.2-h8228510_1 
+      requests           conda-forge/noarch::requests-2.31.0-pyhd8ed1ab_0 
+      rich               conda-forge/noarch::rich-13.7.1-pyhd8ed1ab_0 
+      rich-click         conda-forge/noarch::rich-click-1.8.0-pyhd8ed1ab_0 
+      setuptools         conda-forge/noarch::setuptools-69.5.1-pyhd8ed1ab_0 
+      simplejson         conda-forge/linux-64::simplejson-3.19.2-py311h459d7ec_0 
+      six                conda-forge/noarch::six-1.16.0-pyh6c4a22f_0 
+      spectra            conda-forge/noarch::spectra-0.0.11-py_1 
+      sqlite             conda-forge/linux-64::sqlite-3.45.3-h2c6b66d_0 
+      tenacity           conda-forge/noarch::tenacity-8.2.3-pyhd8ed1ab_0 
+      tk                 conda-forge/linux-64::tk-8.6.13-noxft_h4845f30_101 
+      typing_extensions  conda-forge/noarch::typing_extensions-4.11.0-pyha770c72_0 
+      tzdata             conda-forge/noarch::tzdata-2024a-h0c530f3_0 
+      urllib3            conda-forge/noarch::urllib3-2.2.1-pyhd8ed1ab_0 
+      wheel              conda-forge/noarch::wheel-0.43.0-pyhd8ed1ab_1 
+      xorg-libxau        conda-forge/linux-64::xorg-libxau-1.0.11-hd590300_0 
+      xorg-libxdmcp      conda-forge/linux-64::xorg-libxdmcp-1.1.3-h7f98852_0 
+      xz                 conda-forge/linux-64::xz-5.2.6-h166bdaf_0 
+      yaml               conda-forge/linux-64::yaml-0.2.5-h7f98852_2 
+      zipp               conda-forge/noarch::zipp-3.17.0-pyhd8ed1ab_0 
+      zstd               conda-forge/linux-64::zstd-1.5.5-hfc55251_0 
+    
+    
+    Preparing transaction: ...working... done
+    Verifying transaction: ...working... failed
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'bin/mathjax-path'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/MathJax.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/AM_CHTML-full.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/AM_CHTML.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/AM_HTMLorMML-full.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/AM_HTMLorMML.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/AM_SVG-full.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/AM_SVG.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/Accessible-full.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/Accessible.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/MML_CHTML-full.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/MML_CHTML.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/MML_HTMLorMML-full.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/MML_HTMLorMML.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/MML_SVG-full.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/MML_SVG.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-AMS-MML_HTMLorMML-full.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-AMS-MML_HTMLorMML.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-AMS-MML_SVG-full.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-AMS-MML_SVG.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-AMS_CHTML-full.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-AMS_CHTML.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-AMS_HTML-full.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-AMS_HTML.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-AMS_SVG-full.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-AMS_SVG.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-MML-AM_CHTML-full.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-MML-AM_CHTML.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-MML-AM_HTMLorMML-full.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-MML-AM_HTMLorMML.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-MML-AM_SVG-full.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-MML-AM_SVG.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/docs/README.txt'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/docs/html/index.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/docs/source/README.txt'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/extensions/a11y/mathjax-sre.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/extensions/a11y/mathmaps/en/symbols/math_arrows.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/extensions/a11y/mathmaps/en/symbols/math_symbols.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/extensions/a11y/mathmaps/mathmaps_ie.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/fonts/HTML-CSS/Asana-Math/OFL.txt'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/fonts/HTML-CSS/Gyre-Pagella/GUST-FONT-LICENSE.txt'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/fonts/HTML-CSS/Gyre-Pagella/MANIFEST-GyrePagellaMathJax.txt'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/fonts/HTML-CSS/Gyre-Termes/GUST-FONT-LICENSE.txt'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/fonts/HTML-CSS/Gyre-Termes/MANIFEST-GyreTermesMathJax.txt'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/fonts/HTML-CSS/Latin-Modern/GUST-FONT-LICENSE.txt'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/fonts/HTML-CSS/Latin-Modern/MANIFEST-LatinModernMathJax.txt'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/fonts/HTML-CSS/Neo-Euler/OFL.txt'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/fonts/HTML-CSS/STIX-Web/OFL.txt'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/fonts/HTML-CSS/TeX/png/imagedata.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/fonts/HTML-CSS/TeX/png/unpacked/imagedata.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/CommonHTML/jax.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/HTML-CSS/jax.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Asana-Math/Main/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Asana-Math/NonUnicode/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Asana-Math/Normal/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Asana-Math/Operators/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Asana-Math/SansSerif/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/Fraktur/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/Latin/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/Main/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/NonUnicode/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/Normal/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/SansSerif/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/Fraktur/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/Latin/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/Main/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/NonUnicode/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/Normal/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/SansSerif/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/Script/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Fraktur/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Latin/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Main/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Latin-Modern/NonUnicode/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Normal/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Latin-Modern/SansSerif/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Size1/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Size7/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Neo-Euler/Fraktur/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Neo-Euler/Main/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Neo-Euler/NonUnicode/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Alphabets/Bold/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Alphabets/BoldItalic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Alphabets/Italic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Alphabets/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Arrows/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Latin/Bold/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Latin/BoldItalic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Latin/Italic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Latin/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Main/Bold/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Main/BoldItalic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Main/Italic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Main/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Misc/Bold/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Misc/BoldItalic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Misc/Italic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Misc/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Operators/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Shapes/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/TeX/Main/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/TeX/Math/BoldItalic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/TeX/Math/Italic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/TeX/fontdata.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/examples.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/index-images.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/index.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/localization.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample-all-at-once.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample-asciimath.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample-autoload.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample-dynamic-2.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample-dynamic-steps.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample-dynamic.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample-eqnum.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample-eqrefs.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample-loader-config.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample-loader.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample-macros.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample-mediawiki-texvc.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample-mml.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample-signals.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample-tex.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/MathJax.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/extensions/MathML/content-mathml.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/extensions/MathMenu.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/extensions/TeX/mhchem3/mhchem.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/extensions/a11y/mathjax-sre.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/extensions/a11y/mathmaps/en/symbols/math_arrows.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/extensions/a11y/mathmaps/en/symbols/math_symbols.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/extensions/a11y/mathmaps/mathmaps_ie.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/element/mml/jax.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/input/AsciiMath/jax.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/input/TeX/jax.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/CommonHTML/fonts/TeX/fontdata.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/CommonHTML/jax.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/HTML-CSS/blank.gif'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/HTML-CSS/fonts/Latin-Modern/NonUnicode/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/HTML-CSS/fonts/STIX/fontdata.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/HTML-CSS/fonts/TeX/fontdata.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/HTML-CSS/jax.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Asana-Math/Main/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Asana-Math/NonUnicode/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Asana-Math/Normal/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Asana-Math/Operators/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Asana-Math/SansSerif/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    SafetyError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Asana-Math/Script/Regular/Main.js'
+    has an incorrect size.
+      reported size: 58250 bytes
+      actual size: 0 bytes
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Gyre-Pagella/Fraktur/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Gyre-Pagella/Latin/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Gyre-Pagella/Main/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Gyre-Pagella/NonUnicode/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Gyre-Pagella/Normal/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Gyre-Pagella/SansSerif/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Gyre-Termes/Fraktur/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Gyre-Termes/Latin/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Gyre-Termes/Main/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Gyre-Termes/NonUnicode/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Gyre-Termes/Normal/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Gyre-Termes/SansSerif/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Gyre-Termes/Script/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Latin-Modern/Fraktur/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Latin-Modern/Latin/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Latin-Modern/Main/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Latin-Modern/NonUnicode/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Latin-Modern/Normal/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Latin-Modern/SansSerif/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Latin-Modern/Size1/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Latin-Modern/Size7/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Neo-Euler/Fraktur/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Neo-Euler/Main/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Neo-Euler/NonUnicode/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Alphabets/Bold/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Alphabets/BoldItalic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Alphabets/Italic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Alphabets/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Arrows/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Latin/Bold/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Latin/BoldItalic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Latin/Italic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Latin/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Main/Bold/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Main/BoldItalic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Main/Italic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Main/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Misc/Bold/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Misc/BoldItalic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Misc/Italic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Misc/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Operators/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Shapes/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/TeX/AMS/Regular/MathOperators.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/TeX/Main/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/TeX/Math/BoldItalic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/TeX/Math/Italic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/TeX/fontdata.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/jax.js'
+    specified in the package manifest cannot be found.
+
+
+
+ -- Check '.nextflow.log' file for details
+
+executor >  sge (87)
+[bf/fe63a4] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[2c/e8ac99] process > FASTQC (28)    [100%] 28 of 28 ✔
+[-        ] process > MULTIQC        -
+[14/0c5920] process > TRIMMING (28)  [100%] 3 of 3
+[e8/3581b8] process > FASTQC_PT (3)  [100%] 3 of 3
+[-        ] process > MULTIQC_PT     -
+ERROR ~ Error executing process > 'MULTIQC'
+
+Caused by:
+  Failed to create Conda environment
+  command: conda create --mkdir --yes --quiet --prefix /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Analysis/nextflow/work/conda/env-d7c82d54e5d749f203637076e9292471 multiqc=1.21
+  status : 1
+  message:
+    Collecting package metadata (current_repodata.json): ...working... done
+    Solving environment: ...working... done
+    
+    ## Package Plan ##
+    
+      environment location: /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Analysis/nextflow/work/conda/env-d7c82d54e5d749f203637076e9292471
+    
+      added / updated specs:
+        - multiqc=1.21
+    
+    
+    The following packages will be downloaded:
+    
+        package                    |            build
+        ---------------------------|-----------------
+        rich-click-1.8.0           |     pyhd8ed1ab_0          33 KB  conda-forge
+        ------------------------------------------------------------
+                                               Total:          33 KB
+    
+    The following NEW packages will be INSTALLED:
+    
+      _libgcc_mutex      conda-forge/linux-64::_libgcc_mutex-0.1-conda_forge 
+      _openmp_mutex      conda-forge/linux-64::_openmp_mutex-4.5-2_gnu 
+      brotli             conda-forge/linux-64::brotli-1.1.0-hd590300_1 
+      brotli-bin         conda-forge/linux-64::brotli-bin-1.1.0-hd590300_1 
+      brotli-python      conda-forge/linux-64::brotli-python-1.1.0-py311hb755f60_1 
+      bzip2              conda-forge/linux-64::bzip2-1.0.8-hd590300_5 
+      ca-certificates    conda-forge/linux-64::ca-certificates-2024.2.2-hbcca054_0 
+      certifi            conda-forge/noarch::certifi-2024.2.2-pyhd8ed1ab_0 
+      charset-normalizer conda-forge/noarch::charset-normalizer-3.3.2-pyhd8ed1ab_0 
+      click              conda-forge/noarch::click-8.1.7-unix_pyh707e725_0 
+      coloredlogs        conda-forge/noarch::coloredlogs-15.0.1-pyhd8ed1ab_3 
+      colormath          conda-forge/noarch::colormath-3.0.0-py_2 
+      contourpy          conda-forge/linux-64::contourpy-1.2.1-py311h9547e67_0 
+      cycler             conda-forge/noarch::cycler-0.12.1-pyhd8ed1ab_0 
+      expat              conda-forge/linux-64::expat-2.6.2-h59595ed_0 
+      font-ttf-dejavu-s~ conda-forge/noarch::font-ttf-dejavu-sans-mono-2.37-hab24e00_0 
+      font-ttf-inconsol~ conda-forge/noarch::font-ttf-inconsolata-3.000-h77eed37_0 
+      font-ttf-source-c~ conda-forge/noarch::font-ttf-source-code-pro-2.038-h77eed37_0 
+      font-ttf-ubuntu    conda-forge/noarch::font-ttf-ubuntu-0.83-h77eed37_2 
+      fontconfig         conda-forge/linux-64::fontconfig-2.14.2-h14ed4e7_0 
+      fonts-conda-forge  conda-forge/noarch::fonts-conda-forge-1-0 
+      fonttools          conda-forge/linux-64::fonttools-4.51.0-py311h459d7ec_0 
+      freetype           conda-forge/linux-64::freetype-2.12.1-h267a509_2 
+      future             conda-forge/noarch::future-1.0.0-pyhd8ed1ab_0 
+      humanfriendly      conda-forge/noarch::humanfriendly-10.0-pyhd8ed1ab_6 
+      humanize           conda-forge/noarch::humanize-4.9.0-pyhd8ed1ab_0 
+      idna               conda-forge/noarch::idna-3.7-pyhd8ed1ab_0 
+      importlib-metadata conda-forge/noarch::importlib-metadata-7.1.0-pyha770c72_0 
+      jinja2             conda-forge/noarch::jinja2-3.1.3-pyhd8ed1ab_0 
+      kaleido-core       conda-forge/linux-64::kaleido-core-0.2.1-h3644ca4_0 
+      kiwisolver         conda-forge/linux-64::kiwisolver-1.4.5-py311h9547e67_1 
+      lcms2              conda-forge/linux-64::lcms2-2.16-hb7c19ff_0 
+      ld_impl_linux-64   conda-forge/linux-64::ld_impl_linux-64-2.40-h55db66e_0 
+      lerc               conda-forge/linux-64::lerc-4.0.0-h27087fc_0 
+      libblas            conda-forge/linux-64::libblas-3.9.0-22_linux64_openblas 
+      libbrotlicommon    conda-forge/linux-64::libbrotlicommon-1.1.0-hd590300_1 
+      libbrotlidec       conda-forge/linux-64::libbrotlidec-1.1.0-hd590300_1 
+      libbrotlienc       conda-forge/linux-64::libbrotlienc-1.1.0-hd590300_1 
+      libcblas           conda-forge/linux-64::libcblas-3.9.0-22_linux64_openblas 
+      libdeflate         conda-forge/linux-64::libdeflate-1.20-hd590300_0 
+      libexpat           conda-forge/linux-64::libexpat-2.6.2-h59595ed_0 
+      libffi             conda-forge/linux-64::libffi-3.4.2-h7f98852_5 
+      libgcc-ng          conda-forge/linux-64::libgcc-ng-13.2.0-hc881cc4_6 
+      libgfortran-ng     conda-forge/linux-64::libgfortran-ng-13.2.0-h69a702a_6 
+      libgfortran5       conda-forge/linux-64::libgfortran5-13.2.0-h43f5ff8_6 
+      libgomp            conda-forge/linux-64::libgomp-13.2.0-hc881cc4_6 
+      libjpeg-turbo      conda-forge/linux-64::libjpeg-turbo-3.0.0-hd590300_1 
+      liblapack          conda-forge/linux-64::liblapack-3.9.0-22_linux64_openblas 
+      libnsl             conda-forge/linux-64::libnsl-2.0.1-hd590300_0 
+      libopenblas        conda-forge/linux-64::libopenblas-0.3.27-pthreads_h413a1c8_0 
+      libpng             conda-forge/linux-64::libpng-1.6.43-h2797004_0 
+      libsqlite          conda-forge/linux-64::libsqlite-3.45.3-h2797004_0 
+      libstdcxx-ng       conda-forge/linux-64::libstdcxx-ng-13.2.0-h95c4c6d_6 
+      libtiff            conda-forge/linux-64::libtiff-4.6.0-h1dd3fc0_3 
+      libuuid            conda-forge/linux-64::libuuid-2.38.1-h0b41bf4_0 
+      libwebp-base       conda-forge/linux-64::libwebp-base-1.4.0-hd590300_0 
+      libxcb             conda-forge/linux-64::libxcb-1.15-h0b41bf4_0 
+      libxcrypt          conda-forge/linux-64::libxcrypt-4.4.36-hd590300_1 
+      libzlib            conda-forge/linux-64::libzlib-1.2.13-hd590300_5 
+      lzstring           conda-forge/noarch::lzstring-1.0.4-py_1001 
+      markdown           conda-forge/noarch::markdown-3.6-pyhd8ed1ab_0 
+      markdown-it-py     conda-forge/noarch::markdown-it-py-3.0.0-pyhd8ed1ab_0 
+      markupsafe         conda-forge/linux-64::markupsafe-2.1.5-py311h459d7ec_0 
+      mathjax            conda-forge/linux-64::mathjax-2.7.7-ha770c72_3 
+      matplotlib-base    conda-forge/linux-64::matplotlib-base-3.8.4-py311h54ef318_0 
+      mdurl              conda-forge/noarch::mdurl-0.1.2-pyhd8ed1ab_0 
+      multiqc            bioconda/noarch::multiqc-1.21-pyhdfd78af_0 
+      munkres            conda-forge/noarch::munkres-1.1.4-pyh9f0ad1d_0 
+      ncurses            conda-forge/linux-64::ncurses-6.4.20240210-h59595ed_0 
+      networkx           conda-forge/noarch::networkx-3.3-pyhd8ed1ab_1 
+      nspr               conda-forge/linux-64::nspr-4.35-h27087fc_0 
+      nss                conda-forge/linux-64::nss-3.98-h1d7d5a4_0 
+      numpy              conda-forge/linux-64::numpy-1.26.4-py311h64a7726_0 
+      openjpeg           conda-forge/linux-64::openjpeg-2.5.2-h488ebb8_0 
+      openssl            conda-forge/linux-64::openssl-3.3.0-hd590300_0 
+      packaging          conda-forge/noarch::packaging-24.0-pyhd8ed1ab_0 
+      pillow             conda-forge/linux-64::pillow-10.3.0-py311h18e6fac_0 
+      pip                conda-forge/noarch::pip-24.0-pyhd8ed1ab_0 
+      plotly             conda-forge/noarch::plotly-5.21.0-pyhd8ed1ab_0 
+      pthread-stubs      conda-forge/linux-64::pthread-stubs-0.4-h36c2ea0_1001 
+      pyaml-env          conda-forge/noarch::pyaml-env-1.1.0-pyhd8ed1ab_0 
+      pygments           conda-forge/noarch::pygments-2.17.2-pyhd8ed1ab_0 
+      pyparsing          conda-forge/noarch::pyparsing-3.1.2-pyhd8ed1ab_0 
+      pysocks            conda-forge/noarch::pysocks-1.7.1-pyha2e5f31_6 
+      python             conda-forge/linux-64::python-3.11.9-hb806964_0_cpython 
+      python-dateutil    conda-forge/noarch::python-dateutil-2.9.0-pyhd8ed1ab_0 
+      python-kaleido     conda-forge/noarch::python-kaleido-0.2.1-pyhd8ed1ab_0 
+      python_abi         conda-forge/linux-64::python_abi-3.11-4_cp311 
+      pyyaml             conda-forge/linux-64::pyyaml-5.4.1-py311hd4cff14_4 
+      readline           conda-forge/linux-64::readline-8.2-h8228510_1 
+      requests           conda-forge/noarch::requests-2.31.0-pyhd8ed1ab_0 
+      rich               conda-forge/noarch::rich-13.7.1-pyhd8ed1ab_0 
+      rich-click         conda-forge/noarch::rich-click-1.8.0-pyhd8ed1ab_0 
+      setuptools         conda-forge/noarch::setuptools-69.5.1-pyhd8ed1ab_0 
+      simplejson         conda-forge/linux-64::simplejson-3.19.2-py311h459d7ec_0 
+      six                conda-forge/noarch::six-1.16.0-pyh6c4a22f_0 
+      spectra            conda-forge/noarch::spectra-0.0.11-py_1 
+      sqlite             conda-forge/linux-64::sqlite-3.45.3-h2c6b66d_0 
+      tenacity           conda-forge/noarch::tenacity-8.2.3-pyhd8ed1ab_0 
+      tk                 conda-forge/linux-64::tk-8.6.13-noxft_h4845f30_101 
+      typing_extensions  conda-forge/noarch::typing_extensions-4.11.0-pyha770c72_0 
+      tzdata             conda-forge/noarch::tzdata-2024a-h0c530f3_0 
+      urllib3            conda-forge/noarch::urllib3-2.2.1-pyhd8ed1ab_0 
+      wheel              conda-forge/noarch::wheel-0.43.0-pyhd8ed1ab_1 
+      xorg-libxau        conda-forge/linux-64::xorg-libxau-1.0.11-hd590300_0 
+      xorg-libxdmcp      conda-forge/linux-64::xorg-libxdmcp-1.1.3-h7f98852_0 
+      xz                 conda-forge/linux-64::xz-5.2.6-h166bdaf_0 
+      yaml               conda-forge/linux-64::yaml-0.2.5-h7f98852_2 
+      zipp               conda-forge/noarch::zipp-3.17.0-pyhd8ed1ab_0 
+      zstd               conda-forge/linux-64::zstd-1.5.5-hfc55251_0 
+    
+    
+    Preparing transaction: ...working... done
+    Verifying transaction: ...working... failed
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'bin/mathjax-path'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/MathJax.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/AM_CHTML-full.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/AM_CHTML.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/AM_HTMLorMML-full.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/AM_HTMLorMML.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/AM_SVG-full.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/AM_SVG.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/Accessible-full.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/Accessible.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/MML_CHTML-full.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/MML_CHTML.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/MML_HTMLorMML-full.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/MML_HTMLorMML.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/MML_SVG-full.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/MML_SVG.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-AMS-MML_HTMLorMML-full.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-AMS-MML_HTMLorMML.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-AMS-MML_SVG-full.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-AMS-MML_SVG.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-AMS_CHTML-full.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-AMS_CHTML.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-AMS_HTML-full.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-AMS_HTML.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-AMS_SVG-full.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-AMS_SVG.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-MML-AM_CHTML-full.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-MML-AM_CHTML.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-MML-AM_HTMLorMML-full.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-MML-AM_HTMLorMML.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-MML-AM_SVG-full.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/config/TeX-MML-AM_SVG.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/docs/README.txt'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/docs/html/index.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/docs/source/README.txt'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/extensions/a11y/mathjax-sre.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/extensions/a11y/mathmaps/en/symbols/math_arrows.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/extensions/a11y/mathmaps/en/symbols/math_symbols.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/extensions/a11y/mathmaps/mathmaps_ie.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/fonts/HTML-CSS/Asana-Math/OFL.txt'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/fonts/HTML-CSS/Gyre-Pagella/GUST-FONT-LICENSE.txt'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/fonts/HTML-CSS/Gyre-Pagella/MANIFEST-GyrePagellaMathJax.txt'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/fonts/HTML-CSS/Gyre-Termes/GUST-FONT-LICENSE.txt'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/fonts/HTML-CSS/Gyre-Termes/MANIFEST-GyreTermesMathJax.txt'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/fonts/HTML-CSS/Latin-Modern/GUST-FONT-LICENSE.txt'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/fonts/HTML-CSS/Latin-Modern/MANIFEST-LatinModernMathJax.txt'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/fonts/HTML-CSS/Neo-Euler/OFL.txt'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/fonts/HTML-CSS/STIX-Web/OFL.txt'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/fonts/HTML-CSS/TeX/png/imagedata.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/fonts/HTML-CSS/TeX/png/unpacked/imagedata.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/CommonHTML/jax.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/HTML-CSS/jax.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Asana-Math/Main/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Asana-Math/NonUnicode/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Asana-Math/Normal/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Asana-Math/Operators/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Asana-Math/SansSerif/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/Fraktur/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/Latin/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/Main/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/NonUnicode/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/Normal/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/SansSerif/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/Fraktur/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/Latin/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/Main/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/NonUnicode/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/Normal/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/SansSerif/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/Script/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Fraktur/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Latin/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Main/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Latin-Modern/NonUnicode/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Normal/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Latin-Modern/SansSerif/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Size1/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Size7/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Neo-Euler/Fraktur/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Neo-Euler/Main/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/Neo-Euler/NonUnicode/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Alphabets/Bold/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Alphabets/BoldItalic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Alphabets/Italic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Alphabets/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Arrows/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Latin/Bold/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Latin/BoldItalic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Latin/Italic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Latin/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Main/Bold/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Main/BoldItalic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Main/Italic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Main/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Misc/Bold/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Misc/BoldItalic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Misc/Italic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Misc/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Operators/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/STIX-Web/Shapes/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/TeX/Main/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/TeX/Math/BoldItalic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/TeX/Math/Italic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/jax/output/SVG/fonts/TeX/fontdata.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/examples.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/index-images.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/index.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/localization.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample-all-at-once.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample-asciimath.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample-autoload.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample-dynamic-2.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample-dynamic-steps.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample-dynamic.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample-eqnum.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample-eqrefs.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample-loader-config.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample-loader.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample-macros.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample-mediawiki-texvc.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample-mml.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample-signals.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample-tex.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/test/sample.html'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/MathJax.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/extensions/MathML/content-mathml.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/extensions/MathMenu.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/extensions/TeX/mhchem3/mhchem.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/extensions/a11y/mathjax-sre.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/extensions/a11y/mathmaps/en/symbols/math_arrows.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/extensions/a11y/mathmaps/en/symbols/math_symbols.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/extensions/a11y/mathmaps/mathmaps_ie.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/element/mml/jax.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/input/AsciiMath/jax.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/input/TeX/jax.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/CommonHTML/fonts/TeX/fontdata.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/CommonHTML/jax.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/HTML-CSS/blank.gif'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/HTML-CSS/fonts/Latin-Modern/NonUnicode/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/HTML-CSS/fonts/STIX/fontdata.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/HTML-CSS/fonts/TeX/fontdata.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/HTML-CSS/jax.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Asana-Math/Main/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Asana-Math/NonUnicode/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Asana-Math/Normal/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Asana-Math/Operators/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Asana-Math/SansSerif/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    SafetyError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Asana-Math/Script/Regular/Main.js'
+    has an incorrect size.
+      reported size: 58250 bytes
+      actual size: 0 bytes
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Gyre-Pagella/Fraktur/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Gyre-Pagella/Latin/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Gyre-Pagella/Main/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Gyre-Pagella/NonUnicode/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Gyre-Pagella/Normal/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Gyre-Pagella/SansSerif/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Gyre-Termes/Fraktur/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Gyre-Termes/Latin/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Gyre-Termes/Main/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Gyre-Termes/NonUnicode/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Gyre-Termes/Normal/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Gyre-Termes/SansSerif/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Gyre-Termes/Script/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Latin-Modern/Fraktur/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Latin-Modern/Latin/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Latin-Modern/Main/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Latin-Modern/NonUnicode/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Latin-Modern/Normal/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Latin-Modern/SansSerif/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Latin-Modern/Size1/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Latin-Modern/Size7/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Neo-Euler/Fraktur/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Neo-Euler/Main/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/Neo-Euler/NonUnicode/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Alphabets/Bold/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Alphabets/BoldItalic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Alphabets/Italic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Alphabets/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Arrows/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Latin/Bold/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Latin/BoldItalic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Latin/Italic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Latin/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Main/Bold/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Main/BoldItalic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Main/Italic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Main/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Misc/Bold/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Misc/BoldItalic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Misc/Italic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Misc/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Operators/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/STIX-Web/Shapes/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/TeX/AMS/Regular/MathOperators.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/TeX/Main/Regular/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/TeX/Math/BoldItalic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/TeX/Math/Italic/Main.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/fonts/TeX/fontdata.js'
+    specified in the package manifest cannot be found.
+    
+    CondaVerificationError: The package for mathjax located at /data/home/hmy961/.conda/pkgs/mathjax-2.7.7-ha770c72_3
+    appears to be corrupted. The path 'lib/mathjax/unpacked/jax/output/SVG/jax.js'
+    specified in the package manifest cannot be found.
+
+
+
+ -- Check '.nextflow.log' file for details
+

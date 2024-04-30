@@ -14,19 +14,16 @@ log.info """\
  * Sub-sample to 250k reads, 1M lines
  */
 process SUBSAMPLE {
-    tag "Sub-sample on ${sample_id}"
-
     input:
     tuple val(sample_id), path(reads)
     path parentFolder
 
     output:
-    tuple val(sample_id), path("${parentFolder}/1M_Subsample/1M-${sample_id}_R1.fastq")
-    tuple val(sample_id), path("${parentFolder}/1M_Subsample/1M-${sample_id}_R2.fastq")
+    tuple val(sample_id), path("${parentFolder}/1M_Subsample/1M-${sample_id}_R1.fastq"), path("${parentFolder}/1M_Subsample/1M-${sample_id}_R2.fastq"), emit: reads
 
     script:
     """
-    if [ ! -e ${parentFolder}/1M-Subsample ]; then mkdir -p ${parentFolder}/1M-Subsample; fi
+    if [ ! -e ${parentFolder}/1M_Subsample ]; then mkdir -p ${parentFolder}/1M_Subsample; fi
     gzip -cd ${reads[0]} | head -4000000 > ${parentFolder}/1M_Subsample/1M-${sample_id}_R1.fastq
     gzip -cd ${reads[1]} | head -4000000 > ${parentFolder}/1M_Subsample/1M-${sample_id}_R2.fastq
     """
@@ -36,27 +33,25 @@ process SUBSAMPLE {
  * Perform FastQC
  */
 process FASTQC {
-    tag "FastQC on ${sample_id}"
-
     input:
-    tuple val(sample_id), path(read1)
-    tuple val(sample_id), path(read2)
+    tuple val(sample_id), path(read1), path(read2)
     path parentFolder
 
     output:
-    path "${parentFolder}/1M_fastqc"
-
+    path "${parentFolder}/1M_fastqc/${sample_id}_logs"
+    
     script:
     """
     # Load module
     module load fastqc
-
-    # Make output folder
-    if [ ! -e ${parentFolder}/1M_fastqc ]; then mkdir -p ${parentFolder}/1M_fastqc; fi
     
+    # Create output folders
+    if [ ! -e ${parentFolder}/1M_fastqc ]; then mkdir -p ${parentFolder}/1M_fastqc; fi
+    if [ ! -e ${parentFolder}/1M_fastqc/${sample_id}_logs ]; then mkdir -p ${parentFolder}/1M_fastqc/${sample_id}_logs; fi
+
     # FastQC files
-    fastqc --outdir=${parentFolder}/1M_fastqc ${read1}
-    fastqc --outdir=${parentFolder}/1M_fastqc ${read2}
+    fastqc -o ${parentFolder}/1M_fastqc/${sample_id}_logs ${read1}
+    fastqc -o ${parentFolder}/1M_fastqc/${sample_id}_logs ${read2}
     """
 }
 
@@ -64,19 +59,17 @@ process FASTQC {
  * Perform MultiQC
  */
 process MULTIQC {
+    conda 'multiqc=1.21'
+
     input:
-    path fastqcFolder
+    path '*'
 
     output:
-    file "${fastqcFolder}/pre_trim_multiqc_report.html"
+    path "$params.analysisdir/1M_fastqc/pre_trim_multiqc_report.html"
 
     script:
     """
-    # Load gcenv containing multiqc
-    source /data/WHRI-GenomeCentre/gcenv/bin/activate
-
     # Run multiqc
-    cd ${fastqcFolder}
     multiqc .
     """
 }
@@ -85,21 +78,20 @@ process MULTIQC {
  * Perform trimming
  */
 process TRIMMING {
-    tag "Trimming on ${sample_id}"
-
     input:
     tuple val(sample_id), path(reads)
     path parentFolder
 
     output:
-    path "${parentFolder}/trimgalore_outs"
+    tuple val(sample_id), path("${parentFolder}/trimgalore_outs/*val*.fq.gz"), emit: reads
+	path("${parentFolder}/trimgalore_outs/*report.txt"), optional: true, emit: report
 
     script:
     """
     # Load module
     module load trimgalore/0.6.5
 
-    # Make output folder
+    # Create output folders
     if [ ! -e ${parentFolder}/trimgalore_outs ]; then mkdir -p ${parentFolder}/trimgalore_outs; fi
     
 	# Run trimgalore
@@ -111,7 +103,7 @@ process TRIMMING {
 	--stringency 1 \
 	-e 0.1 \
 	--output_dir ${parentFolder}/trimgalore_outs \
-	${reads[0]} ${reads[1]}
+	${reads}
     """
 }
 
@@ -119,26 +111,24 @@ process TRIMMING {
  * Perform FastQC, post trimming
  */
 process FASTQC_PT {
-    tag "Post-trimming FastQC on ${sample_id}"
-
     input:
     tuple val(sample_id), path(reads)
-    path trimFolder
+    path parentFolder
 
     output:
-    path "${trimFolder}/post_trim_fastqc"
+    path "${parentFolder}/post_trim_fastqc"
 
     script:
     """
     # Load module
     module load fastqc
 
-    # Make output folder
-    if [ ! -e ${trimFolder}/post_trim_fastqc ]; then mkdir -p ${trimFolder}/post_trim_fastqc; fi
+    # Create output folders
+    if [ ! -e ${parentFolder}/post_trim_fastqc ]; then mkdir -p ${parentFolder}/post_trim_fastqc; fi
+    if [ ! -e ${parentFolder}/post_trim_fastqc/${sample_id}_logs ]; then mkdir -p ${parentFolder}/post_trim_fastqc/${sample_id}_logs; fi
     
     # FastQC files
-    fastqc --outdir=${trimFolder}/post_trim_fastqc ${reads[0]}
-    fastqc --outdir=${trimFolder}/post_trim_fastqc ${reads[1]}
+    fastqc -o ${parentFolder}/post_trim_fastqc/${sample_id}_logs ${reads}
     """
 }
 
@@ -146,19 +136,17 @@ process FASTQC_PT {
  * Perform MultiQC, post-trimming
  */
 process MULTIQC_PT {
+    conda 'multiqc=1.21'
+
     input:
-    path fastqcFolder
+    path '*'
 
     output:
-    file "${fastqcFolder}/post_trim_multiqc_report.html"
+    path "$params.analysisdir/trimgalore_outs/fastqc/post_trim_multiqc_report.html"
 
     script:
     """
-    # Load gcenv containing multiqc
-    source /data/WHRI-GenomeCentre/gcenv/bin/activate
-
     # Run multiqc
-    cd ${fastqcFolder}
     multiqc .
     """
 }
@@ -171,12 +159,9 @@ workflow {
         .fromFilePairs(params.reads, checkIfExists: true)
         .set { read_pairs_ch }
     SUBSAMPLE(read_pairs_ch, params.analysisdir)
-    FASTQC(SUBSAMPLE.out[0], SUBSAMPLE.out[1], params.analysisdir)
-    MULTIQC(FASTQC.out)
+    fastqc_ch = FASTQC(SUBSAMPLE.out.reads, params.analysisdir)
+    MULTIQC(fastqc_ch.collect())
     TRIMMING(read_pairs_ch, params.analysisdir)
-    Channel
-        .fromFilePairs(TRIMMING.out, checkIfExists: true)
-        .set { trim_read_pairs_ch }
-    FASTQC(trim_read_pairs_ch, TRIMMING.out)
-    MULTIQC_PT(FASTQC.out)
+    fastqcPT_ch = FASTQC_PT(TRIMMING.out.reads, params.analysisdir)
+    MULTIQC_PT(fastqcPT_ch.collect())
 }
