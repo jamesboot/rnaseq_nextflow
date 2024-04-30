@@ -33,7 +33,7 @@ process SUBSAMPLE {
 }
 
 /*
- * Sub-sample to 250k reads, 1M lines
+ * Perform FastQC
  */
 process FASTQC {
     tag "FastQC on ${sample_id}"
@@ -57,6 +57,14 @@ process FASTQC {
     # FastQC files
     fastqc --outdir=${parentFolder}/1M-fastqc ${read1}
     fastqc --outdir=${parentFolder}/1M-fastqc ${read2}
+
+    # Run multiqc on above output
+    # Load gcenv containing multiqc
+    . /data/WHRI-GenomeCentre/gcenv/bin/activate
+
+    # Run multiqc
+    cd ${parentFolder}/1M-fastqc
+    multiqc .
     """
 }
 
