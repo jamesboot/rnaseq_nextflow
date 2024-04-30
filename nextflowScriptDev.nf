@@ -21,14 +21,14 @@ process SUBSAMPLE {
     path parentFolder
 
     output:
-    tuple val(sample_id), path("${parentFolder}/1M-Subsample/1M-${sample_id}_R1.fastq")
-    tuple val(sample_id), path("${parentFolder}/1M-Subsample/1M-${sample_id}_R2.fastq")
+    tuple val(sample_id), path("${parentFolder}/1M_Subsample/1M-${sample_id}_R1.fastq")
+    tuple val(sample_id), path("${parentFolder}/1M_Subsample/1M-${sample_id}_R2.fastq")
 
     script:
     """
     if [ ! -e ${parentFolder}/1M-Subsample ]; then mkdir -p ${parentFolder}/1M-Subsample; fi
-    gzip -cd ${reads[0]} | head -4000000 > ${parentFolder}/1M-Subsample/1M-${sample_id}_R1.fastq
-    gzip -cd ${reads[1]} | head -4000000 > ${parentFolder}/1M-Subsample/1M-${sample_id}_R2.fastq
+    gzip -cd ${reads[0]} | head -4000000 > ${parentFolder}/1M_Subsample/1M-${sample_id}_R1.fastq
+    gzip -cd ${reads[1]} | head -4000000 > ${parentFolder}/1M_Subsample/1M-${sample_id}_R2.fastq
     """
 }
 
@@ -44,7 +44,7 @@ process FASTQC {
     path parentFolder
 
     output:
-    path "${parentFolder}/1M-fastqc"
+    path "${parentFolder}/1M_fastqc"
 
     script:
     """
@@ -52,11 +52,11 @@ process FASTQC {
     module load fastqc
 
     # Make output folder
-    if [ ! -e ${parentFolder}/1M-fastqc ]; then mkdir -p ${parentFolder}/1M-fastqc; fi
+    if [ ! -e ${parentFolder}/1M_fastqc ]; then mkdir -p ${parentFolder}/1M_fastqc; fi
     
     # FastQC files
-    fastqc --outdir=${parentFolder}/1M-fastqc ${read1}
-    fastqc --outdir=${parentFolder}/1M-fastqc ${read2}
+    fastqc --outdir=${parentFolder}/1M_fastqc ${read1}
+    fastqc --outdir=${parentFolder}/1M_fastqc ${read2}
     """
 }
 
@@ -68,7 +68,7 @@ process MULTIQC {
     path fastqcFolder
 
     output:
-    file "pre_trim_multiqc_report.html"
+    file "${fastqcFolder}/pre_trim_multiqc_report.html"
 
     script:
     """
@@ -93,7 +93,6 @@ process TRIMMING {
 
     output:
     path "${parentFolder}/trimgalore_outs"
-    path "${parentFolder}/trimgalore_outs/fastqc"
 
     script:
     """
@@ -111,21 +110,47 @@ process TRIMMING {
 	--paired \
 	--stringency 1 \
 	-e 0.1 \
-	--fastqc --fastqc_args "-o ${parentFolder}/trimgalore_outs/fastqc --noextract" \
 	--output_dir ${parentFolder}/trimgalore_outs \
 	${reads[0]} ${reads[1]}
     """
 }
 
 /*
- * Perform MultiQC post-trimming
+ * Perform FastQC, post trimming
+ */
+process FASTQC_PT {
+    tag "Post-trimming FastQC on ${sample_id}"
+
+    input:
+    tuple val(sample_id), path(reads)
+    path trimFolder
+
+    output:
+    path "${trimFolder}/post_trim_fastqc"
+
+    script:
+    """
+    # Load module
+    module load fastqc
+
+    # Make output folder
+    if [ ! -e ${trimFolder}/post_trim_fastqc ]; then mkdir -p ${trimFolder}/post_trim_fastqc; fi
+    
+    # FastQC files
+    fastqc --outdir=${trimFolder}/post_trim_fastqc ${reads[0]}
+    fastqc --outdir=${trimFolder}/post_trim_fastqc ${reads[1]}
+    """
+}
+
+/*
+ * Perform MultiQC, post-trimming
  */
 process MULTIQC_PT {
     input:
     path fastqcFolder
 
     output:
-    file "post_trim_multiqc_report.html" 
+    file "${fastqcFolder}/post_trim_multiqc_report.html"
 
     script:
     """
@@ -149,5 +174,9 @@ workflow {
     FASTQC(SUBSAMPLE.out[0], SUBSAMPLE.out[1], params.analysisdir)
     MULTIQC(FASTQC.out)
     TRIMMING(read_pairs_ch, params.analysisdir)
-    MULTIQC_PT(TRIMMING.out[1])
+    Channel
+        .fromFilePairs(TRIMMING.out, checkIfExists: true)
+        .set { trim_read_pairs_ch }
+    FASTQC(trim_read_pairs_ch, TRIMMING.out)
+    MULTIQC_PT(FASTQC.out)
 }
