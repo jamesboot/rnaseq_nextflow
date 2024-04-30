@@ -44,12 +44,12 @@ process FASTQC {
     path parentFolder
 
     output:
-    path "${parentFolder}/1M-fastqc"
+    path "${parentFolder}/fastqc"
 
     script:
     """
     # Load module
-    module load fastqc
+    module load trimgalore/0.6.5
 
     # Make output folder
     if [ ! -e ${parentFolder}/1M-fastqc ]; then mkdir -p ${parentFolder}/1M-fastqc; fi
@@ -57,26 +57,13 @@ process FASTQC {
     # FastQC files
     fastqc --outdir=${parentFolder}/1M-fastqc ${read1}
     fastqc --outdir=${parentFolder}/1M-fastqc ${read2}
-    """
-}
 
-/*
- * Perform MultiQC
- */
-process MULTIQC {
-    input:
-    path fastqcFolder
-
-    output:
-    file "pre_trim_multiqc_report.html"
-
-    script:
-    """
+    # Run multiqc on above output
     # Load gcenv containing multiqc
     . /data/WHRI-GenomeCentre/gcenv/bin/activate
 
     # Run multiqc
-    cd ${fastqcFolder}
+    cd ${parentFolder}/1M-fastqc
     multiqc .
     """
 }
@@ -93,7 +80,6 @@ process TRIMMING {
 
     output:
     path "${parentFolder}/trimgalore_outs"
-    path "${parentFolder}/trimgalore_outs/fastqc"
 
     script:
     """
@@ -114,26 +100,13 @@ process TRIMMING {
 	--fastqc --fastqc_args "-o ${parentFolder}/trimgalore_outs/fastqc --noextract" \
 	--output_dir ${parentFolder}/trimgalore_outs \
 	${reads[0]} ${reads[1]}
-    """
-}
 
-/*
- * Perform MultiQC post-trimming
- */
-process MULTIQC_PT {
-    input:
-    path fastqcFolder
-
-    output:
-    file "post_trim_multiqc_report.html" 
-
-    script:
-    """
+    # Run multiqc on trimmed fastqc output
     # Load gcenv containing multiqc
     . /data/WHRI-GenomeCentre/gcenv/bin/activate
 
     # Run multiqc
-    cd ${fastqcFolder}
+    cd ${parentFolder}/trimgalore_outs/fastqc
     multiqc .
     """
 }
@@ -147,7 +120,5 @@ workflow {
         .set { read_pairs_ch }
     SUBSAMPLE(read_pairs_ch, params.analysisdir)
     FASTQC(SUBSAMPLE.out[0], SUBSAMPLE.out[1], params.analysisdir)
-    MULTIQC(FASTQC.out)
     TRIMMING(read_pairs_ch, params.analysisdir)
-    MULTIQC_PT(TRIMMING.out[1])
 }
