@@ -1,0 +1,155 @@
+Apr-30 10:59:40.908 [main] DEBUG nextflow.cli.Launcher - $> nextflow -DXmx=1G -C nextflow.config run nextflowScriptDev.nf -resume --reads '/data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Data/201023_NS500784_0721_AHFCJHBGXG/Alignment_1/20201024_095434/Fastq/fastq_lane-merged/*_L001_R{1,2}_001.fastq.gz' --analysisdir /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Analysis/nextflow
+Apr-30 10:59:41.160 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+Apr-30 10:59:41.202 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/data/home/hmy961/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.3,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.1
+Apr-30 10:59:41.228 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Apr-30 10:59:41.228 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Apr-30 10:59:41.231 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Apr-30 10:59:41.240 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Apr-30 10:59:41.281 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Analysis/nextflow/nextflow.config
+Apr-30 10:59:41.338 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Apr-30 10:59:42.249 [main] WARN  nextflow.config.ConfigBuilder - It appears you have never run this project before -- Option `-resume` is ignored
+Apr-30 10:59:42.299 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Apr-30 10:59:42.329 [main] INFO  nextflow.cli.CmdRun - Launching `nextflowScriptDev.nf` [thirsty_bardeen] DSL2 - revision: 6b013eb4e7
+Apr-30 10:59:42.330 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Apr-30 10:59:42.330 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Apr-30 10:59:42.340 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /data/home/hmy961/.nextflow/secrets/store.json
+Apr-30 10:59:42.342 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@7a485a36] - activable => nextflow.secret.LocalSecretsProvider@7a485a36
+Apr-30 10:59:42.434 [main] DEBUG nextflow.Session - Session UUID: 6d7f417f-e611-4f9f-8bdb-e100e4c03b06
+Apr-30 10:59:42.434 [main] DEBUG nextflow.Session - Run name: thirsty_bardeen
+Apr-30 10:59:42.435 [main] DEBUG nextflow.Session - Executor pool size: 2
+Apr-30 10:59:42.454 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Apr-30 10:59:42.458 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=10; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Apr-30 10:59:42.502 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.10.1 build 5891
+  Created: 12-01-2024 22:01 UTC (22:01 BST)
+  System: Linux 3.10.0-1160.83.1.el7.x86_64
+  Runtime: Groovy 3.0.19 on Java HotSpot(TM) 64-Bit Server VM 17+35-LTS-2724
+  Encoding: UTF-8 (UTF-8)
+  Process: 179751@ddy114 [10.14.107.114]
+  CPUs: 1 - Mem: 7.5 GB (7.3 GB) - Swap: 0 (0)
+Apr-30 10:59:42.559 [main] DEBUG nextflow.Session - Work-dir: /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Analysis/nextflow/work [gpfs]
+Apr-30 10:59:42.559 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Analysis/nextflow/bin
+Apr-30 10:59:42.566 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Apr-30 10:59:42.574 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Apr-30 10:59:42.622 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Apr-30 10:59:42.648 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 2; maxThreads: 1000
+Apr-30 10:59:42.804 [main] DEBUG nextflow.Session - Session start
+Apr-30 10:59:43.502 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Apr-30 10:59:43.531 [main] INFO  nextflow.Nextflow - R N A S E Q - N F   P I P E L I N E
+===================================
+reads        : /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Data/201023_NS500784_0721_AHFCJHBGXG/Alignment_1/20201024_095434/Fastq/fastq_lane-merged/*_L001_R{1,2}_001.fastq.gz
+analysisdir  : /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Analysis/nextflow
+
+Apr-30 10:59:43.765 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: sge
+Apr-30 10:59:43.766 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'sge'
+Apr-30 10:59:43.772 [main] DEBUG nextflow.executor.Executor - [warm up] executor > sge
+Apr-30 10:59:43.789 [main] DEBUG n.processor.TaskPollingMonitor - Creating task monitor for executor 'sge' > capacity: 100; pollInterval: 5s; dumpInterval: 5m 
+Apr-30 10:59:43.791 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: sge)
+Apr-30 10:59:43.811 [main] DEBUG n.executor.AbstractGridExecutor - Creating executor 'sge' > queue-stat-interval: 1m
+Apr-30 10:59:43.915 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: sge
+Apr-30 10:59:43.915 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'sge'
+Apr-30 10:59:43.922 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: sge
+Apr-30 10:59:43.922 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'sge'
+Apr-30 10:59:43.939 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: FASTQC, SUBSAMPLE, TRIMMING
+Apr-30 10:59:43.939 [main] DEBUG nextflow.Session - Igniting dataflow network (4)
+Apr-30 10:59:43.956 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SUBSAMPLE
+Apr-30 10:59:43.958 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FASTQC
+Apr-30 10:59:43.958 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > TRIMMING
+Apr-30 10:59:43.958 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_656d572c52a1b6bd: /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Analysis/nextflow/nextflowScriptDev.nf
+Apr-30 10:59:43.958 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Apr-30 10:59:43.958 [main] DEBUG nextflow.Session - Session await
+Apr-30 10:59:43.959 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Data/201023_NS500784_0721_AHFCJHBGXG/Alignment_1/20201024_095434/Fastq/fastq_lane-merged/; pattern: *_L001_R{1,2}_001.fastq.gz; options: [checkIfExists:true]
+Apr-30 10:59:45.371 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SGE] submitted process SUBSAMPLE (Sub-sample on GC-JK-9047-Osc-1-Ind-1h_S5) > jobId: 3528783; workDir: /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Analysis/nextflow/work/b3/7a843c46671425c34b9e4130628222
+Apr-30 10:59:45.372 [Task submitter] INFO  nextflow.Session - [b3/7a843c] Submitted process > SUBSAMPLE (Sub-sample on GC-JK-9047-Osc-1-Ind-1h_S5)
+Apr-30 10:59:46.005 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SGE] submitted process TRIMMING (Trimming on GC-JK-9047-Osc-3-Ind-24h_S15) > jobId: 3528784; workDir: /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Analysis/nextflow/work/17/33039eec477a24b9a9be2d8d887ade
+Apr-30 10:59:46.006 [Task submitter] INFO  nextflow.Session - [17/33039e] Submitted process > TRIMMING (Trimming on GC-JK-9047-Osc-3-Ind-24h_S15)
+Apr-30 10:59:46.565 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SGE] submitted process TRIMMING (Trimming on GC-JK-9047-Osc-1-Ind-1h_S5) > jobId: 3528785; workDir: /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Analysis/nextflow/work/92/10a2ee11f5731a406bc140c23b7f3d
+Apr-30 10:59:46.565 [Task submitter] INFO  nextflow.Session - [92/10a2ee] Submitted process > TRIMMING (Trimming on GC-JK-9047-Osc-1-Ind-1h_S5)
+Apr-30 10:59:47.119 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SGE] submitted process SUBSAMPLE (Sub-sample on GC-JK-9047-Osc-3-Ind-24h_S15) > jobId: 3528786; workDir: /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Analysis/nextflow/work/78/bbcc8fcead01506abd115f0b8e6c42
+Apr-30 10:59:47.120 [Task submitter] INFO  nextflow.Session - [78/bbcc8f] Submitted process > SUBSAMPLE (Sub-sample on GC-JK-9047-Osc-3-Ind-24h_S15)
+Apr-30 10:59:47.696 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SGE] submitted process TRIMMING (Trimming on GC-JK-9047-Osc-3-Act-d7_S19) > jobId: 3528787; workDir: /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Analysis/nextflow/work/34/f72c05f86c272e532b0a99a544bde0
+Apr-30 10:59:47.696 [Task submitter] INFO  nextflow.Session - [34/f72c05] Submitted process > TRIMMING (Trimming on GC-JK-9047-Osc-3-Act-d7_S19)
+Apr-30 10:59:48.230 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SGE] submitted process SUBSAMPLE (Sub-sample on GC-JK-9047-Osc-4-Ind-24h_S16) > jobId: 3528788; workDir: /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Analysis/nextflow/work/df/801ed9b11972f71954f96cf8d1e4f4
+Apr-30 10:59:48.230 [Task submitter] INFO  nextflow.Session - [df/801ed9] Submitted process > SUBSAMPLE (Sub-sample on GC-JK-9047-Osc-4-Ind-24h_S16)
+Apr-30 10:59:48.774 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SGE] submitted process TRIMMING (Trimming on GC-JK-9047-Osc-4-Ind-24h_S16) > jobId: 3528789; workDir: /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Analysis/nextflow/work/27/05f471be2cfa9de788c8c18f9d382f
+Apr-30 10:59:48.774 [Task submitter] INFO  nextflow.Session - [27/05f471] Submitted process > TRIMMING (Trimming on GC-JK-9047-Osc-4-Ind-24h_S16)
+Apr-30 10:59:48.899 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 3528784; id: 3; name: TRIMMING (Trimming on GC-JK-9047-Osc-3-Ind-24h_S15); status: COMPLETED; exit: 127; error: -; workDir: /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Analysis/nextflow/work/17/33039eec477a24b9a9be2d8d887ade started: 1714471188896; exited: 2024-04-30T09:59:47.357510778Z; ]
+Apr-30 10:59:48.902 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=TRIMMING (Trimming on GC-JK-9047-Osc-3-Ind-24h_S15); work-dir=/data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Analysis/nextflow/work/17/33039eec477a24b9a9be2d8d887ade
+  error [nextflow.exception.ProcessFailedException]: Process `TRIMMING (Trimming on GC-JK-9047-Osc-3-Ind-24h_S15)` terminated with an error exit status (127)
+Apr-30 10:59:48.965 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'TRIMMING (Trimming on GC-JK-9047-Osc-3-Ind-24h_S15)'
+
+Caused by:
+  Process `TRIMMING (Trimming on GC-JK-9047-Osc-3-Ind-24h_S15)` terminated with an error exit status (127)
+
+Command executed:
+
+  # Load module
+     module load fastqc
+  
+     # Make output folder
+     if [ ! -e nextflow/trimgalore_outs ]; then mkdir -p nextflow/trimgalore_outs; fi
+  
+  # Run trimgalore
+  # Options --length, -e, --stringency, --quality are set to default
+  trim_galore --quality 20 	--length 20 	-j 1 	--paired 	--stringency 1 	-e 0.1 	--fastqc --fastqc_args "-o nextflow/trimgalore_outs/fastqc --noextract" 	--output_dir nextflow/trimgalore_outs 	GC-JK-9047-Osc-3-Ind-24h_S15_L001_R1_001.fastq.gz GC-JK-9047-Osc-3-Ind-24h_S15_L001_R2_001.fastq.gz
+  
+     # Run multiqc on trimmed fastqc output
+     # Load gcenv containing multiqc
+     . /data/WHRI-GenomeCentre/gcenv/bin/activate
+  
+     # Run multiqc
+     cd nextflow/trimgalore_outs/fastqc
+     multiqc .
+
+Command exit status:
+  127
+
+Command output:
+  (empty)
+
+Command error:
+  Loading fastqc/0.11.9
+    Loading requirement: java/1.8.0_382-openjdk
+  .command.sh: line 10: trim_galore: command not found
+
+Work dir:
+  /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Analysis/nextflow/work/17/33039eec477a24b9a9be2d8d887ade
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+Apr-30 10:59:48.993 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Process `TRIMMING (Trimming on GC-JK-9047-Osc-3-Ind-24h_S15)` terminated with an error exit status (127)
+Apr-30 10:59:49.019 [Task monitor] DEBUG nextflow.Session - The following nodes are still active:
+[process] FASTQC
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (queue) OPEN  ; channel: -
+  port 2: (value) bound ; channel: parentFolder
+  port 3: (cntrl) -     ; channel: $
+
+Apr-30 10:59:49.022 [main] DEBUG nextflow.Session - Session await > all processes finished
+Apr-30 10:59:49.022 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Apr-30 10:59:49.025 [main] WARN  n.processor.TaskPollingMonitor - Killing running tasks (6)
+Apr-30 10:59:49.038 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 3528785; id: 4; name: TRIMMING (Trimming on GC-JK-9047-Osc-1-Ind-1h_S5); status: COMPLETED; exit: 127; error: -; workDir: /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Analysis/nextflow/work/92/10a2ee11f5731a406bc140c23b7f3d started: 1714471189037; exited: 2024-04-30T09:59:47.982514762Z; ]
+Apr-30 10:59:49.038 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=TRIMMING (Trimming on GC-JK-9047-Osc-1-Ind-1h_S5); work-dir=/data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Analysis/nextflow/work/92/10a2ee11f5731a406bc140c23b7f3d
+  error [nextflow.exception.ProcessFailedException]: Process `TRIMMING (Trimming on GC-JK-9047-Osc-1-Ind-1h_S5)` terminated with an error exit status (127)
+Apr-30 10:59:49.042 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 3528787; id: 7; name: TRIMMING (Trimming on GC-JK-9047-Osc-3-Act-d7_S19); status: COMPLETED; exit: 127; error: -; workDir: /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Analysis/nextflow/work/34/f72c05f86c272e532b0a99a544bde0 started: 1714471189040; exited: 2024-04-30T09:59:48.63117022Z; ]
+Apr-30 10:59:49.043 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=TRIMMING (Trimming on GC-JK-9047-Osc-3-Act-d7_S19); work-dir=/data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Analysis/nextflow/work/34/f72c05f86c272e532b0a99a544bde0
+  error [nextflow.exception.ProcessFailedException]: Process `TRIMMING (Trimming on GC-JK-9047-Osc-3-Act-d7_S19)` terminated with an error exit status (127)
+Apr-30 10:59:49.044 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: sge) - terminating tasks monitor poll loop
+Apr-30 10:59:49.113 [main] DEBUG n.executor.AbstractGridExecutor - Unable to kill pending jobs
+- cmd executed: qdel 3528783 3528785 3528786 3528787 3528788 3528789
+- exit status : 1
+- output      :
+  hmy961 has registered the job 3528783 for deletion
+  denied: job "3528785" does not exist
+  hmy961 has registered the job 3528786 for deletion
+  job 3528787.1 is already in deletion
+  hmy961 has deleted job 3528788
+  hmy961 has deleted job 3528789
+
+Apr-30 10:59:49.113 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=3; ignoredCount=0; cachedCount=0; pendingCount=49; submittedCount=2; runningCount=-4; retriesCount=0; abortedCount=6; succeedDuration=0ms; failedDuration=5ms; cachedDuration=0ms;loadCpus=-4; loadMemory=0; peakRunning=2; peakCpus=2; peakMemory=0; ]
+Apr-30 10:59:49.213 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Apr-30 10:59:49.223 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

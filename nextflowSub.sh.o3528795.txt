@@ -1,0 +1,672 @@
+Loading nextflow/23.10.1
+  Loading requirement: java/17.0.0
+N E X T F L O W  ~  version 23.10.1
+Launching `nextflowScriptDev.nf` [extravagant_curran] DSL2 - revision: dbce1796c7
+R N A S E Q - N F   P I P E L I N E
+===================================
+reads        : /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Data/201023_NS500784_0721_AHFCJHBGXG/Alignment_1/20201024_095434/Fastq/fastq_lane-merged/*_L001_R{1,2}_001.fastq.gz
+analysisdir  : /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Analysis/nextflow
+
+[-        ] process > SUBSAMPLE -
+[-        ] process > FASTQC    -
+[-        ] process > TRIMMING  -
+
+[-        ] process > SUBSAMPLE [  0%] 0 of 7
+[-        ] process > FASTQC    -
+[-        ] process > TRIMMING  [  0%] 0 of 12
+
+[-        ] process > SUBSAMPLE [  0%] 0 of 28
+[-        ] process > FASTQC    -
+[-        ] process > TRIMMING  [  0%] 0 of 28
+
+executor >  sge (1)
+[60/d27e91] process > SUBSAMPLE (Sub-sample on GC... [  0%] 0 of 28
+[-        ] process > FASTQC                         -
+[-        ] process > TRIMMING                       [  0%] 0 of 28
+
+executor >  sge (2)
+[49/425eb4] process > SUBSAMPLE (Sub-sample on GC... [  0%] 0 of 28
+[-        ] process > FASTQC                         -
+[-        ] process > TRIMMING                       [  0%] 0 of 28
+
+executor >  sge (3)
+[60/1ce6e9] process > SUBSAMPLE (Sub-sample on GC... [  0%] 0 of 28
+[-        ] process > FASTQC                         -
+[-        ] process > TRIMMING                       [  0%] 0 of 28
+
+executor >  sge (4)
+[60/1ce6e9] process > SUBSAMPLE (Sub-sample on GC... [  0%] 0 of 28
+[-        ] process > FASTQC                         -
+[20/7b3b8f] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (5)
+[60/1ce6e9] process > SUBSAMPLE (Sub-sample on GC... [  0%] 0 of 28
+[-        ] process > FASTQC                         -
+[e4/2cc906] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (6)
+[60/1ce6e9] process > SUBSAMPLE (Sub-sample on GC... [  0%] 0 of 28
+[-        ] process > FASTQC                         -
+[cd/822a27] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (7)
+[55/4ec5c8] process > SUBSAMPLE (Sub-sample on GC... [  0%] 0 of 28
+[-        ] process > FASTQC                         -
+[cd/822a27] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (7)
+[55/4ec5c8] process > SUBSAMPLE (Sub-sample on GC... [  0%] 0 of 28
+[-        ] process > FASTQC                         -
+[cd/822a27] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (8)
+[55/4ec5c8] process > SUBSAMPLE (Sub-sample on GC... [  0%] 0 of 28
+[-        ] process > FASTQC                         -
+[59/b426ac] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (9)
+[55/4ec5c8] process > SUBSAMPLE (Sub-sample on GC... [  0%] 0 of 28
+[-        ] process > FASTQC                         -
+[d1/911f01] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (10)
+[55/4ec5c8] process > SUBSAMPLE (Sub-sample on GC... [  0%] 0 of 28
+[-        ] process > FASTQC                         -
+[11/8fcfbf] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (11)
+[55/4ec5c8] process > SUBSAMPLE (Sub-sample on GC... [  0%] 0 of 28
+[-        ] process > FASTQC                         -
+[b7/7ea0bd] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (12)
+[55/4ec5c8] process > SUBSAMPLE (Sub-sample on GC... [  0%] 0 of 28
+[-        ] process > FASTQC                         -
+[c8/28134f] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (13)
+[55/4ec5c8] process > SUBSAMPLE (Sub-sample on GC... [  0%] 0 of 28
+[-        ] process > FASTQC                         -
+[a9/16b3e8] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (14)
+[42/4d008d] process > SUBSAMPLE (Sub-sample on GC... [  0%] 0 of 28
+[-        ] process > FASTQC                         -
+[a9/16b3e8] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (15)
+[42/4d008d] process > SUBSAMPLE (Sub-sample on GC... [  0%] 0 of 28
+[-        ] process > FASTQC                         -
+[96/e09f31] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (15)
+[55/4ec5c8] process > SUBSAMPLE (Sub-sample on GC... [ 14%] 4 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 4
+[96/e09f31] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (16)
+[55/4ec5c8] process > SUBSAMPLE (Sub-sample on GC... [ 14%] 4 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 4
+[7e/b24be2] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (17)
+[55/4ec5c8] process > SUBSAMPLE (Sub-sample on GC... [ 14%] 4 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 4
+[d0/ca1c91] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (18)
+[c0/725283] process > SUBSAMPLE (Sub-sample on GC... [ 14%] 4 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 4
+[d0/ca1c91] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (19)
+[99/a62c2d] process > SUBSAMPLE (Sub-sample on GC... [ 14%] 4 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 4
+[d0/ca1c91] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (20)
+[52/529180] process > SUBSAMPLE (Sub-sample on GC... [ 14%] 4 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 4
+[d0/ca1c91] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (21)
+[65/0fb0f8] process > SUBSAMPLE (Sub-sample on GC... [ 14%] 4 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 4
+[d0/ca1c91] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (22)
+[0a/a56d8b] process > SUBSAMPLE (Sub-sample on GC... [ 14%] 4 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 4
+[d0/ca1c91] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (23)
+[0a/a56d8b] process > SUBSAMPLE (Sub-sample on GC... [ 14%] 4 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 4
+[ed/0358d8] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (23)
+[0a/a56d8b] process > SUBSAMPLE (Sub-sample on GC... [ 14%] 4 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 4
+[ed/0358d8] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (24)
+[f4/1fe00b] process > SUBSAMPLE (Sub-sample on GC... [ 14%] 4 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 4
+[ed/0358d8] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (25)
+[20/31ddc9] process > SUBSAMPLE (Sub-sample on GC... [ 14%] 4 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 4
+[ed/0358d8] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (26)
+[20/31ddc9] process > SUBSAMPLE (Sub-sample on GC... [ 14%] 4 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 4
+[31/2053f8] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (27)
+[20/31ddc9] process > SUBSAMPLE (Sub-sample on GC... [ 14%] 4 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 4
+[33/374287] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (28)
+[72/baf238] process > SUBSAMPLE (Sub-sample on GC... [ 14%] 4 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 4
+[33/374287] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (29)
+[3a/36ec2b] process > SUBSAMPLE (Sub-sample on GC... [ 14%] 4 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 4
+[33/374287] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (30)
+[3a/36ec2b] process > SUBSAMPLE (Sub-sample on GC... [ 14%] 4 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 4
+[33/374287] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (30)
+[ab/a098e4] process > SUBSAMPLE (Sub-sample on GC... [ 14%] 4 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 4
+[33/374287] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (31)
+[ab/a098e4] process > SUBSAMPLE (Sub-sample on GC... [ 14%] 4 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 4
+[82/f1c250] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (31)
+[99/a62c2d] process > SUBSAMPLE (Sub-sample on GC... [ 25%] 7 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 7
+[82/f1c250] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (32)
+[08/81b49c] process > SUBSAMPLE (Sub-sample on GC... [ 32%] 9 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 9
+[82/f1c250] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (33)
+[08/81b49c] process > SUBSAMPLE (Sub-sample on GC... [ 32%] 9 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 9
+[6b/a1df15] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (34)
+[08/81b49c] process > SUBSAMPLE (Sub-sample on GC... [ 32%] 9 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 9
+[52/b0c6d6] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (35)
+[93/68d2e1] process > SUBSAMPLE (Sub-sample on GC... [ 32%] 9 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 9
+[52/b0c6d6] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (36)
+[93/68d2e1] process > SUBSAMPLE (Sub-sample on GC... [ 32%] 9 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 9
+[21/ee254a] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (37)
+[93/68d2e1] process > SUBSAMPLE (Sub-sample on GC... [ 32%] 9 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 9
+[e6/8d7096] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (38)
+[55/c2e3c8] process > SUBSAMPLE (Sub-sample on GC... [ 32%] 9 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 9
+[e6/8d7096] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (39)
+[55/c2e3c8] process > SUBSAMPLE (Sub-sample on GC... [ 32%] 9 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 9
+[5a/7d66bc] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (40)
+[3a/36ec2b] process > SUBSAMPLE (Sub-sample on GC... [ 50%] 14 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 14
+[8a/215bc7] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (41)
+[f8/59fd5a] process > SUBSAMPLE (Sub-sample on GC... [ 50%] 14 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 14
+[8a/215bc7] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (42)
+[f8/59fd5a] process > SUBSAMPLE (Sub-sample on GC... [ 50%] 14 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 14
+[c9/0d8ddb] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (43)
+[cd/b63c4f] process > SUBSAMPLE (Sub-sample on GC... [ 50%] 14 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 14
+[c9/0d8ddb] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (44)
+[cd/b63c4f] process > SUBSAMPLE (Sub-sample on GC... [ 50%] 14 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 14
+[52/d09ca1] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (45)
+[cd/b63c4f] process > SUBSAMPLE (Sub-sample on GC... [ 50%] 14 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 14
+[ed/767eaa] process > TRIMMING (Trimming on Undet... [  0%] 0 of 28
+
+executor >  sge (46)
+[28/0b376e] process > SUBSAMPLE (Sub-sample on GC... [ 50%] 14 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 14
+[ed/767eaa] process > TRIMMING (Trimming on Undet... [  0%] 0 of 28
+
+executor >  sge (47)
+[28/0b376e] process > SUBSAMPLE (Sub-sample on GC... [ 50%] 14 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 14
+[24/050256] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (48)
+[93/68d2e1] process > SUBSAMPLE (Sub-sample on GC... [ 60%] 17 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 17
+[86/2f48e5] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (49)
+[06/a52f67] process > SUBSAMPLE (Sub-sample on GC... [ 60%] 17 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 17
+[86/2f48e5] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (50)
+[06/a52f67] process > SUBSAMPLE (Sub-sample on GC... [ 60%] 17 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 17
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (51)
+[cb/eb5de9] process > SUBSAMPLE (Sub-sample on GC... [ 60%] 17 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 17
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (52)
+[87/991f83] process > SUBSAMPLE (Sub-sample on GC... [ 60%] 17 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 17
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (53)
+[30/ed5235] process > SUBSAMPLE (Sub-sample on GC... [ 60%] 17 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 17
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (54)
+[6d/e75812] process > SUBSAMPLE (Sub-sample on Un... [ 60%] 17 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 17
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (55)
+[8a/e4832d] process > SUBSAMPLE (Sub-sample on GC... [ 60%] 17 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 17
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (56)
+[64/6bb4ea] process > SUBSAMPLE (Sub-sample on GC... [ 60%] 17 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 17
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (56)
+[cd/b63c4f] process > SUBSAMPLE (Sub-sample on GC... [ 71%] 20 of 28
+[-        ] process > FASTQC                         [  0%] 0 of 20
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (57)
+[cd/b63c4f] process > SUBSAMPLE (Sub-sample on GC... [ 71%] 20 of 28
+[a4/10cef1] process > FASTQC (FastQC on GC-JK-904... [  0%] 0 of 20
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (58)
+[cd/b63c4f] process > SUBSAMPLE (Sub-sample on GC... [ 71%] 20 of 28
+[56/31dcee] process > FASTQC (FastQC on GC-JK-904... [  0%] 0 of 20
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (59)
+[cd/b63c4f] process > SUBSAMPLE (Sub-sample on GC... [ 71%] 20 of 28
+[73/6617fd] process > FASTQC (FastQC on GC-JK-904... [  0%] 0 of 20
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (60)
+[cd/b63c4f] process > SUBSAMPLE (Sub-sample on GC... [ 71%] 20 of 28
+[22/3c3597] process > FASTQC (FastQC on GC-JK-904... [  0%] 0 of 20
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (61)
+[cd/b63c4f] process > SUBSAMPLE (Sub-sample on GC... [ 71%] 20 of 28
+[b3/2a2b2e] process > FASTQC (FastQC on GC-JK-904... [  0%] 0 of 20
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (62)
+[cd/b63c4f] process > SUBSAMPLE (Sub-sample on GC... [ 71%] 20 of 28
+[ec/e811b5] process > FASTQC (FastQC on GC-JK-904... [  0%] 0 of 20
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (63)
+[cd/b63c4f] process > SUBSAMPLE (Sub-sample on GC... [ 71%] 20 of 28
+[f8/feef0a] process > FASTQC (FastQC on GC-JK-904... [  0%] 0 of 20
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (64)
+[cd/b63c4f] process > SUBSAMPLE (Sub-sample on GC... [ 71%] 20 of 28
+[b0/a142f2] process > FASTQC (FastQC on GC-JK-904... [  0%] 0 of 20
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (64)
+[30/ed5235] process > SUBSAMPLE (Sub-sample on GC... [ 89%] 25 of 28
+[b0/a142f2] process > FASTQC (FastQC on GC-JK-904... [  0%] 0 of 25
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (65)
+[8a/e4832d] process > SUBSAMPLE (Sub-sample on GC... [ 92%] 26 of 28
+[a1/4ff1b7] process > FASTQC (FastQC on GC-JK-904... [  0%] 0 of 26
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (65)
+[64/6bb4ea] process > SUBSAMPLE (Sub-sample on GC... [ 96%] 27 of 28
+[a1/4ff1b7] process > FASTQC (FastQC on GC-JK-904... [  0%] 0 of 27
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (66)
+[64/6bb4ea] process > SUBSAMPLE (Sub-sample on GC... [ 96%] 27 of 28
+[c0/2948fa] process > FASTQC (FastQC on GC-JK-904... [  0%] 0 of 27
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (67)
+[64/6bb4ea] process > SUBSAMPLE (Sub-sample on GC... [ 96%] 27 of 28
+[65/b753b0] process > FASTQC (FastQC on GC-JK-904... [  0%] 0 of 27
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (68)
+[64/6bb4ea] process > SUBSAMPLE (Sub-sample on GC... [ 96%] 27 of 28
+[3f/a9cf15] process > FASTQC (FastQC on GC-JK-904... [  0%] 0 of 27
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (69)
+[64/6bb4ea] process > SUBSAMPLE (Sub-sample on GC... [ 96%] 27 of 28
+[6e/27aa6d] process > FASTQC (FastQC on GC-JK-904... [  0%] 0 of 27
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (70)
+[64/6bb4ea] process > SUBSAMPLE (Sub-sample on GC... [ 96%] 27 of 28
+[e1/cedc8d] process > FASTQC (FastQC on GC-JK-904... [  0%] 0 of 27
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (71)
+[64/6bb4ea] process > SUBSAMPLE (Sub-sample on GC... [ 96%] 27 of 28
+[bc/37a5f4] process > FASTQC (FastQC on GC-JK-904... [  0%] 0 of 27
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (72)
+[64/6bb4ea] process > SUBSAMPLE (Sub-sample on GC... [ 96%] 27 of 28
+[b1/5c623d] process > FASTQC (FastQC on GC-JK-904... [  0%] 0 of 27
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (73)
+[64/6bb4ea] process > SUBSAMPLE (Sub-sample on GC... [ 96%] 27 of 28
+[56/45332a] process > FASTQC (FastQC on GC-JK-904... [  0%] 0 of 27
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (73)
+[6d/e75812] process > SUBSAMPLE (Sub-sample on Un... [100%] 28 of 28 ✔
+[56/45332a] process > FASTQC (FastQC on GC-JK-904... [  0%] 0 of 28
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (74)
+[6d/e75812] process > SUBSAMPLE (Sub-sample on Un... [100%] 28 of 28 ✔
+[93/97a6e9] process > FASTQC (FastQC on GC-JK-904... [  0%] 0 of 28
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (75)
+[6d/e75812] process > SUBSAMPLE (Sub-sample on Un... [100%] 28 of 28 ✔
+[53/18e6f7] process > FASTQC (FastQC on GC-JK-904... [  0%] 0 of 28
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (76)
+[6d/e75812] process > SUBSAMPLE (Sub-sample on Un... [100%] 28 of 28 ✔
+[40/fd2737] process > FASTQC (FastQC on GC-JK-904... [  0%] 0 of 28
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (77)
+[6d/e75812] process > SUBSAMPLE (Sub-sample on Un... [100%] 28 of 28 ✔
+[cf/4fa19b] process > FASTQC (FastQC on GC-JK-904... [  0%] 0 of 28
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (78)
+[6d/e75812] process > SUBSAMPLE (Sub-sample on Un... [100%] 28 of 28 ✔
+[1f/8eb6e0] process > FASTQC (FastQC on GC-JK-904... [  0%] 0 of 28
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (79)
+[6d/e75812] process > SUBSAMPLE (Sub-sample on Un... [100%] 28 of 28 ✔
+[ef/742123] process > FASTQC (FastQC on GC-JK-904... [  0%] 0 of 28
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (80)
+[6d/e75812] process > SUBSAMPLE (Sub-sample on Un... [100%] 28 of 28 ✔
+[d7/a948d5] process > FASTQC (FastQC on GC-JK-904... [  0%] 0 of 28
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (81)
+[6d/e75812] process > SUBSAMPLE (Sub-sample on Un... [100%] 28 of 28 ✔
+[00/5a0aa2] process > FASTQC (FastQC on GC-JK-904... [  0%] 0 of 28
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (82)
+[6d/e75812] process > SUBSAMPLE (Sub-sample on Un... [100%] 28 of 28 ✔
+[79/113984] process > FASTQC (FastQC on GC-JK-904... [  0%] 0 of 28
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (83)
+[6d/e75812] process > SUBSAMPLE (Sub-sample on Un... [100%] 28 of 28 ✔
+[3a/4c6b8c] process > FASTQC (FastQC on GC-JK-904... [  0%] 0 of 28
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (84)
+[6d/e75812] process > SUBSAMPLE (Sub-sample on Un... [100%] 28 of 28 ✔
+[61/90f63f] process > FASTQC (FastQC on Undetermi... [  0%] 0 of 28
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+executor >  sge (84)
+[6d/e75812] process > SUBSAMPLE (Sub-sample on Un... [100%] 28 of 28 ✔
+[61/90f63f] process > FASTQC (FastQC on Undetermi... [  0%] 0 of 28
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+
+WARN: Killing running tasks (55)
+executor >  sge (84)
+[6d/e75812] process > SUBSAMPLE (Sub-sample on Un... [100%] 28 of 28 ✔
+[61/90f63f] process > FASTQC (FastQC on Undetermi... [  0%] 0 of 28
+[09/744055] process > TRIMMING (Trimming on GC-JK... [  0%] 0 of 28
+ERROR ~ Error executing process > 'FASTQC (FastQC on GC-JK-9047-Osc-1-Ind-1h_S5)'
+
+Caused by:
+  Process `FASTQC (FastQC on GC-JK-9047-Osc-1-Ind-1h_S5)` terminated with an error exit status (1)
+
+Command executed:
+
+  # Load module
+  module load trimgalore/0.6.5
+  
+  # Make output folder
+  if [ ! -e nextflow/1M-fastqc ]; then mkdir -p nextflow/1M-fastqc; fi
+  
+  # FastQC files
+  fastqc --outdir=nextflow/1M-fastqc 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  fastqc --outdir=nextflow/1M-fastqc 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  
+  # Run multiqc on above output
+  # Load gcenv containing multiqc
+  . /data/WHRI-GenomeCentre/gcenv/bin/activate
+  
+  # Run multiqc
+  cd nextflow/1M-fastqc
+  multiqc .
+
+Command exit status:
+  1
+
+Command output:
+  Analysis complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Analysis complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+
+Command error:
+  Loading trimgalore/0.6.5
+    Loading requirement: java/1.8.0_382-openjdk fastqc/0.11.5
+  Started analysis of 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 5% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 10% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 15% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 20% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 25% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 30% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 35% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 40% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 45% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 50% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 55% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 60% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 65% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 70% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 75% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 80% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 85% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 90% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 95% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 100% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Started analysis of 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 5% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 10% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 15% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 20% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 25% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 30% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 35% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 40% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 45% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 50% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 55% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 60% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 65% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 70% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 75% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 80% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 85% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 90% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 95% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 100% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  /data/WHRI-GenomeCentre/gcenv/bin/activate: line 69: PS1: unbound variable
+
+Work dir:
+  /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Analysis/nextflow/work/a4/10cef1c536af7f60edd36ee5c1000f
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+
+ -- Check '.nextflow.log' file for details
+
+executor >  sge (84)
+[6d/e75812] process > SUBSAMPLE (Sub-sample on Un... [100%] 28 of 28 ✔
+[b0/a142f2] process > FASTQC (FastQC on GC-JK-904... [800%] 8 of 1, failed: 8
+[-        ] process > TRIMMING (Trimming on GC-JK... -
+ERROR ~ Error executing process > 'FASTQC (FastQC on GC-JK-9047-Osc-1-Ind-1h_S5)'
+
+Caused by:
+  Process `FASTQC (FastQC on GC-JK-9047-Osc-1-Ind-1h_S5)` terminated with an error exit status (1)
+
+Command executed:
+
+  # Load module
+  module load trimgalore/0.6.5
+  
+  # Make output folder
+  if [ ! -e nextflow/1M-fastqc ]; then mkdir -p nextflow/1M-fastqc; fi
+  
+  # FastQC files
+  fastqc --outdir=nextflow/1M-fastqc 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  fastqc --outdir=nextflow/1M-fastqc 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  
+  # Run multiqc on above output
+  # Load gcenv containing multiqc
+  . /data/WHRI-GenomeCentre/gcenv/bin/activate
+  
+  # Run multiqc
+  cd nextflow/1M-fastqc
+  multiqc .
+
+Command exit status:
+  1
+
+Command output:
+  Analysis complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Analysis complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+
+Command error:
+  Loading trimgalore/0.6.5
+    Loading requirement: java/1.8.0_382-openjdk fastqc/0.11.5
+  Started analysis of 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 5% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 10% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 15% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 20% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 25% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 30% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 35% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 40% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 45% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 50% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 55% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 60% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 65% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 70% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 75% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 80% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 85% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 90% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 95% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Approx 100% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1.fastq
+  Started analysis of 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 5% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 10% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 15% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 20% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 25% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 30% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 35% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 40% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 45% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 50% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 55% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 60% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 65% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 70% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 75% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 80% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 85% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 90% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 95% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  Approx 100% complete for 1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2.fastq
+  /data/WHRI-GenomeCentre/gcenv/bin/activate: line 69: PS1: unbound variable
+
+Work dir:
+  /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Analysis/nextflow/work/a4/10cef1c536af7f60edd36ee5c1000f
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+
+ -- Check '.nextflow.log' file for details
+
