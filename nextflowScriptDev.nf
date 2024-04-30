@@ -84,7 +84,7 @@ process TRIMMING {
     script:
     """
     # Load module
-    module load fastqc
+    module load trimgalore/0.6.5
 
     # Make output folder
     if [ ! -e ${parentFolder}/trimgalore_outs ]; then mkdir -p ${parentFolder}/trimgalore_outs; fi
