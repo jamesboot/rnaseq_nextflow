@@ -38,7 +38,7 @@ process FASTQC {
     path parentFolder
 
     output:
-    path "${parentFolder}/1M_fastqc/${sample_id}_logs"
+    file "${parentFolder}/1M_fastqc/*_fastqc.{zip,html}"
     
     script:
     """
@@ -47,30 +47,9 @@ process FASTQC {
     
     # Create output folders
     if [ ! -e ${parentFolder}/1M_fastqc ]; then mkdir -p ${parentFolder}/1M_fastqc; fi
-    if [ ! -e ${parentFolder}/1M_fastqc/${sample_id}_logs ]; then mkdir -p ${parentFolder}/1M_fastqc/${sample_id}_logs; fi
 
     # FastQC files
-    fastqc -o ${parentFolder}/1M_fastqc/${sample_id}_logs ${read1}
-    fastqc -o ${parentFolder}/1M_fastqc/${sample_id}_logs ${read2}
-    """
-}
-
-/*
- * Perform MultiQC
- */
-process MULTIQC {
-    conda 'multiqc=1.21'
-
-    input:
-    path '*'
-
-    output:
-    path "$params.analysisdir/1M_fastqc/pre_trim_multiqc_report.html"
-
-    script:
-    """
-    # Run multiqc
-    multiqc .
+    fastqc -o ${parentFolder}/1M_fastqc ${read1} ${read2}
     """
 }
 
@@ -116,7 +95,7 @@ process FASTQC_PT {
     path parentFolder
 
     output:
-    path "${parentFolder}/post_trim_fastqc"
+    file "${parentFolder}/post_trim_fastqc/*_fastqc.{zip,html}"
 
     script:
     """
@@ -125,24 +104,23 @@ process FASTQC_PT {
 
     # Create output folders
     if [ ! -e ${parentFolder}/post_trim_fastqc ]; then mkdir -p ${parentFolder}/post_trim_fastqc; fi
-    if [ ! -e ${parentFolder}/post_trim_fastqc/${sample_id}_logs ]; then mkdir -p ${parentFolder}/post_trim_fastqc/${sample_id}_logs; fi
     
     # FastQC files
-    fastqc -o ${parentFolder}/post_trim_fastqc/${sample_id}_logs ${reads}
+    fastqc -o ${parentFolder}/post_trim_fastqc ${reads}
     """
 }
 
 /*
- * Perform MultiQC, post-trimming
+ * Perform MultiQC
  */
-process MULTIQC_PT {
+process MULTIQC {
     conda 'multiqc=1.21'
 
     input:
-    path '*'
+    file '*'
 
     output:
-    path "$params.analysisdir/trimgalore_outs/fastqc/post_trim_multiqc_report.html"
+    path "$params.analysisdir/multiqc_report.html"
 
     script:
     """
@@ -160,8 +138,7 @@ workflow {
         .set { read_pairs_ch }
     SUBSAMPLE(read_pairs_ch, params.analysisdir)
     fastqc_ch = FASTQC(SUBSAMPLE.out.reads, params.analysisdir)
-    MULTIQC(fastqc_ch.collect())
     TRIMMING(read_pairs_ch, params.analysisdir)
     fastqcPT_ch = FASTQC_PT(TRIMMING.out.reads, params.analysisdir)
-    MULTIQC_PT(fastqcPT_ch.collect())
+    MULTIQC(fastqcPT_ch.mix(fastqc_ch).collect())
 }
