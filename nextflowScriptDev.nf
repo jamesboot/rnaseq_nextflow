@@ -140,5 +140,5 @@ workflow {
     fastqc_ch = FASTQC(SUBSAMPLE.out.reads, params.analysisdir)
     TRIMMING(read_pairs_ch, params.analysisdir)
     fastqcPT_ch = FASTQC_PT(TRIMMING.out.reads, params.analysisdir)
-    MULTIQC(fastqcPT_ch.mix(fastqc_ch).collect())
+    MULTIQC(fastqcPT_ch.mix(fastqc_ch).collect().unique())
 }
