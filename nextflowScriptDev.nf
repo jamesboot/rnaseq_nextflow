@@ -117,7 +117,8 @@ process MULTIQC {
     conda 'multiqc=1.21'
 
     input:
-    file '*'
+    path "${parentFolder}/1M_fastqc/*"
+    path "${parentFolder}/post_trim_fastqc/*"
 
     output:
     path "$params.analysisdir/multiqc_report.html"
@@ -140,5 +141,5 @@ workflow {
     fastqc_ch = FASTQC(SUBSAMPLE.out.reads, params.analysisdir)
     TRIMMING(read_pairs_ch, params.analysisdir)
     fastqcPT_ch = FASTQC_PT(TRIMMING.out.reads, params.analysisdir)
-    MULTIQC(fastqcPT_ch.mix(fastqc_ch).collect().unique())
+    MULTIQC(fastqc_ch.collect(), fastqcPT_ch.collect())
 }
