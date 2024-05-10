@@ -1,0 +1,1874 @@
+Loading nextflow/23.10.1
+  Loading requirement: java/17.0.0
+Variable OMP_NUM_THREADS has been set to 2
+N E X T F L O W  ~  version 23.10.1
+WARN: It appears you have never run this project before -- Option `-resume` is ignored
+Launching `nextflowScriptDev.nf` [distracted_dijkstra] DSL2 - revision: 1c6debeec8
+R N A S E Q - N F   P I P E L I N E
+===================================
+reads        : /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Data/201023_NS500784_0721_AHFCJHBGXG/Alignment_1/20201024_095434/Fastq/fastq_lane-merged/*_L001_R{1,2}_001.fastq.gz
+analysisdir  : /data/WHRI-GenomeCentre/shares/Projects_RandD/Reference_Datasets/PolyA/GC-JK-9047_copy/Analysis/nextflow
+
+[-        ] process > SUBSAMPLE -
+[-        ] process > FASTQC    -
+[-        ] process > TRIMMING  -
+[-        ] process > FASTQC_PT -
+[-        ] process > MULTIQC   -
+
+[-        ] process > SUBSAMPLE -
+[-        ] process > FASTQC    -
+[-        ] process > TRIMMING  [  0%] 0 of 1
+[-        ] process > FASTQC_PT -
+[-        ] process > MULTIQC   -
+
+[-        ] process > SUBSAMPLE [  0%] 0 of 28
+[-        ] process > FASTQC    -
+[-        ] process > TRIMMING  [  0%] 0 of 28
+[-        ] process > FASTQC_PT -
+[-        ] process > MULTIQC   -
+
+executor >  sge (1)
+[-        ] process > SUBSAMPLE    [  0%] 0 of 28
+[-        ] process > FASTQC       -
+[2b/6fc40e] process > TRIMMING (1) [  0%] 0 of 28
+[-        ] process > FASTQC_PT    -
+[-        ] process > MULTIQC      -
+
+executor >  sge (2)
+[49/6f9997] process > SUBSAMPLE (1) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[2b/6fc40e] process > TRIMMING (1)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (3)
+[49/6f9997] process > SUBSAMPLE (1) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[3b/34607b] process > TRIMMING (2)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (4)
+[69/21945d] process > SUBSAMPLE (2) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[3b/34607b] process > TRIMMING (2)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (5)
+[80/87b71d] process > SUBSAMPLE (3) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[3b/34607b] process > TRIMMING (2)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (6)
+[6a/929d43] process > SUBSAMPLE (4) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[3b/34607b] process > TRIMMING (2)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (7)
+[6a/929d43] process > SUBSAMPLE (4) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[ae/24146c] process > TRIMMING (3)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (8)
+[6a/929d43] process > SUBSAMPLE (4) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[2b/b9c060] process > TRIMMING (4)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (9)
+[6a/929d43] process > SUBSAMPLE (4) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[1d/c5052e] process > TRIMMING (6)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (10)
+[18/a8fdff] process > SUBSAMPLE (5) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[1d/c5052e] process > TRIMMING (6)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (11)
+[29/41ca2c] process > SUBSAMPLE (6) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[1d/c5052e] process > TRIMMING (6)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (12)
+[29/41ca2c] process > SUBSAMPLE (6) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[2a/c8b6e0] process > TRIMMING (7)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (13)
+[29/41ca2c] process > SUBSAMPLE (6) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[e3/a6c29e] process > TRIMMING (5)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (14)
+[e6/1f4d42] process > SUBSAMPLE (7) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[e3/a6c29e] process > TRIMMING (5)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (15)
+[b6/b66c8e] process > SUBSAMPLE (8) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[e3/a6c29e] process > TRIMMING (5)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (16)
+[b6/b66c8e] process > SUBSAMPLE (8) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[1a/373977] process > TRIMMING (8)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (17)
+[b6/b66c8e] process > SUBSAMPLE (8) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[9d/36a63d] process > TRIMMING (10) [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (18)
+[b6/b66c8e] process > SUBSAMPLE (8) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[6b/b13f7a] process > TRIMMING (11) [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (19)
+[64/0c6850] process > SUBSAMPLE (9) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[6b/b13f7a] process > TRIMMING (11) [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (20)
+[64/0c6850] process > SUBSAMPLE (9) [  0%] 0 of 28
+[-        ] process > FASTQC        -
+[af/954057] process > TRIMMING (9)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (21)
+[9f/899193] process > SUBSAMPLE (10) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[af/954057] process > TRIMMING (9)   [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (22)
+[9f/899193] process > SUBSAMPLE (10) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[14/82cd2f] process > TRIMMING (12)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (23)
+[c4/8b1fc8] process > SUBSAMPLE (12) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[14/82cd2f] process > TRIMMING (12)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (24)
+[c4/8b1fc8] process > SUBSAMPLE (12) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[18/4c03c1] process > TRIMMING (14)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (25)
+[85/2d14a5] process > SUBSAMPLE (13) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[18/4c03c1] process > TRIMMING (14)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (26)
+[b0/435535] process > SUBSAMPLE (11) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[18/4c03c1] process > TRIMMING (14)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (27)
+[81/e6c62e] process > SUBSAMPLE (14) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[18/4c03c1] process > TRIMMING (14)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (28)
+[81/e6c62e] process > SUBSAMPLE (14) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[cc/df7658] process > TRIMMING (13)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (29)
+[fd/4c581b] process > SUBSAMPLE (15) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[cc/df7658] process > TRIMMING (13)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (30)
+[fd/4c581b] process > SUBSAMPLE (15) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[5c/58c9e0] process > TRIMMING (16)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (31)
+[fd/4c581b] process > SUBSAMPLE (15) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[56/df408c] process > TRIMMING (15)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (32)
+[e8/a8b7f0] process > SUBSAMPLE (17) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[56/df408c] process > TRIMMING (15)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (33)
+[51/7c196a] process > SUBSAMPLE (16) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[56/df408c] process > TRIMMING (15)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (34)
+[51/7c196a] process > SUBSAMPLE (16) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[2e/fb16c5] process > TRIMMING (18)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (35)
+[51/7c196a] process > SUBSAMPLE (16) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[35/ead365] process > TRIMMING (17)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (36)
+[7f/9aba3d] process > SUBSAMPLE (18) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[35/ead365] process > TRIMMING (17)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (37)
+[7f/9aba3d] process > SUBSAMPLE (18) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[09/7b985a] process > TRIMMING (20)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (38)
+[7f/9aba3d] process > SUBSAMPLE (18) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[af/603f35] process > TRIMMING (21)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (39)
+[97/ed9b03] process > SUBSAMPLE (19) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[af/603f35] process > TRIMMING (21)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (40)
+[97/ed9b03] process > SUBSAMPLE (19) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[5b/708878] process > TRIMMING (19)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (41)
+[97/ed9b03] process > SUBSAMPLE (19) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[3f/d1dbc4] process > TRIMMING (23)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (42)
+[97/ed9b03] process > SUBSAMPLE (19) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[c0/5003c8] process > TRIMMING (24)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (43)
+[0b/e4abb6] process > SUBSAMPLE (21) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[c0/5003c8] process > TRIMMING (24)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (44)
+[9d/081c11] process > SUBSAMPLE (20) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[c0/5003c8] process > TRIMMING (24)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (45)
+[9d/081c11] process > SUBSAMPLE (20) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[9c/2910a3] process > TRIMMING (22)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (46)
+[9d/081c11] process > SUBSAMPLE (20) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[41/de28b9] process > TRIMMING (25)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (47)
+[f5/73a17c] process > SUBSAMPLE (23) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[41/de28b9] process > TRIMMING (25)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (48)
+[f5/73a17c] process > SUBSAMPLE (23) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[88/b1598c] process > TRIMMING (27)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (49)
+[c5/da59c1] process > SUBSAMPLE (24) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[88/b1598c] process > TRIMMING (27)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (50)
+[c5/da59c1] process > SUBSAMPLE (24) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[a3/902029] process > TRIMMING (26)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (51)
+[92/26b6ce] process > SUBSAMPLE (22) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[a3/902029] process > TRIMMING (26)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (52)
+[92/26b6ce] process > SUBSAMPLE (22) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[9d/e05689] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (53)
+[d2/461ae1] process > SUBSAMPLE (25) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[9d/e05689] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (54)
+[61/a08ffd] process > SUBSAMPLE (26) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[9d/e05689] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (55)
+[5a/59a9c4] process > SUBSAMPLE (27) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[9d/e05689] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (56)
+[bd/1b3287] process > SUBSAMPLE (28) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[9d/e05689] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (56)
+[bd/1b3287] process > SUBSAMPLE (28) [  0%] 0 of 28
+[-        ] process > FASTQC         -
+[9d/e05689] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (56)
+[49/6f9997] process > SUBSAMPLE (1)  [  3%] 1 of 28
+[-        ] process > FASTQC         [  0%] 0 of 1
+[9d/e05689] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (57)
+[49/6f9997] process > SUBSAMPLE (1)  [  3%] 1 of 28
+[4e/c0157b] process > FASTQC (1)     [  0%] 0 of 1
+[9d/e05689] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (57)
+[49/6f9997] process > SUBSAMPLE (1)  [  3%] 1 of 28
+[4e/c0157b] process > FASTQC (1)     [  0%] 0 of 1
+[9d/e05689] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (57)
+[69/21945d] process > SUBSAMPLE (2) [  7%] 2 of 28
+[4e/c0157b] process > FASTQC (1)    [  0%] 0 of 2
+[9d/e05689] process > TRIMMING (28) [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (58)
+[69/21945d] process > SUBSAMPLE (2) [  7%] 2 of 28
+[ba/55cea2] process > FASTQC (2)    [  0%] 0 of 2
+[9d/e05689] process > TRIMMING (28) [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (58)
+[69/21945d] process > SUBSAMPLE (2) [  7%] 2 of 28
+[ba/55cea2] process > FASTQC (2)    [  0%] 0 of 2
+[9d/e05689] process > TRIMMING (28) [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (58)
+[6a/929d43] process > SUBSAMPLE (4) [ 14%] 4 of 28
+[ba/55cea2] process > FASTQC (2)    [  0%] 0 of 4
+[9d/e05689] process > TRIMMING (28) [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (59)
+[6a/929d43] process > SUBSAMPLE (4) [ 14%] 4 of 28
+[be/efec71] process > FASTQC (3)    [  0%] 0 of 4
+[9d/e05689] process > TRIMMING (28) [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (60)
+[6a/929d43] process > SUBSAMPLE (4) [ 14%] 4 of 28
+[4f/19de90] process > FASTQC (4)    [  0%] 0 of 4
+[9d/e05689] process > TRIMMING (28) [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (60)
+[6a/929d43] process > SUBSAMPLE (4) [ 14%] 4 of 28
+[4f/19de90] process > FASTQC (4)    [  0%] 0 of 4
+[9d/e05689] process > TRIMMING (28) [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (60)
+[6a/929d43] process > SUBSAMPLE (4) [ 14%] 4 of 28
+[4f/19de90] process > FASTQC (4)    [  0%] 0 of 4
+[9d/e05689] process > TRIMMING (28) [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (60)
+[6a/929d43] process > SUBSAMPLE (4) [ 14%] 4 of 28
+[4f/19de90] process > FASTQC (4)    [  0%] 0 of 4
+[9d/e05689] process > TRIMMING (28) [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (60)
+[18/a8fdff] process > SUBSAMPLE (5) [ 17%] 5 of 28
+[4f/19de90] process > FASTQC (4)    [  0%] 0 of 5
+[9d/e05689] process > TRIMMING (28) [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (61)
+[18/a8fdff] process > SUBSAMPLE (5) [ 17%] 5 of 28
+[80/4f919f] process > FASTQC (5)    [  0%] 0 of 5
+[9d/e05689] process > TRIMMING (28) [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (61)
+[18/a8fdff] process > SUBSAMPLE (5) [ 17%] 5 of 28
+[80/4f919f] process > FASTQC (5)    [  0%] 0 of 5
+[9d/e05689] process > TRIMMING (28) [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (61)
+[29/41ca2c] process > SUBSAMPLE (6) [ 21%] 6 of 28
+[80/4f919f] process > FASTQC (5)    [  0%] 0 of 6
+[9d/e05689] process > TRIMMING (28) [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (62)
+[29/41ca2c] process > SUBSAMPLE (6) [ 21%] 6 of 28
+[fc/c66f1f] process > FASTQC (6)    [  0%] 0 of 6
+[9d/e05689] process > TRIMMING (28) [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (62)
+[29/41ca2c] process > SUBSAMPLE (6) [ 21%] 6 of 28
+[fc/c66f1f] process > FASTQC (6)    [  0%] 0 of 6
+[9d/e05689] process > TRIMMING (28) [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (62)
+[29/41ca2c] process > SUBSAMPLE (6) [ 21%] 6 of 28
+[fc/c66f1f] process > FASTQC (6)    [  0%] 0 of 6
+[9d/e05689] process > TRIMMING (28) [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (62)
+[e6/1f4d42] process > SUBSAMPLE (7) [ 25%] 7 of 28
+[fc/c66f1f] process > FASTQC (6)    [  0%] 0 of 7
+[9d/e05689] process > TRIMMING (28) [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (63)
+[e6/1f4d42] process > SUBSAMPLE (7) [ 25%] 7 of 28
+[a3/778c55] process > FASTQC (7)    [  0%] 0 of 7
+[9d/e05689] process > TRIMMING (28) [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (63)
+[e6/1f4d42] process > SUBSAMPLE (7) [ 25%] 7 of 28
+[a3/778c55] process > FASTQC (7)    [  0%] 0 of 7
+[9d/e05689] process > TRIMMING (28) [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (63)
+[b6/b66c8e] process > SUBSAMPLE (8) [ 28%] 8 of 28
+[a3/778c55] process > FASTQC (7)    [  0%] 0 of 8
+[9d/e05689] process > TRIMMING (28) [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (64)
+[b6/b66c8e] process > SUBSAMPLE (8) [ 28%] 8 of 28
+[c4/9796de] process > FASTQC (8)    [  0%] 0 of 8
+[9d/e05689] process > TRIMMING (28) [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (64)
+[b6/b66c8e] process > SUBSAMPLE (8) [ 28%] 8 of 28
+[c4/9796de] process > FASTQC (8)    [  0%] 0 of 8
+[9d/e05689] process > TRIMMING (28) [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (64)
+[b6/b66c8e] process > SUBSAMPLE (8) [ 28%] 8 of 28
+[c4/9796de] process > FASTQC (8)    [  0%] 0 of 8
+[9d/e05689] process > TRIMMING (28) [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (64)
+[64/0c6850] process > SUBSAMPLE (9) [ 32%] 9 of 28
+[c4/9796de] process > FASTQC (8)    [  0%] 0 of 9
+[9d/e05689] process > TRIMMING (28) [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (65)
+[64/0c6850] process > SUBSAMPLE (9) [ 32%] 9 of 28
+[df/f3e610] process > FASTQC (9)    [  0%] 0 of 9
+[9d/e05689] process > TRIMMING (28) [  0%] 0 of 28
+[-        ] process > FASTQC_PT     -
+[-        ] process > MULTIQC       -
+
+executor >  sge (65)
+[9f/899193] process > SUBSAMPLE (10) [ 35%] 10 of 28
+[df/f3e610] process > FASTQC (9)     [  0%] 0 of 10
+[9d/e05689] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (66)
+[9f/899193] process > SUBSAMPLE (10) [ 35%] 10 of 28
+[16/44cd44] process > FASTQC (10)    [  0%] 0 of 10
+[9d/e05689] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (66)
+[c4/8b1fc8] process > SUBSAMPLE (12) [ 39%] 11 of 28
+[16/44cd44] process > FASTQC (10)    [  0%] 0 of 11
+[9d/e05689] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (67)
+[c4/8b1fc8] process > SUBSAMPLE (12) [ 39%] 11 of 28
+[a3/64219d] process > FASTQC (11)    [  0%] 0 of 11
+[9d/e05689] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (67)
+[c4/8b1fc8] process > SUBSAMPLE (12) [ 39%] 11 of 28
+[a3/64219d] process > FASTQC (11)    [  0%] 0 of 11
+[9d/e05689] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (67)
+[c4/8b1fc8] process > SUBSAMPLE (12) [ 39%] 11 of 28
+[a3/64219d] process > FASTQC (11)    [  0%] 0 of 11
+[9d/e05689] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (67)
+[85/2d14a5] process > SUBSAMPLE (13) [ 42%] 12 of 28
+[a3/64219d] process > FASTQC (11)    [  0%] 0 of 12
+[9d/e05689] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (67)
+[b0/435535] process > SUBSAMPLE (11) [ 46%] 13 of 28
+[a3/64219d] process > FASTQC (11)    [  0%] 0 of 13
+[9d/e05689] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (68)
+[b0/435535] process > SUBSAMPLE (11) [ 46%] 13 of 28
+[59/9d3933] process > FASTQC (12)    [  0%] 0 of 13
+[9d/e05689] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (69)
+[b0/435535] process > SUBSAMPLE (11) [ 46%] 13 of 28
+[6b/4f4605] process > FASTQC (13)    [  0%] 0 of 13
+[9d/e05689] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (69)
+[81/e6c62e] process > SUBSAMPLE (14) [ 50%] 14 of 28
+[6b/4f4605] process > FASTQC (13)    [  0%] 0 of 14
+[9d/e05689] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (70)
+[81/e6c62e] process > SUBSAMPLE (14) [ 50%] 14 of 28
+[c3/232d23] process > FASTQC (14)    [  0%] 0 of 14
+[9d/e05689] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (70)
+[fd/4c581b] process > SUBSAMPLE (15) [ 53%] 15 of 28
+[c3/232d23] process > FASTQC (14)    [  0%] 0 of 15
+[9d/e05689] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (70)
+[e8/a8b7f0] process > SUBSAMPLE (17) [ 57%] 16 of 28
+[c3/232d23] process > FASTQC (14)    [  0%] 0 of 16
+[9d/e05689] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (71)
+[e8/a8b7f0] process > SUBSAMPLE (17) [ 57%] 16 of 28
+[26/e11557] process > FASTQC (15)    [  0%] 0 of 16
+[9d/e05689] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (72)
+[e8/a8b7f0] process > SUBSAMPLE (17) [ 57%] 16 of 28
+[21/462942] process > FASTQC (16)    [  0%] 0 of 16
+[9d/e05689] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (72)
+[51/7c196a] process > SUBSAMPLE (16) [ 60%] 17 of 28
+[21/462942] process > FASTQC (16)    [  0%] 0 of 17
+[9d/e05689] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (73)
+[51/7c196a] process > SUBSAMPLE (16) [ 60%] 17 of 28
+[a0/63b4e3] process > FASTQC (17)    [  0%] 0 of 17
+[9d/e05689] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (73)
+[51/7c196a] process > SUBSAMPLE (16) [ 60%] 17 of 28
+[a0/63b4e3] process > FASTQC (17)    [  0%] 0 of 17
+[9d/e05689] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (73)
+[7f/9aba3d] process > SUBSAMPLE (18) [ 64%] 18 of 28
+[a0/63b4e3] process > FASTQC (17)    [  0%] 0 of 18
+[9d/e05689] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (74)
+[7f/9aba3d] process > SUBSAMPLE (18) [ 64%] 18 of 28
+[e1/ebd511] process > FASTQC (18)    [  0%] 0 of 18
+[9d/e05689] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (74)
+[7f/9aba3d] process > SUBSAMPLE (18) [ 64%] 18 of 28
+[e1/ebd511] process > FASTQC (18)    [  0%] 0 of 18
+[9d/e05689] process > TRIMMING (28)  [  0%] 0 of 28
+[-        ] process > FASTQC_PT      -
+[-        ] process > MULTIQC        -
+
+executor >  sge (74)
+[7f/9aba3d] process > SUBSAMPLE (18) [ 64%] 18 of 28
+[e1/ebd511] process > FASTQC (18)    [  0%] 0 of 18
+[af/954057] process > TRIMMING (9)   [  3%] 1 of 28
+[-        ] process > FASTQC_PT      [  0%] 0 of 1
+[-        ] process > MULTIQC        -
+
+executor >  sge (75)
+[7f/9aba3d] process > SUBSAMPLE (18) [ 64%] 18 of 28
+[e1/ebd511] process > FASTQC (18)    [  0%] 0 of 18
+[af/954057] process > TRIMMING (9)   [  3%] 1 of 28
+[b3/d9198a] process > FASTQC_PT (1)  [  0%] 0 of 1
+[-        ] process > MULTIQC        -
+
+executor >  sge (75)
+[7f/9aba3d] process > SUBSAMPLE (18) [ 64%] 18 of 28
+[e1/ebd511] process > FASTQC (18)    [  0%] 0 of 18
+[af/954057] process > TRIMMING (9)   [  3%] 1 of 28
+[b3/d9198a] process > FASTQC_PT (1)  [  0%] 0 of 1
+[-        ] process > MULTIQC        -
+
+executor >  sge (75)
+[97/ed9b03] process > SUBSAMPLE (19) [ 67%] 19 of 28
+[e1/ebd511] process > FASTQC (18)    [  0%] 0 of 19
+[af/954057] process > TRIMMING (9)   [  3%] 1 of 28
+[b3/d9198a] process > FASTQC_PT (1)  [  0%] 0 of 1
+[-        ] process > MULTIQC        -
+
+executor >  sge (76)
+[97/ed9b03] process > SUBSAMPLE (19) [ 67%] 19 of 28
+[45/7a80b2] process > FASTQC (19)    [  0%] 0 of 19
+[af/954057] process > TRIMMING (9)   [  3%] 1 of 28
+[b3/d9198a] process > FASTQC_PT (1)  [  0%] 0 of 1
+[-        ] process > MULTIQC        -
+
+executor >  sge (76)
+[97/ed9b03] process > SUBSAMPLE (19) [ 67%] 19 of 28
+[45/7a80b2] process > FASTQC (19)    [  0%] 0 of 19
+[af/954057] process > TRIMMING (9)   [  3%] 1 of 28
+[b3/d9198a] process > FASTQC_PT (1)  [  0%] 0 of 1
+[-        ] process > MULTIQC        -
+
+executor >  sge (76)
+[97/ed9b03] process > SUBSAMPLE (19) [ 67%] 19 of 28
+[45/7a80b2] process > FASTQC (19)    [  0%] 0 of 19
+[56/df408c] process > TRIMMING (15)  [  7%] 2 of 28
+[b3/d9198a] process > FASTQC_PT (1)  [  0%] 0 of 2
+[-        ] process > MULTIQC        -
+
+executor >  sge (77)
+[97/ed9b03] process > SUBSAMPLE (19) [ 67%] 19 of 28
+[45/7a80b2] process > FASTQC (19)    [  0%] 0 of 19
+[56/df408c] process > TRIMMING (15)  [  7%] 2 of 28
+[2e/3e5a91] process > FASTQC_PT (2)  [  0%] 0 of 2
+[-        ] process > MULTIQC        -
+
+executor >  sge (77)
+[97/ed9b03] process > SUBSAMPLE (19) [ 67%] 19 of 28
+[45/7a80b2] process > FASTQC (19)    [  0%] 0 of 19
+[56/df408c] process > TRIMMING (15)  [  7%] 2 of 28
+[2e/3e5a91] process > FASTQC_PT (2)  [  0%] 0 of 2
+[-        ] process > MULTIQC        -
+
+executor >  sge (77)
+[97/ed9b03] process > SUBSAMPLE (19) [ 67%] 19 of 28
+[45/7a80b2] process > FASTQC (19)    [  0%] 0 of 19
+[56/df408c] process > TRIMMING (15)  [  7%] 2 of 28
+[2e/3e5a91] process > FASTQC_PT (2)  [  0%] 0 of 2
+[-        ] process > MULTIQC        -
+
+executor >  sge (77)
+[97/ed9b03] process > SUBSAMPLE (19) [ 67%] 19 of 28
+[45/7a80b2] process > FASTQC (19)    [  0%] 0 of 19
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[2e/3e5a91] process > FASTQC_PT (2)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (78)
+[97/ed9b03] process > SUBSAMPLE (19) [ 67%] 19 of 28
+[45/7a80b2] process > FASTQC (19)    [  0%] 0 of 19
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (78)
+[0b/e4abb6] process > SUBSAMPLE (21) [ 71%] 20 of 28
+[45/7a80b2] process > FASTQC (19)    [  0%] 0 of 20
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (79)
+[0b/e4abb6] process > SUBSAMPLE (21) [ 71%] 20 of 28
+[72/29c447] process > FASTQC (20)    [  0%] 0 of 20
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (79)
+[9d/081c11] process > SUBSAMPLE (20) [ 75%] 21 of 28
+[72/29c447] process > FASTQC (20)    [  0%] 0 of 21
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (80)
+[9d/081c11] process > SUBSAMPLE (20) [ 75%] 21 of 28
+[2e/bbf3db] process > FASTQC (21)    [  0%] 0 of 21
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (80)
+[9d/081c11] process > SUBSAMPLE (20) [ 75%] 21 of 28
+[2e/bbf3db] process > FASTQC (21)    [  0%] 0 of 21
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (80)
+[9d/081c11] process > SUBSAMPLE (20) [ 75%] 21 of 28
+[2e/bbf3db] process > FASTQC (21)    [  0%] 0 of 21
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (80)
+[9d/081c11] process > SUBSAMPLE (20) [ 75%] 21 of 28
+[2e/bbf3db] process > FASTQC (21)    [  0%] 0 of 21
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (80)
+[c5/da59c1] process > SUBSAMPLE (24) [ 82%] 23 of 28
+[2e/bbf3db] process > FASTQC (21)    [  0%] 0 of 23
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (80)
+[92/26b6ce] process > SUBSAMPLE (22) [ 85%] 24 of 28
+[2e/bbf3db] process > FASTQC (21)    [  0%] 0 of 24
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (81)
+[d2/461ae1] process > SUBSAMPLE (25) [ 89%] 25 of 28
+[0d/bcb494] process > FASTQC (22)    [  0%] 0 of 25
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (81)
+[61/a08ffd] process > SUBSAMPLE (26) [ 92%] 26 of 28
+[0d/bcb494] process > FASTQC (22)    [  0%] 0 of 26
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (81)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[0d/bcb494] process > FASTQC (22)    [  0%] 0 of 28
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (82)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[d3/64cc8a] process > FASTQC (23)    [  0%] 0 of 28
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (84)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[cf/535735] process > FASTQC (25)    [  0%] 0 of 28
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (85)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[8a/b63868] process > FASTQC (26)    [  0%] 0 of 28
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (86)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[ab/35e414] process > FASTQC (27)    [  0%] 0 of 28
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (87)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [  0%] 0 of 28
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (87)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [  0%] 0 of 28
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (87)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[4e/c0157b] process > FASTQC (1)     [  3%] 1 of 28
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (87)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[ba/55cea2] process > FASTQC (2)     [  7%] 2 of 28
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (87)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[be/efec71] process > FASTQC (3)     [ 10%] 3 of 28
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (87)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[4f/19de90] process > FASTQC (4)     [ 14%] 4 of 28
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (87)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[a3/778c55] process > FASTQC (7)     [ 25%] 7 of 28
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (87)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[c4/9796de] process > FASTQC (8)     [ 28%] 8 of 28
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (87)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[df/f3e610] process > FASTQC (9)     [ 32%] 9 of 28
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (87)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[a3/64219d] process > FASTQC (11)    [ 39%] 11 of 28
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (87)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[6b/4f4605] process > FASTQC (13)    [ 46%] 13 of 28
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (87)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[21/462942] process > FASTQC (16)    [ 57%] 16 of 28
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (87)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[a0/63b4e3] process > FASTQC (17)    [ 60%] 17 of 28
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (87)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[e1/ebd511] process > FASTQC (18)    [ 64%] 18 of 28
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (87)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[45/7a80b2] process > FASTQC (19)    [ 67%] 19 of 28
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (87)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[2e/bbf3db] process > FASTQC (21)    [ 75%] 21 of 28
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (87)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[2e/bbf3db] process > FASTQC (21)    [ 75%] 21 of 28
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (87)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[d3/64cc8a] process > FASTQC (23)    [ 82%] 23 of 28
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (87)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[cf/535735] process > FASTQC (25)    [ 89%] 25 of 28
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (87)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [  0%] 0 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (87)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[2e/3e5a91] process > FASTQC_PT (2)  [ 33%] 1 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (87)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[b3/d9198a] process > FASTQC_PT (1)  [ 66%] 2 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (87)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[5b/708878] process > TRIMMING (19)  [ 10%] 3 of 28
+[32/bd275b] process > FASTQC_PT (3)  [100%] 3 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (87)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[2b/6fc40e] process > TRIMMING (1)   [ 14%] 4 of 28
+[32/bd275b] process > FASTQC_PT (3)  [100%] 3 of 3
+[-        ] process > MULTIQC        -
+
+executor >  sge (87)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[2b/6fc40e] process > TRIMMING (1)   [ 14%] 4 of 28
+[32/bd275b] process > FASTQC_PT (3)  [ 75%] 3 of 4
+[-        ] process > MULTIQC        -
+
+executor >  sge (88)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[2b/6fc40e] process > TRIMMING (1)   [ 14%] 4 of 28
+[d4/6f0a82] process > FASTQC_PT (4)  [ 75%] 3 of 4
+[-        ] process > MULTIQC        -
+
+executor >  sge (88)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[2b/6fc40e] process > TRIMMING (1)   [ 14%] 4 of 28
+[d4/6f0a82] process > FASTQC_PT (4)  [ 75%] 3 of 4
+[-        ] process > MULTIQC        -
+
+executor >  sge (88)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[2b/b9c060] process > TRIMMING (4)   [ 17%] 5 of 28
+[d4/6f0a82] process > FASTQC_PT (4)  [ 60%] 3 of 5
+[-        ] process > MULTIQC        -
+
+executor >  sge (88)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[1d/c5052e] process > TRIMMING (6)   [ 21%] 6 of 28
+[d4/6f0a82] process > FASTQC_PT (4)  [ 60%] 3 of 5
+[-        ] process > MULTIQC        -
+
+executor >  sge (88)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[1d/c5052e] process > TRIMMING (6)   [ 21%] 6 of 28
+[d4/6f0a82] process > FASTQC_PT (4)  [ 50%] 3 of 6
+[-        ] process > MULTIQC        -
+
+executor >  sge (89)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[1d/c5052e] process > TRIMMING (6)   [ 21%] 6 of 28
+[c8/03f70b] process > FASTQC_PT (5)  [ 50%] 3 of 6
+[-        ] process > MULTIQC        -
+
+executor >  sge (90)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[1d/c5052e] process > TRIMMING (6)   [ 21%] 6 of 28
+[1d/ac4723] process > FASTQC_PT (6)  [ 50%] 3 of 6
+[-        ] process > MULTIQC        -
+
+executor >  sge (90)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[1d/c5052e] process > TRIMMING (6)   [ 21%] 6 of 28
+[1d/ac4723] process > FASTQC_PT (6)  [ 50%] 3 of 6
+[-        ] process > MULTIQC        -
+
+executor >  sge (90)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[1d/c5052e] process > TRIMMING (6)   [ 21%] 6 of 28
+[1d/ac4723] process > FASTQC_PT (6)  [ 50%] 3 of 6
+[-        ] process > MULTIQC        -
+
+executor >  sge (90)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[1a/373977] process > TRIMMING (8)   [ 25%] 7 of 28
+[1d/ac4723] process > FASTQC_PT (6)  [ 42%] 3 of 7
+[-        ] process > MULTIQC        -
+
+executor >  sge (91)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[1a/373977] process > TRIMMING (8)   [ 25%] 7 of 28
+[08/50e7ec] process > FASTQC_PT (7)  [ 42%] 3 of 7
+[-        ] process > MULTIQC        -
+
+executor >  sge (91)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[1a/373977] process > TRIMMING (8)   [ 25%] 7 of 28
+[08/50e7ec] process > FASTQC_PT (7)  [ 42%] 3 of 7
+[-        ] process > MULTIQC        -
+
+executor >  sge (91)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[2e/fb16c5] process > TRIMMING (18)  [ 28%] 8 of 28
+[08/50e7ec] process > FASTQC_PT (7)  [ 42%] 3 of 7
+[-        ] process > MULTIQC        -
+
+executor >  sge (91)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[2e/fb16c5] process > TRIMMING (18)  [ 28%] 8 of 28
+[08/50e7ec] process > FASTQC_PT (7)  [ 37%] 3 of 8
+[-        ] process > MULTIQC        -
+
+executor >  sge (92)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[2e/fb16c5] process > TRIMMING (18)  [ 28%] 8 of 28
+[e1/b7691f] process > FASTQC_PT (8)  [ 37%] 3 of 8
+[-        ] process > MULTIQC        -
+
+executor >  sge (92)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[2e/fb16c5] process > TRIMMING (18)  [ 28%] 8 of 28
+[e1/b7691f] process > FASTQC_PT (8)  [ 37%] 3 of 8
+[-        ] process > MULTIQC        -
+
+executor >  sge (92)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[14/82cd2f] process > TRIMMING (12)  [ 32%] 9 of 28
+[e1/b7691f] process > FASTQC_PT (8)  [ 37%] 3 of 8
+[-        ] process > MULTIQC        -
+
+executor >  sge (92)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[14/82cd2f] process > TRIMMING (12)  [ 32%] 9 of 28
+[e1/b7691f] process > FASTQC_PT (8)  [ 33%] 3 of 9
+[-        ] process > MULTIQC        -
+
+executor >  sge (93)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[14/82cd2f] process > TRIMMING (12)  [ 32%] 9 of 28
+[0a/460413] process > FASTQC_PT (9)  [ 33%] 3 of 9
+[-        ] process > MULTIQC        -
+
+executor >  sge (93)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[14/82cd2f] process > TRIMMING (12)  [ 32%] 9 of 28
+[0a/460413] process > FASTQC_PT (9)  [ 33%] 3 of 9
+[-        ] process > MULTIQC        -
+
+executor >  sge (93)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[35/ead365] process > TRIMMING (17)  [ 35%] 10 of 28
+[0a/460413] process > FASTQC_PT (9)  [ 33%] 3 of 9
+[-        ] process > MULTIQC        -
+
+executor >  sge (93)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[35/ead365] process > TRIMMING (17)  [ 35%] 10 of 28
+[0a/460413] process > FASTQC_PT (9)  [ 30%] 3 of 10
+[-        ] process > MULTIQC        -
+
+executor >  sge (94)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[35/ead365] process > TRIMMING (17)  [ 35%] 10 of 28
+[13/f01f4f] process > FASTQC_PT (10) [ 30%] 3 of 10
+[-        ] process > MULTIQC        -
+
+executor >  sge (94)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[35/ead365] process > TRIMMING (17)  [ 35%] 10 of 28
+[13/f01f4f] process > FASTQC_PT (10) [ 30%] 3 of 10
+[-        ] process > MULTIQC        -
+
+executor >  sge (94)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9d/36a63d] process > TRIMMING (10)  [ 39%] 11 of 28
+[13/f01f4f] process > FASTQC_PT (10) [ 30%] 3 of 10
+[-        ] process > MULTIQC        -
+
+executor >  sge (94)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9d/36a63d] process > TRIMMING (10)  [ 39%] 11 of 28
+[13/f01f4f] process > FASTQC_PT (10) [ 27%] 3 of 11
+[-        ] process > MULTIQC        -
+
+executor >  sge (95)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9d/36a63d] process > TRIMMING (10)  [ 39%] 11 of 28
+[7c/c1a319] process > FASTQC_PT (11) [ 27%] 3 of 11
+[-        ] process > MULTIQC        -
+
+executor >  sge (95)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9d/36a63d] process > TRIMMING (10)  [ 39%] 11 of 28
+[7c/c1a319] process > FASTQC_PT (11) [ 27%] 3 of 11
+[-        ] process > MULTIQC        -
+
+executor >  sge (95)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[6b/b13f7a] process > TRIMMING (11)  [ 42%] 12 of 28
+[7c/c1a319] process > FASTQC_PT (11) [ 25%] 3 of 12
+[-        ] process > MULTIQC        -
+
+executor >  sge (96)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[6b/b13f7a] process > TRIMMING (11)  [ 42%] 12 of 28
+[c3/3898f5] process > FASTQC_PT (12) [ 25%] 3 of 12
+[-        ] process > MULTIQC        -
+
+executor >  sge (96)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[e3/a6c29e] process > TRIMMING (5)   [ 46%] 13 of 28
+[c3/3898f5] process > FASTQC_PT (12) [ 23%] 3 of 13
+[-        ] process > MULTIQC        -
+
+executor >  sge (97)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[e3/a6c29e] process > TRIMMING (5)   [ 46%] 13 of 28
+[6d/4f1b5e] process > FASTQC_PT (13) [ 23%] 3 of 13
+[-        ] process > MULTIQC        -
+
+executor >  sge (97)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[e3/a6c29e] process > TRIMMING (5)   [ 46%] 13 of 28
+[6d/4f1b5e] process > FASTQC_PT (13) [ 23%] 3 of 13
+[-        ] process > MULTIQC        -
+
+executor >  sge (97)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[2a/c8b6e0] process > TRIMMING (7)   [ 50%] 14 of 28
+[6d/4f1b5e] process > FASTQC_PT (13) [ 21%] 3 of 14
+[-        ] process > MULTIQC        -
+
+executor >  sge (98)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[2a/c8b6e0] process > TRIMMING (7)   [ 50%] 14 of 28
+[64/731afe] process > FASTQC_PT (14) [ 21%] 3 of 14
+[-        ] process > MULTIQC        -
+
+executor >  sge (98)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[5c/58c9e0] process > TRIMMING (16)  [ 53%] 15 of 28
+[64/731afe] process > FASTQC_PT (14) [ 20%] 3 of 15
+[-        ] process > MULTIQC        -
+
+executor >  sge (99)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[5c/58c9e0] process > TRIMMING (16)  [ 53%] 15 of 28
+[e5/bda7fa] process > FASTQC_PT (15) [ 20%] 3 of 15
+[-        ] process > MULTIQC        -
+
+executor >  sge (99)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[18/4c03c1] process > TRIMMING (14)  [ 57%] 16 of 28
+[e5/bda7fa] process > FASTQC_PT (15) [ 20%] 3 of 15
+[-        ] process > MULTIQC        -
+
+executor >  sge (99)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[18/4c03c1] process > TRIMMING (14)  [ 57%] 16 of 28
+[e5/bda7fa] process > FASTQC_PT (15) [ 18%] 3 of 16
+[-        ] process > MULTIQC        -
+
+executor >  sge (100)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[18/4c03c1] process > TRIMMING (14)  [ 57%] 16 of 28
+[dc/05ff81] process > FASTQC_PT (16) [ 18%] 3 of 16
+[-        ] process > MULTIQC        -
+
+executor >  sge (100)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[3b/34607b] process > TRIMMING (2)   [ 60%] 17 of 28
+[dc/05ff81] process > FASTQC_PT (16) [ 17%] 3 of 17
+[-        ] process > MULTIQC        -
+
+executor >  sge (100)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[3f/d1dbc4] process > TRIMMING (23)  [ 64%] 18 of 28
+[dc/05ff81] process > FASTQC_PT (16) [ 16%] 3 of 18
+[-        ] process > MULTIQC        -
+
+executor >  sge (101)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[3f/d1dbc4] process > TRIMMING (23)  [ 64%] 18 of 28
+[8f/193121] process > FASTQC_PT (17) [ 16%] 3 of 18
+[-        ] process > MULTIQC        -
+
+executor >  sge (102)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[3f/d1dbc4] process > TRIMMING (23)  [ 64%] 18 of 28
+[ca/7bcd32] process > FASTQC_PT (18) [ 16%] 3 of 18
+[-        ] process > MULTIQC        -
+
+executor >  sge (102)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[c0/5003c8] process > TRIMMING (24)  [ 67%] 19 of 28
+[ca/7bcd32] process > FASTQC_PT (18) [ 16%] 3 of 18
+[-        ] process > MULTIQC        -
+
+executor >  sge (102)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[c0/5003c8] process > TRIMMING (24)  [ 67%] 19 of 28
+[ca/7bcd32] process > FASTQC_PT (18) [ 15%] 3 of 19
+[-        ] process > MULTIQC        -
+
+executor >  sge (103)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[c0/5003c8] process > TRIMMING (24)  [ 67%] 19 of 28
+[4e/cf3e2b] process > FASTQC_PT (19) [ 15%] 3 of 19
+[-        ] process > MULTIQC        -
+
+executor >  sge (103)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[c0/5003c8] process > TRIMMING (24)  [ 67%] 19 of 28
+[4e/cf3e2b] process > FASTQC_PT (19) [ 15%] 3 of 19
+[-        ] process > MULTIQC        -
+
+executor >  sge (103)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[c0/5003c8] process > TRIMMING (24)  [ 67%] 19 of 28
+[4e/cf3e2b] process > FASTQC_PT (19) [ 15%] 3 of 19
+[-        ] process > MULTIQC        -
+
+executor >  sge (103)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[a3/902029] process > TRIMMING (26)  [ 71%] 20 of 28
+[4e/cf3e2b] process > FASTQC_PT (19) [ 15%] 3 of 19
+[-        ] process > MULTIQC        -
+
+executor >  sge (103)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[a3/902029] process > TRIMMING (26)  [ 71%] 20 of 28
+[4e/cf3e2b] process > FASTQC_PT (19) [ 15%] 3 of 20
+[-        ] process > MULTIQC        -
+
+executor >  sge (104)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[a3/902029] process > TRIMMING (26)  [ 71%] 20 of 28
+[51/c55ade] process > FASTQC_PT (20) [ 15%] 3 of 20
+[-        ] process > MULTIQC        -
+
+executor >  sge (104)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[af/603f35] process > TRIMMING (21)  [ 75%] 21 of 28
+[51/c55ade] process > FASTQC_PT (20) [ 14%] 3 of 21
+[-        ] process > MULTIQC        -
+
+executor >  sge (105)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[af/603f35] process > TRIMMING (21)  [ 75%] 21 of 28
+[0d/3af23a] process > FASTQC_PT (21) [ 14%] 3 of 21
+[-        ] process > MULTIQC        -
+
+executor >  sge (105)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[af/603f35] process > TRIMMING (21)  [ 75%] 21 of 28
+[0d/3af23a] process > FASTQC_PT (21) [ 14%] 3 of 21
+[-        ] process > MULTIQC        -
+
+executor >  sge (105)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[af/603f35] process > TRIMMING (21)  [ 75%] 21 of 28
+[0d/3af23a] process > FASTQC_PT (21) [ 14%] 3 of 21
+[-        ] process > MULTIQC        -
+
+executor >  sge (105)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[88/b1598c] process > TRIMMING (27)  [ 78%] 22 of 28
+[0d/3af23a] process > FASTQC_PT (21) [ 13%] 3 of 22
+[-        ] process > MULTIQC        -
+
+executor >  sge (106)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[88/b1598c] process > TRIMMING (27)  [ 78%] 22 of 28
+[68/09a495] process > FASTQC_PT (22) [ 13%] 3 of 22
+[-        ] process > MULTIQC        -
+
+executor >  sge (106)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[41/de28b9] process > TRIMMING (25)  [ 82%] 23 of 28
+[68/09a495] process > FASTQC_PT (22) [ 13%] 3 of 23
+[-        ] process > MULTIQC        -
+
+executor >  sge (107)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[41/de28b9] process > TRIMMING (25)  [ 82%] 23 of 28
+[85/e1888f] process > FASTQC_PT (23) [ 13%] 3 of 23
+[-        ] process > MULTIQC        -
+
+executor >  sge (107)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[ae/24146c] process > TRIMMING (3)   [ 85%] 24 of 28
+[85/e1888f] process > FASTQC_PT (23) [ 13%] 3 of 23
+[-        ] process > MULTIQC        -
+
+executor >  sge (107)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[ae/24146c] process > TRIMMING (3)   [ 85%] 24 of 28
+[85/e1888f] process > FASTQC_PT (23) [ 12%] 3 of 24
+[-        ] process > MULTIQC        -
+
+executor >  sge (108)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[ae/24146c] process > TRIMMING (3)   [ 85%] 24 of 28
+[3a/cccce3] process > FASTQC_PT (24) [ 12%] 3 of 24
+[-        ] process > MULTIQC        -
+
+executor >  sge (108)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[ae/24146c] process > TRIMMING (3)   [ 85%] 24 of 28
+[3a/cccce3] process > FASTQC_PT (24) [ 12%] 3 of 24
+[-        ] process > MULTIQC        -
+
+executor >  sge (108)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9d/e05689] process > TRIMMING (28)  [ 89%] 25 of 28
+[3a/cccce3] process > FASTQC_PT (24) [ 12%] 3 of 25
+[-        ] process > MULTIQC        -
+
+executor >  sge (109)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9d/e05689] process > TRIMMING (28)  [ 89%] 25 of 28
+[bf/588133] process > FASTQC_PT (25) [ 12%] 3 of 25
+[-        ] process > MULTIQC        -
+
+executor >  sge (109)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[cc/df7658] process > TRIMMING (13)  [ 92%] 26 of 28
+[bf/588133] process > FASTQC_PT (25) [ 11%] 3 of 26
+[-        ] process > MULTIQC        -
+
+executor >  sge (110)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[cc/df7658] process > TRIMMING (13)  [ 92%] 26 of 28
+[56/54948e] process > FASTQC_PT (26) [ 11%] 3 of 26
+[-        ] process > MULTIQC        -
+
+executor >  sge (110)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[cc/df7658] process > TRIMMING (13)  [ 92%] 26 of 28
+[56/54948e] process > FASTQC_PT (26) [ 11%] 3 of 26
+[-        ] process > MULTIQC        -
+
+executor >  sge (110)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[09/7b985a] process > TRIMMING (20)  [ 96%] 27 of 28
+[56/54948e] process > FASTQC_PT (26) [ 11%] 3 of 26
+[-        ] process > MULTIQC        -
+
+executor >  sge (110)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[09/7b985a] process > TRIMMING (20)  [ 96%] 27 of 28
+[56/54948e] process > FASTQC_PT (26) [ 11%] 3 of 27
+[-        ] process > MULTIQC        -
+
+executor >  sge (111)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[09/7b985a] process > TRIMMING (20)  [ 96%] 27 of 28
+[47/bebb18] process > FASTQC_PT (27) [ 11%] 3 of 27
+[-        ] process > MULTIQC        -
+
+executor >  sge (111)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[09/7b985a] process > TRIMMING (20)  [ 96%] 27 of 28
+[47/bebb18] process > FASTQC_PT (27) [ 11%] 3 of 27
+[-        ] process > MULTIQC        -
+
+executor >  sge (111)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9c/2910a3] process > TRIMMING (22)  [100%] 28 of 28 ✔
+[47/bebb18] process > FASTQC_PT (27) [ 10%] 3 of 28
+[-        ] process > MULTIQC        -
+
+executor >  sge (112)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9c/2910a3] process > TRIMMING (22)  [100%] 28 of 28 ✔
+[1d/8ef493] process > FASTQC_PT (28) [ 10%] 3 of 28
+[-        ] process > MULTIQC        -
+
+executor >  sge (112)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9c/2910a3] process > TRIMMING (22)  [100%] 28 of 28 ✔
+[1d/8ef493] process > FASTQC_PT (28) [ 10%] 3 of 28
+[-        ] process > MULTIQC        -
+
+executor >  sge (112)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9c/2910a3] process > TRIMMING (22)  [100%] 28 of 28 ✔
+[d4/6f0a82] process > FASTQC_PT (4)  [ 14%] 4 of 28
+[-        ] process > MULTIQC        -
+
+executor >  sge (112)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9c/2910a3] process > TRIMMING (22)  [100%] 28 of 28 ✔
+[c8/03f70b] process > FASTQC_PT (5)  [ 17%] 5 of 28
+[-        ] process > MULTIQC        -
+
+executor >  sge (112)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9c/2910a3] process > TRIMMING (22)  [100%] 28 of 28 ✔
+[1d/ac4723] process > FASTQC_PT (6)  [ 21%] 6 of 28
+[-        ] process > MULTIQC        -
+
+executor >  sge (112)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9c/2910a3] process > TRIMMING (22)  [100%] 28 of 28 ✔
+[08/50e7ec] process > FASTQC_PT (7)  [ 25%] 7 of 28
+[-        ] process > MULTIQC        -
+
+executor >  sge (112)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9c/2910a3] process > TRIMMING (22)  [100%] 28 of 28 ✔
+[e1/b7691f] process > FASTQC_PT (8)  [ 28%] 8 of 28
+[-        ] process > MULTIQC        -
+
+executor >  sge (112)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9c/2910a3] process > TRIMMING (22)  [100%] 28 of 28 ✔
+[13/f01f4f] process > FASTQC_PT (10) [ 32%] 9 of 28
+[-        ] process > MULTIQC        -
+
+executor >  sge (112)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9c/2910a3] process > TRIMMING (22)  [100%] 28 of 28 ✔
+[0a/460413] process > FASTQC_PT (9)  [ 35%] 10 of 28
+[-        ] process > MULTIQC        -
+
+executor >  sge (112)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9c/2910a3] process > TRIMMING (22)  [100%] 28 of 28 ✔
+[68/09a495] process > FASTQC_PT (22) [ 39%] 11 of 28
+[-        ] process > MULTIQC        -
+
+executor >  sge (112)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9c/2910a3] process > TRIMMING (22)  [100%] 28 of 28 ✔
+[7c/c1a319] process > FASTQC_PT (11) [ 42%] 12 of 28
+[-        ] process > MULTIQC        -
+
+executor >  sge (112)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9c/2910a3] process > TRIMMING (22)  [100%] 28 of 28 ✔
+[8f/193121] process > FASTQC_PT (17) [ 50%] 14 of 28
+[-        ] process > MULTIQC        -
+
+executor >  sge (112)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9c/2910a3] process > TRIMMING (22)  [100%] 28 of 28 ✔
+[ca/7bcd32] process > FASTQC_PT (18) [ 53%] 15 of 28
+[-        ] process > MULTIQC        -
+
+executor >  sge (112)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9c/2910a3] process > TRIMMING (22)  [100%] 28 of 28 ✔
+[56/54948e] process > FASTQC_PT (26) [ 57%] 16 of 28
+[-        ] process > MULTIQC        -
+
+executor >  sge (112)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9c/2910a3] process > TRIMMING (22)  [100%] 28 of 28 ✔
+[51/c55ade] process > FASTQC_PT (20) [ 60%] 17 of 28
+[-        ] process > MULTIQC        -
+
+executor >  sge (112)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9c/2910a3] process > TRIMMING (22)  [100%] 28 of 28 ✔
+[64/731afe] process > FASTQC_PT (14) [ 64%] 18 of 28
+[-        ] process > MULTIQC        -
+
+executor >  sge (112)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9c/2910a3] process > TRIMMING (22)  [100%] 28 of 28 ✔
+[4e/cf3e2b] process > FASTQC_PT (19) [ 67%] 19 of 28
+[-        ] process > MULTIQC        -
+
+executor >  sge (112)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9c/2910a3] process > TRIMMING (22)  [100%] 28 of 28 ✔
+[0d/3af23a] process > FASTQC_PT (21) [ 71%] 20 of 28
+[-        ] process > MULTIQC        -
+
+executor >  sge (112)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9c/2910a3] process > TRIMMING (22)  [100%] 28 of 28 ✔
+[3a/cccce3] process > FASTQC_PT (24) [ 78%] 22 of 28
+[-        ] process > MULTIQC        -
+
+executor >  sge (112)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9c/2910a3] process > TRIMMING (22)  [100%] 28 of 28 ✔
+[6d/4f1b5e] process > FASTQC_PT (13) [ 82%] 23 of 28
+[-        ] process > MULTIQC        -
+
+executor >  sge (112)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9c/2910a3] process > TRIMMING (22)  [100%] 28 of 28 ✔
+[c3/3898f5] process > FASTQC_PT (12) [ 85%] 24 of 28
+[-        ] process > MULTIQC        -
+
+executor >  sge (112)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9c/2910a3] process > TRIMMING (22)  [100%] 28 of 28 ✔
+[bf/588133] process > FASTQC_PT (25) [ 89%] 25 of 28
+[-        ] process > MULTIQC        -
+
+executor >  sge (112)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9c/2910a3] process > TRIMMING (22)  [100%] 28 of 28 ✔
+[e5/bda7fa] process > FASTQC_PT (15) [ 92%] 26 of 28
+[-        ] process > MULTIQC        -
+
+executor >  sge (112)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9c/2910a3] process > TRIMMING (22)  [100%] 28 of 28 ✔
+[47/bebb18] process > FASTQC_PT (27) [ 96%] 27 of 28
+[-        ] process > MULTIQC        -
+
+executor >  sge (112)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9c/2910a3] process > TRIMMING (22)  [100%] 28 of 28 ✔
+[1d/8ef493] process > FASTQC_PT (28) [100%] 28 of 28 ✔
+[-        ] process > MULTIQC        -
+
+executor >  sge (112)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9c/2910a3] process > TRIMMING (22)  [100%] 28 of 28 ✔
+[1d/8ef493] process > FASTQC_PT (28) [100%] 28 of 28 ✔
+[-        ] process > MULTIQC        -
+ERROR ~ Error executing process > 'MULTIQC'
+
+Caused by:
+  Process `MULTIQC` input file name collision -- There are multiple input files for each of the following file names: null/post_trim_fastqc/GC-JK-9047-Osc-1-Act-d7_S17_L001_R1_001_val_1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-3-Act-d7_S19_L001_R2_001_val_2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Act-d7_S17_R1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Ind-1h_S8_R1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Act-d7_S17_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Ind-24h_S16_R2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-2-Act-24h_S10_L001_R1_001_val_1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Act-24h_S10_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-2-Act-1h_S2_L001_R1_001_val_1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-4-Ind-1h_S8_L001_R1_001_val_1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Act-24h_S9_R1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-3-Act-1h_S3_L001_R2_001_val_2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Act-24h_S9_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Ind-d7_S23_R1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Act-d7_S20_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-4-Ind-24h_S16_L001_R2_001_val_2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-4-Ind-d7_S24_L001_R2_001_val_2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-4-Ind-1h_S8_L001_R2_001_val_2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-2-Act-24h_S10_L001_R2_001_val_2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-3-Ind-24h_S15_L001_R1_001_val_1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Ind-24h_S15_R2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Act-d7_S18_R2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Act-d7_S19_R1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Act-24h_S11_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-1-Ind-1h_S5_L001_R1_001_val_1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Act-24h_S9_R2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Ind-d7_S24_R2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Act-1h_S3_R2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Act-24h_S12_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-2-Act-1h_S2_L001_R2_001_val_2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-1-Ind-d7_S21_L001_R2_001_val_2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-2-Act-24h_S10_L001_R1_001_val_1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-1-Act-24h_S9_L001_R2_001_val_2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-1-Act-d7_S17_L001_R2_001_val_2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-4-Act-d7_S20_L001_R1_001_val_1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-2-Act-d7_S18_L001_R1_001_val_1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-3-Ind-d7_S23_L001_R2_001_val_2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Act-1h_S3_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-2-Act-1h_S2_L001_R2_001_val_2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Ind-24h_S14_R2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Ind-d7_S23_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Act-1h_S1_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Act-1h_S1_R1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-4-Act-24h_S12_L001_R2_001_val_2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-2-Ind-24h_S14_L001_R2_001_val_2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-BLGCSEQL1084-Cntl-2_S26_R1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-BLGCSEQL1084-Cntl-2_S26_R2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-3-Act-1h_S3_L001_R2_001_val_2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-3-Act-24h_S11_L001_R1_001_val_1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-2-Ind-d7_S22_L001_R1_001_val_1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-BLGCSEQL1084-Cntl-3_S27_R1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Act-d7_S19_R1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-3-Act-24h_S11_L001_R2_001_val_2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Act-24h_S10_R1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Ind-1h_S6_R1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Act-d7_S20_R1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Ind-d7_S24_R1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Ind-24h_S16_R1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-4-Ind-d7_S24_L001_R1_001_val_1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Ind-d7_S23_R2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Act-1h_S2_R2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-1-Act-1h_S1_L001_R1_001_val_1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Act-1h_S4_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-BLGCSEQL1084-Cntl-2_S26_R2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-3-Act-24h_S11_L001_R2_001_val_2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Act-d7_S20_R2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-BLGCSEQL1084-Cntl-2_S26_L001_R1_001_val_1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Ind-1h_S8_R2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-BLGCSEQL1084-Cntl-3_S27_L001_R2_001_val_2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Ind-1h_S6_R1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Act-d7_S18_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-BLGCSEQL1084-Cntl-3_S27_R1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Ind-d7_S22_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-4-Ind-1h_S8_L001_R2_001_val_2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-BLGCSEQL1084-Cntl-1_S25_R2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-BLGCSEQL1084-Cntl-2_S26_L001_R2_001_val_2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Ind-d7_S21_R2_fastqc.zip, null/1M_fastqc/1M-Undetermined_S0_R2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-4-Act-d7_S20_L001_R2_001_val_2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Ind-1h_S8_R2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-2-Ind-24h_S14_L001_R1_001_val_1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-3-Act-24h_S11_L001_R1_001_val_1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Ind-d7_S24_R1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-1-Ind-1h_S5_L001_R1_001_val_1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-1-Act-d7_S17_L001_R1_001_val_1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Act-1h_S4_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-3-Ind-1h_S7_L001_R2_001_val_2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-4-Ind-d7_S24_L001_R2_001_val_2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Ind-d7_S22_R2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-BLGCSEQL1084-Cntl-3_S27_L001_R1_001_val_1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-BLGCSEQL1084-Cntl-1_S25_R2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-2-Ind-24h_S14_L001_R1_001_val_1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-2-Ind-24h_S14_L001_R2_001_val_2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Act-1h_S2_R1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-2-Act-d7_S18_L001_R2_001_val_2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-3-Ind-d7_S23_L001_R1_001_val_1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Ind-24h_S14_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Act-1h_S1_R1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Act-24h_S11_R1_fastqc.html, null/1M_fastqc/1M-Undetermined_S0_R1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-4-Act-1h_S4_L001_R1_001_val_1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-BLGCSEQL1084-Cntl-2_S26_L001_R1_001_val_1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-3-Ind-1h_S7_L001_R2_001_val_2_fastqc.zip, null/post_trim_fastqc/Undetermined_S0_L001_R1_001_val_1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Ind-1h_S7_R1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Act-1h_S4_R2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Ind-1h_S7_R2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-4-Ind-24h_S16_L001_R2_001_val_2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Ind-24h_S13_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Ind-24h_S13_R1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-4-Ind-24h_S16_L001_R1_001_val_1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Ind-d7_S23_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-3-Act-1h_S3_L001_R1_001_val_1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-BLGCSEQL1084-Cntl-2_S26_R1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Ind-d7_S22_R2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-1-Act-1h_S1_L001_R2_001_val_2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Act-24h_S12_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Ind-24h_S13_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-4-Ind-1h_S8_L001_R1_001_val_1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-BLGCSEQL1084-Cntl-3_S27_R2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-3-Act-d7_S19_L001_R1_001_val_1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Act-1h_S2_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-4-Act-1h_S4_L001_R2_001_val_2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-3-Ind-d7_S23_L001_R2_001_val_2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-1-Ind-24h_S13_L001_R2_001_val_2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Ind-1h_S6_R2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-3-Ind-24h_S15_L001_R2_001_val_2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Act-1h_S3_R2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-4-Act-1h_S4_L001_R1_001_val_1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-3-Act-1h_S3_L001_R1_001_val_1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Ind-24h_S15_R1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Ind-1h_S7_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-1-Ind-1h_S5_L001_R2_001_val_2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-3-Ind-1h_S7_L001_R1_001_val_1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Act-d7_S17_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-BLGCSEQL1084-Cntl-1_S25_L001_R2_001_val_2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Ind-24h_S15_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Act-1h_S3_R1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Act-24h_S12_R1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Act-24h_S12_R2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-3-Ind-1h_S7_L001_R1_001_val_1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Ind-1h_S6_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Ind-d7_S21_R2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-1-Act-24h_S9_L001_R1_001_val_1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Ind-24h_S14_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-BLGCSEQL1084-Cntl-1_S25_L001_R1_001_val_1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-4-Ind-24h_S16_L001_R1_001_val_1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-BLGCSEQL1084-Cntl-3_S27_L001_R1_001_val_1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-BLGCSEQL1084-Cntl-1_S25_L001_R1_001_val_1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-BLGCSEQL1084-Cntl-3_S27_L001_R2_001_val_2_fastqc.html, null/post_trim_fastqc/Undetermined_S0_L001_R1_001_val_1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-3-Ind-24h_S15_L001_R1_001_val_1_fastqc.zip, null/1M_fastqc/1M-Undetermined_S0_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-1-Ind-24h_S13_L001_R1_001_val_1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Ind-24h_S15_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-1-Ind-d7_S21_L001_R2_001_val_2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Ind-24h_S13_R2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Act-24h_S11_R2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Ind-1h_S8_R1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-2-Ind-d7_S22_L001_R2_001_val_2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Act-24h_S9_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-1-Ind-24h_S13_L001_R2_001_val_2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-2-Ind-1h_S6_L001_R2_001_val_2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Act-24h_S10_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-BLGCSEQL1084-Cntl-1_S25_R1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Act-d7_S20_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Act-d7_S19_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Ind-d7_S21_R1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Ind-1h_S7_R2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-2-Ind-1h_S6_L001_R1_001_val_1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-1-Ind-d7_S21_L001_R1_001_val_1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-1-Ind-d7_S21_L001_R1_001_val_1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Act-d7_S17_R2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Ind-24h_S16_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Act-d7_S18_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-4-Act-24h_S12_L001_R1_001_val_1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Act-1h_S4_R1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-2-Act-d7_S18_L001_R1_001_val_1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-2-Ind-1h_S6_L001_R2_001_val_2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-1-Act-24h_S9_L001_R2_001_val_2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-2-Ind-d7_S22_L001_R2_001_val_2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-3-Act-d7_S19_L001_R1_001_val_1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-1-Act-1h_S1_L001_R2_001_val_2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-BLGCSEQL1084-Cntl-2_S26_L001_R2_001_val_2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Act-d7_S18_R1_fastqc.html, null/post_trim_fastqc/Undetermined_S0_L001_R2_001_val_2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-1-Act-d7_S17_L001_R2_001_val_2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Act-d7_S19_R2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-BLGCSEQL1084-Cntl-3_S27_R2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-1-Act-24h_S9_L001_R1_001_val_1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-2-Act-1h_S2_L001_R1_001_val_1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-4-Act-1h_S4_L001_R2_001_val_2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-2-Ind-d7_S22_L001_R1_001_val_1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-1-Act-1h_S1_L001_R1_001_val_1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-2-Act-24h_S10_L001_R2_001_val_2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-4-Act-24h_S12_L001_R2_001_val_2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Ind-24h_S16_R1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Ind-d7_S22_R1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Act-24h_S10_R2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-4-Act-d7_S20_L001_R1_001_val_1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-3-Ind-24h_S15_L001_R2_001_val_2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-1-Ind-1h_S5_L001_R2_001_val_2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-4-Act-d7_S20_L001_R2_001_val_2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-BLGCSEQL1084-Cntl-1_S25_L001_R2_001_val_2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Act-1h_S1_R2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-1-Ind-24h_S13_L001_R1_001_val_1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Ind-d7_S24_R2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-3-Act-d7_S19_L001_R2_001_val_2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-4-Ind-d7_S24_L001_R1_001_val_1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Act-1h_S2_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2_fastqc.html, null/post_trim_fastqc/Undetermined_S0_L001_R2_001_val_2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Ind-24h_S14_R1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-2-Ind-1h_S6_L001_R1_001_val_1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-BLGCSEQL1084-Cntl-1_S25_R1_fastqc.html, null/1M_fastqc/1M-Undetermined_S0_R2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-3-Ind-d7_S23_L001_R1_001_val_1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-4-Act-24h_S12_L001_R1_001_val_1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-2-Act-d7_S18_L001_R2_001_val_2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Act-24h_S11_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Ind-d7_S21_R1_fastqc.zip
+
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+
+ -- Check '.nextflow.log' file for details
+
+executor >  sge (112)
+[bd/1b3287] process > SUBSAMPLE (28) [100%] 28 of 28 ✔
+[47/26359c] process > FASTQC (28)    [100%] 28 of 28 ✔
+[9c/2910a3] process > TRIMMING (22)  [100%] 28 of 28 ✔
+[1d/8ef493] process > FASTQC_PT (28) [100%] 28 of 28 ✔
+[-        ] process > MULTIQC        -
+ERROR ~ Error executing process > 'MULTIQC'
+
+Caused by:
+  Process `MULTIQC` input file name collision -- There are multiple input files for each of the following file names: null/post_trim_fastqc/GC-JK-9047-Osc-1-Act-d7_S17_L001_R1_001_val_1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-3-Act-d7_S19_L001_R2_001_val_2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Act-d7_S17_R1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Ind-1h_S8_R1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Act-d7_S17_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Ind-24h_S16_R2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-2-Act-24h_S10_L001_R1_001_val_1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Act-24h_S10_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-2-Act-1h_S2_L001_R1_001_val_1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-4-Ind-1h_S8_L001_R1_001_val_1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Act-24h_S9_R1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-3-Act-1h_S3_L001_R2_001_val_2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Act-24h_S9_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Ind-d7_S23_R1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Act-d7_S20_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-4-Ind-24h_S16_L001_R2_001_val_2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-4-Ind-d7_S24_L001_R2_001_val_2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-4-Ind-1h_S8_L001_R2_001_val_2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-2-Act-24h_S10_L001_R2_001_val_2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-3-Ind-24h_S15_L001_R1_001_val_1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Ind-24h_S15_R2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Act-d7_S18_R2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Act-d7_S19_R1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Act-24h_S11_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-1-Ind-1h_S5_L001_R1_001_val_1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Act-24h_S9_R2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Ind-d7_S24_R2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Act-1h_S3_R2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Act-24h_S12_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-2-Act-1h_S2_L001_R2_001_val_2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-1-Ind-d7_S21_L001_R2_001_val_2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-2-Act-24h_S10_L001_R1_001_val_1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-1-Act-24h_S9_L001_R2_001_val_2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-1-Act-d7_S17_L001_R2_001_val_2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-4-Act-d7_S20_L001_R1_001_val_1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-2-Act-d7_S18_L001_R1_001_val_1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-3-Ind-d7_S23_L001_R2_001_val_2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Act-1h_S3_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-2-Act-1h_S2_L001_R2_001_val_2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Ind-24h_S14_R2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Ind-d7_S23_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Act-1h_S1_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Act-1h_S1_R1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-4-Act-24h_S12_L001_R2_001_val_2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-2-Ind-24h_S14_L001_R2_001_val_2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-BLGCSEQL1084-Cntl-2_S26_R1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-BLGCSEQL1084-Cntl-2_S26_R2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-3-Act-1h_S3_L001_R2_001_val_2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-3-Act-24h_S11_L001_R1_001_val_1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-2-Ind-d7_S22_L001_R1_001_val_1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-BLGCSEQL1084-Cntl-3_S27_R1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Act-d7_S19_R1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-3-Act-24h_S11_L001_R2_001_val_2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Act-24h_S10_R1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Ind-1h_S6_R1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Act-d7_S20_R1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Ind-d7_S24_R1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Ind-24h_S16_R1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-4-Ind-d7_S24_L001_R1_001_val_1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Ind-d7_S23_R2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Act-1h_S2_R2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-1-Act-1h_S1_L001_R1_001_val_1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Act-1h_S4_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-BLGCSEQL1084-Cntl-2_S26_R2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-3-Act-24h_S11_L001_R2_001_val_2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Act-d7_S20_R2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-BLGCSEQL1084-Cntl-2_S26_L001_R1_001_val_1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Ind-1h_S8_R2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-BLGCSEQL1084-Cntl-3_S27_L001_R2_001_val_2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Ind-1h_S6_R1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Act-d7_S18_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-BLGCSEQL1084-Cntl-3_S27_R1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Ind-d7_S22_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-4-Ind-1h_S8_L001_R2_001_val_2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-BLGCSEQL1084-Cntl-1_S25_R2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-BLGCSEQL1084-Cntl-2_S26_L001_R2_001_val_2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Ind-d7_S21_R2_fastqc.zip, null/1M_fastqc/1M-Undetermined_S0_R2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-4-Act-d7_S20_L001_R2_001_val_2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Ind-1h_S8_R2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-2-Ind-24h_S14_L001_R1_001_val_1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-3-Act-24h_S11_L001_R1_001_val_1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Ind-d7_S24_R1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-1-Ind-1h_S5_L001_R1_001_val_1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-1-Act-d7_S17_L001_R1_001_val_1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Act-1h_S4_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-3-Ind-1h_S7_L001_R2_001_val_2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-4-Ind-d7_S24_L001_R2_001_val_2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Ind-d7_S22_R2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-BLGCSEQL1084-Cntl-3_S27_L001_R1_001_val_1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-BLGCSEQL1084-Cntl-1_S25_R2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-2-Ind-24h_S14_L001_R1_001_val_1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-2-Ind-24h_S14_L001_R2_001_val_2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Act-1h_S2_R1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-2-Act-d7_S18_L001_R2_001_val_2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-3-Ind-d7_S23_L001_R1_001_val_1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Ind-24h_S14_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Act-1h_S1_R1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Act-24h_S11_R1_fastqc.html, null/1M_fastqc/1M-Undetermined_S0_R1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-4-Act-1h_S4_L001_R1_001_val_1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-BLGCSEQL1084-Cntl-2_S26_L001_R1_001_val_1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-3-Ind-1h_S7_L001_R2_001_val_2_fastqc.zip, null/post_trim_fastqc/Undetermined_S0_L001_R1_001_val_1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Ind-1h_S7_R1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Act-1h_S4_R2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Ind-1h_S7_R2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-4-Ind-24h_S16_L001_R2_001_val_2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Ind-24h_S13_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Ind-24h_S13_R1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-4-Ind-24h_S16_L001_R1_001_val_1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Ind-d7_S23_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-3-Act-1h_S3_L001_R1_001_val_1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-BLGCSEQL1084-Cntl-2_S26_R1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Ind-d7_S22_R2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-1-Act-1h_S1_L001_R2_001_val_2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Act-24h_S12_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Ind-24h_S13_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-4-Ind-1h_S8_L001_R1_001_val_1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-BLGCSEQL1084-Cntl-3_S27_R2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-3-Act-d7_S19_L001_R1_001_val_1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Act-1h_S2_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-4-Act-1h_S4_L001_R2_001_val_2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-3-Ind-d7_S23_L001_R2_001_val_2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-1-Ind-24h_S13_L001_R2_001_val_2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Ind-1h_S6_R2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-3-Ind-24h_S15_L001_R2_001_val_2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Act-1h_S3_R2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-4-Act-1h_S4_L001_R1_001_val_1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-3-Act-1h_S3_L001_R1_001_val_1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Ind-24h_S15_R1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Ind-1h_S7_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-1-Ind-1h_S5_L001_R2_001_val_2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-3-Ind-1h_S7_L001_R1_001_val_1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Act-d7_S17_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-BLGCSEQL1084-Cntl-1_S25_L001_R2_001_val_2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Ind-24h_S15_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Act-1h_S3_R1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Act-24h_S12_R1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Act-24h_S12_R2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-3-Ind-1h_S7_L001_R1_001_val_1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Ind-1h_S6_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Ind-d7_S21_R2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-1-Act-24h_S9_L001_R1_001_val_1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Ind-24h_S14_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-BLGCSEQL1084-Cntl-1_S25_L001_R1_001_val_1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-4-Ind-24h_S16_L001_R1_001_val_1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-BLGCSEQL1084-Cntl-3_S27_L001_R1_001_val_1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-BLGCSEQL1084-Cntl-1_S25_L001_R1_001_val_1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-BLGCSEQL1084-Cntl-3_S27_L001_R2_001_val_2_fastqc.html, null/post_trim_fastqc/Undetermined_S0_L001_R1_001_val_1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-3-Ind-24h_S15_L001_R1_001_val_1_fastqc.zip, null/1M_fastqc/1M-Undetermined_S0_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-1-Ind-24h_S13_L001_R1_001_val_1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Ind-24h_S15_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-1-Ind-d7_S21_L001_R2_001_val_2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Ind-24h_S13_R2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Act-24h_S11_R2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Ind-1h_S8_R1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-2-Ind-d7_S22_L001_R2_001_val_2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Act-24h_S9_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-1-Ind-24h_S13_L001_R2_001_val_2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-2-Ind-1h_S6_L001_R2_001_val_2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Act-24h_S10_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-BLGCSEQL1084-Cntl-1_S25_R1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Act-d7_S20_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Act-d7_S19_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Ind-d7_S21_R1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Ind-1h_S7_R2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-2-Ind-1h_S6_L001_R1_001_val_1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-1-Ind-d7_S21_L001_R1_001_val_1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-1-Ind-d7_S21_L001_R1_001_val_1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Act-d7_S17_R2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Ind-24h_S16_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Act-d7_S18_R1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-4-Act-24h_S12_L001_R1_001_val_1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Act-1h_S4_R1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-2-Act-d7_S18_L001_R1_001_val_1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-2-Ind-1h_S6_L001_R2_001_val_2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-1-Act-24h_S9_L001_R2_001_val_2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-2-Ind-d7_S22_L001_R2_001_val_2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-3-Act-d7_S19_L001_R1_001_val_1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-1-Act-1h_S1_L001_R2_001_val_2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-BLGCSEQL1084-Cntl-2_S26_L001_R2_001_val_2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Act-d7_S18_R1_fastqc.html, null/post_trim_fastqc/Undetermined_S0_L001_R2_001_val_2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-1-Act-d7_S17_L001_R2_001_val_2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Act-d7_S19_R2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-BLGCSEQL1084-Cntl-3_S27_R2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-1-Act-24h_S9_L001_R1_001_val_1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-2-Act-1h_S2_L001_R1_001_val_1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-4-Act-1h_S4_L001_R2_001_val_2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-2-Ind-d7_S22_L001_R1_001_val_1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-1-Act-1h_S1_L001_R1_001_val_1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-2-Act-24h_S10_L001_R2_001_val_2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-4-Act-24h_S12_L001_R2_001_val_2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Ind-24h_S16_R1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Ind-d7_S22_R1_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Act-24h_S10_R2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-4-Act-d7_S20_L001_R1_001_val_1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-3-Ind-24h_S15_L001_R2_001_val_2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-1-Ind-1h_S5_L001_R2_001_val_2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-4-Act-d7_S20_L001_R2_001_val_2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-BLGCSEQL1084-Cntl-1_S25_L001_R2_001_val_2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Act-1h_S1_R2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-1-Ind-24h_S13_L001_R1_001_val_1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Ind-1h_S5_R1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-4-Ind-d7_S24_R2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-3-Act-d7_S19_L001_R2_001_val_2_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-4-Ind-d7_S24_L001_R1_001_val_1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Act-1h_S2_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Ind-1h_S5_R2_fastqc.html, null/post_trim_fastqc/Undetermined_S0_L001_R2_001_val_2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-2-Ind-24h_S14_R1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-2-Ind-1h_S6_L001_R1_001_val_1_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-BLGCSEQL1084-Cntl-1_S25_R1_fastqc.html, null/1M_fastqc/1M-Undetermined_S0_R2_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-3-Ind-d7_S23_L001_R1_001_val_1_fastqc.zip, null/post_trim_fastqc/GC-JK-9047-Osc-4-Act-24h_S12_L001_R1_001_val_1_fastqc.html, null/post_trim_fastqc/GC-JK-9047-Osc-2-Act-d7_S18_L001_R2_001_val_2_fastqc.zip, null/1M_fastqc/1M-GC-JK-9047-Osc-3-Act-24h_S11_R2_fastqc.html, null/1M_fastqc/1M-GC-JK-9047-Osc-1-Ind-d7_S21_R1_fastqc.zip
+
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+
+ -- Check '.nextflow.log' file for details
+
