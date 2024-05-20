@@ -38,7 +38,7 @@ process FASTQC {
     path parentFolder
 
     output:
-    file "${parentFolder}/1M_fastqc/*_fastqc.{zip,html}"
+    path "${parentFolder}/1M_fastqc"
     
     script:
     """
@@ -95,7 +95,7 @@ process FASTQC_PT {
     path parentFolder
 
     output:
-    file "${parentFolder}/post_trim_fastqc/*_fastqc.{zip,html}"
+    path "${parentFolder}/post_trim_fastqc"
 
     script:
     """
