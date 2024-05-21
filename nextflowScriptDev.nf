@@ -38,7 +38,7 @@ process FASTQC {
     path parentFolder
 
     output:
-    path "${parentFolder}/1M_fastqc"
+    path("${parentFolder}/1M_fastqc/fastqc_${sample_id}_logs")
     
     script:
     """
@@ -47,9 +47,10 @@ process FASTQC {
     
     # Create output folders
     if [ ! -e ${parentFolder}/1M_fastqc ]; then mkdir -p ${parentFolder}/1M_fastqc; fi
+    mkdir ${parentFolder}/1M_fastqc/fastqc_${sample_id}_logs
 
     # FastQC files
-    fastqc -o ${parentFolder}/1M_fastqc ${read1} ${read2}
+    fastqc -o ${parentFolder}/1M_fastqc/fastqc_${sample_id}_logs ${read1} ${read2}
     """
 }
 
@@ -95,7 +96,7 @@ process FASTQC_PT {
     path parentFolder
 
     output:
-    path "${parentFolder}/post_trim_fastqc"
+    path("${parentFolder}/post_trim_fastqc/fastqc_${sample_id}_logs")
 
     script:
     """
@@ -104,9 +105,10 @@ process FASTQC_PT {
 
     # Create output folders
     if [ ! -e ${parentFolder}/post_trim_fastqc ]; then mkdir -p ${parentFolder}/post_trim_fastqc; fi
-    
+    mkdir ${parentFolder}/post_trim_fastqc/fastqc_${sample_id}_logs
+
     # FastQC files
-    fastqc -o ${parentFolder}/post_trim_fastqc ${reads}
+    fastqc -o ${parentFolder}/post_trim_fastqc/fastqc_${sample_id}_logs ${reads}
     """
 }
 
@@ -117,11 +119,10 @@ process MULTIQC {
     conda 'multiqc=1.21'
 
     input:
-    path "1M_fastqc/*"
-    path "post_trim_fastqc/*"
+    path('*')
 
     output:
-    path "$params.analysisdir/multiqc_report.html"
+    path("$params.analysisdir/multiqc_report.html")
 
     script:
     """
@@ -141,5 +142,5 @@ workflow {
     fastqc_ch = FASTQC(SUBSAMPLE.out.reads, params.analysisdir)
     TRIMMING(read_pairs_ch, params.analysisdir)
     fastqcPT_ch = FASTQC_PT(TRIMMING.out.reads, params.analysisdir)
-    MULTIQC(fastqc_ch.collect(), fastqcPT_ch.collect())
+    MULTIQC(fastqcPT_ch.mix(fastqc_ch).collect())
 }
