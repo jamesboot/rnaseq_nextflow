@@ -38,7 +38,7 @@ process FASTQC {
     path parentFolder
 
     output:
-    path("${parentFolder}/1M_fastqc/fastqc_${sample_id}_logs")
+    path("${parentFolder}/1M_fastqc")
     
     script:
     """
@@ -47,10 +47,9 @@ process FASTQC {
     
     # Create output folders
     if [ ! -e ${parentFolder}/1M_fastqc ]; then mkdir -p ${parentFolder}/1M_fastqc; fi
-    mkdir ${parentFolder}/1M_fastqc/fastqc_${sample_id}_logs
 
     # FastQC files
-    fastqc -o ${parentFolder}/1M_fastqc/fastqc_${sample_id}_logs ${read1} ${read2}
+    fastqc -o ${parentFolder}/1M_fastqc ${read1} ${read2}
     """
 }
 
@@ -96,7 +95,7 @@ process FASTQC_PT {
     path parentFolder
 
     output:
-    path("${parentFolder}/post_trim_fastqc/fastqc_${sample_id}_logs")
+    path("${parentFolder}/post_trim_fastqc")
 
     script:
     """
@@ -105,10 +104,9 @@ process FASTQC_PT {
 
     # Create output folders
     if [ ! -e ${parentFolder}/post_trim_fastqc ]; then mkdir -p ${parentFolder}/post_trim_fastqc; fi
-    mkdir ${parentFolder}/post_trim_fastqc/fastqc_${sample_id}_logs
 
     # FastQC files
-    fastqc -o ${parentFolder}/post_trim_fastqc/fastqc_${sample_id}_logs ${reads}
+    fastqc -o ${parentFolder}/post_trim_fastqc ${reads}
     """
 }
 
