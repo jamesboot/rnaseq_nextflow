@@ -137,8 +137,8 @@ workflow {
         .fromFilePairs(params.reads, checkIfExists: true)
         .set { read_pairs_ch }
     SUBSAMPLE(read_pairs_ch, params.analysisdir)
-    fastqc_ch = FASTQC(SUBSAMPLE.out.reads, params.analysisdir)
+    FASTQC(SUBSAMPLE.out.reads, params.analysisdir)
     TRIMMING(read_pairs_ch, params.analysisdir)
-    fastqcPT_ch = FASTQC_PT(TRIMMING.out.reads, params.analysisdir)
-    MULTIQC(fastqcPT_ch.mix(fastqc_ch).collect())
+    FASTQC_PT(TRIMMING.out.reads, params.analysisdir)
+    MULTIQC(FASTQC.out.collect(), FASTQC_PT.out.collect())
 }
