@@ -117,7 +117,8 @@ process MULTIQC {
     conda 'multiqc=1.21'
 
     input:
-    path('*')
+    path("1M_fastqc/*")
+    path("post_trim_fastqc/*")
 
     output:
     path("$params.analysisdir/multiqc_report.html")
