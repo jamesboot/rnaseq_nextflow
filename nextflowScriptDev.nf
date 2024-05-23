@@ -107,7 +107,7 @@ process FASTQC_PT {
  * Perform MultiQC
  */
 process MULTIQC {
-    conda 'multiqc=1.21'
+    conda "/data/WHRI-GenomeCentre/software/multiqc_conda"
 
     input:
     file("*")
