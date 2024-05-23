@@ -39,7 +39,7 @@ process FASTQC {
     tuple val(sample_id), path(read1), path(read2)
 
     output:
-    file "*fastqc*" into ch_fastqc
+    file "*fastqc*"
     
     script:
     """
@@ -91,7 +91,7 @@ process FASTQC_PT {
     tuple val(sample_id), path(reads)
 
     output:
-    file "*fastqc*" into ch_fastqc_trim
+    file "*fastqc*"
 
     script:
     """
@@ -132,8 +132,10 @@ workflow {
         .set { read_pairs_ch }
     SUBSAMPLE(read_pairs_ch)
     FASTQC(SUBSAMPLE.out.reads)
+    ch_fastqc = FASTQC.out
     TRIMMING(read_pairs_ch)
     FASTQC_PT(TRIMMING.out.reads)
+    ch_fastqc_trim = FASTQC_PT.out
     MULTIQC(
         ch_fastqc.collect(), 
         ch_fastqc_trim.collect())
