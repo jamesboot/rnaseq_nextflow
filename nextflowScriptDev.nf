@@ -38,7 +38,8 @@ process FASTQC {
     path parentFolder
 
     output:
-    path("${parentFolder}/1M_fastqc")
+    tuple val(sample_id), path("*.html"), emit: html
+    tuple val(sample_id), path("*.zip") , emit: fastqc_zip
     
     script:
     """
@@ -95,7 +96,8 @@ process FASTQC_PT {
     path parentFolder
 
     output:
-    path("${parentFolder}/post_trim_fastqc")
+    tuple val(sample_id), path("*.html"), emit: html
+    tuple val(sample_id), path("*.zip") , emit: fastqc_zip
 
     script:
     """
@@ -139,7 +141,11 @@ workflow {
         .set { read_pairs_ch }
     SUBSAMPLE(read_pairs_ch, params.analysisdir)
     FASTQC(SUBSAMPLE.out.reads, params.analysisdir)
+    ch_fastqc = FASTQC.out.fastqc_zip
     TRIMMING(read_pairs_ch, params.analysisdir)
     FASTQC_PT(TRIMMING.out.reads, params.analysisdir)
-    MULTIQC(FASTQC.out.collect(), FASTQC_PT.out.collect())
+    ch_fastqc_trim = FASTQC_PT.out.fastqc_zip
+    MULTIQC(
+        ch_fastqc.collect{it[1]}.ifEmpty([]), 
+        ch_fastqc_trim.collect{it[1]}.ifEmpty([]))
 }
