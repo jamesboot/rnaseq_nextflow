@@ -107,8 +107,6 @@ process FASTQC_PT {
  * Perform MultiQC
  */
 process MULTIQC {
-    conda "/data/WHRI-GenomeCentre/software/multiqc_conda"
-
     input:
     file("*")
     file("*")
@@ -118,6 +116,10 @@ process MULTIQC {
 
     script:
     """
+    # Load gcenv and multiqc module
+    module load python/3.6.3
+    . /data/WHRI-GenomeCentre/gcenv/bin/activate
+
     # Run multiqc
     multiqc .
     """
