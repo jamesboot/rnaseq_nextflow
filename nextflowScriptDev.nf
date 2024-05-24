@@ -107,7 +107,9 @@ process FASTQC_PT {
  * Perform MultiQC
  */
 process MULTIQC {
-    conda '/data/home/hmy961/.conda/envs/multiqc-env'
+    module load anaconda3
+    conda activate multiqc-env
+
     publishDir "${params.analysisdir}", mode:'copy'
 
     input:
