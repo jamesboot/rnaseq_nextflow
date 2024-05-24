@@ -107,19 +107,18 @@ process FASTQC_PT {
  * Perform MultiQC
  */
 process MULTIQC {
+    conda 'multiqc=1.21'
+    publishDir "${params.analysisdir}", mode:'copy'
+
     input:
     file("*")
     file("*")
 
     output:
-    path("${params.analysisdir}/multiqc_report.html")
+    path("multiqc_report.html")
 
     script:
     """
-    # Load gcenv and multiqc module
-    module load python/3.6.3
-    . /data/WHRI-GenomeCentre/gcenv/bin/activate
-
     # Run multiqc
     multiqc .
     """
@@ -138,7 +137,5 @@ workflow {
     TRIMMING(read_pairs_ch)
     FASTQC_PT(TRIMMING.out.reads)
     ch_fastqc_trim = FASTQC_PT.out
-    MULTIQC(
-        ch_fastqc.collect(), 
-        ch_fastqc_trim.collect())
+    MULTIQC(ch_fastqc.collect(), ch_fastqc_trim.collect())
 }
