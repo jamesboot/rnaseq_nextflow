@@ -14,18 +14,18 @@ log.info """\
  * Sub-sample to 250k reads, 1M lines
  */
 process SUBSAMPLE {
+    publishDir "${params.analysisdir}/1M_Subsample"
+
     input:
     tuple val(sample_id), path(reads)
-    path parentFolder
 
     output:
-    tuple val(sample_id), path("${parentFolder}/1M_Subsample/1M-${sample_id}_R1.fastq"), path("${parentFolder}/1M_Subsample/1M-${sample_id}_R2.fastq"), emit: reads
+    tuple val(sample_id), path("1M-${sample_id}_R1.fastq"), path("1M-${sample_id}_R2.fastq"), emit: reads
 
     script:
     """
-    if [ ! -e ${parentFolder}/1M_Subsample ]; then mkdir -p ${parentFolder}/1M_Subsample; fi
-    gzip -cd ${reads[0]} | head -4000000 > ${parentFolder}/1M_Subsample/1M-${sample_id}_R1.fastq
-    gzip -cd ${reads[1]} | head -4000000 > ${parentFolder}/1M_Subsample/1M-${sample_id}_R2.fastq
+    gzip -cd ${reads[0]} | head -4000000 > 1M-${sample_id}_R1.fastq
+    gzip -cd ${reads[1]} | head -4000000 > 1M-${sample_id}_R2.fastq
     """
 }
 
@@ -33,23 +33,21 @@ process SUBSAMPLE {
  * Perform FastQC
  */
 process FASTQC {
+    publishDir "${params.analysisdir}/1M_fastqc"
+
     input:
     tuple val(sample_id), path(read1), path(read2)
-    path parentFolder
 
     output:
-    path("${parentFolder}/1M_fastqc")
+    file "*fastqc*"
     
     script:
     """
     # Load module
     module load fastqc
-    
-    # Create output folders
-    if [ ! -e ${parentFolder}/1M_fastqc ]; then mkdir -p ${parentFolder}/1M_fastqc; fi
 
     # FastQC files
-    fastqc -o ${parentFolder}/1M_fastqc ${read1} ${read2}
+    fastqc ${read1} ${read2}
     """
 }
 
@@ -57,21 +55,19 @@ process FASTQC {
  * Perform trimming
  */
 process TRIMMING {
+    publishDir "${params.analysisdir}/trimgalore_outs"
+
     input:
     tuple val(sample_id), path(reads)
-    path parentFolder
 
     output:
-    tuple val(sample_id), path("${parentFolder}/trimgalore_outs/*val*.fq.gz"), emit: reads
-	path("${parentFolder}/trimgalore_outs/*report.txt"), optional: true, emit: report
+    tuple val(sample_id), path("*val*.fq.gz"), emit: reads
+	path("*report.txt"), optional: true, emit: report
 
     script:
     """
     # Load module
     module load trimgalore/0.6.5
-
-    # Create output folders
-    if [ ! -e ${parentFolder}/trimgalore_outs ]; then mkdir -p ${parentFolder}/trimgalore_outs; fi
     
 	# Run trimgalore
 	# Options --length, -e, --stringency, --quality are set to default
@@ -81,7 +77,6 @@ process TRIMMING {
 	--paired \
 	--stringency 1 \
 	-e 0.1 \
-	--output_dir ${parentFolder}/trimgalore_outs \
 	${reads}
     """
 }
@@ -90,23 +85,21 @@ process TRIMMING {
  * Perform FastQC, post trimming
  */
 process FASTQC_PT {
+    publishDir "${params.analysisdir}/post_trim_fastqc"
+
     input:
     tuple val(sample_id), path(reads)
-    path parentFolder
 
     output:
-    path("${parentFolder}/post_trim_fastqc")
+    file "*fastqc*"
 
     script:
     """
     # Load module
     module load fastqc
 
-    # Create output folders
-    if [ ! -e ${parentFolder}/post_trim_fastqc ]; then mkdir -p ${parentFolder}/post_trim_fastqc; fi
-
     # FastQC files
-    fastqc -o ${parentFolder}/post_trim_fastqc ${reads}
+    fastqc ${reads}
     """
 }
 
@@ -114,16 +107,20 @@ process FASTQC_PT {
  * Perform MultiQC
  */
 process MULTIQC {
-    conda 'multiqc=1.21'
+    publishDir "${params.analysisdir}", mode:'copy'
 
     input:
-    path('*')
+    file("*")
+    file("*")
 
     output:
-    path("$params.analysisdir/multiqc_report.html")
+    path("multiqc_report.html")
 
     script:
     """
+    module load anaconda3/2023.03
+    conda activate multiqc-env
+
     # Run multiqc
     multiqc .
     """
@@ -136,9 +133,11 @@ workflow {
     Channel
         .fromFilePairs(params.reads, checkIfExists: true)
         .set { read_pairs_ch }
-    SUBSAMPLE(read_pairs_ch, params.analysisdir)
-    fastqc_ch = FASTQC(SUBSAMPLE.out.reads, params.analysisdir)
-    TRIMMING(read_pairs_ch, params.analysisdir)
-    fastqcPT_ch = FASTQC_PT(TRIMMING.out.reads, params.analysisdir)
-    MULTIQC(fastqcPT_ch.mix(fastqc_ch).collect())
+    SUBSAMPLE(read_pairs_ch)
+    FASTQC(SUBSAMPLE.out.reads)
+    ch_fastqc = FASTQC.out
+    TRIMMING(read_pairs_ch)
+    FASTQC_PT(TRIMMING.out.reads)
+    ch_fastqc_trim = FASTQC_PT.out
+    MULTIQC(ch_fastqc.collect(), ch_fastqc_trim.collect())
 }
